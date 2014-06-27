@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeRef="r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox)/4593348108329555838">
+    <unitInfo nodeId="4593348108329555838" fileName="map_StateMachine.xml" startLine="1" startPosition="0" endLine="70" endPosition="8" unitName="coordination.sandbox.map_StateMachine" />
+  </root>
+</debugInfo>
+
