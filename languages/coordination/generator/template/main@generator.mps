@@ -77,6 +77,12 @@
             <property name="text" nameId="iuxj.6666499814681541920" value="http://www.w3.org/2005/07/scxml" />
           </node>
         </node>
+        <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="6458650210646664286" nodeInfo="ng">
+          <property name="attrName" nameId="iuxj.6666499814681447926" value="xmlns:rsb" />
+          <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="6458650210646665931" nodeInfo="ng">
+            <property name="text" nameId="iuxj.6666499814681541920" value="http://opensource.cit-ec.de/rsb" />
+          </node>
+        </node>
         <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="4593348108327489703" nodeInfo="ng">
           <property name="attrName" nameId="iuxj.6666499814681447926" value="version" />
           <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="4593348108327490562" nodeInfo="ng">
