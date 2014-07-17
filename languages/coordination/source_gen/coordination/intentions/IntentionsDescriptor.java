@@ -13,6 +13,9 @@ public class IntentionsDescriptor extends BaseIntentionsDescriptor {
   }
 
   public void init() {
-    IntentionsManager.getInstance().registerIntentionFactory(new comment_Intention());
+    IntentionsManager.getInstance().registerIntentionFactory(new comment_add_Intention());
+    IntentionsManager.getInstance().registerIntentionFactory(new comment_remove_Intention());
+    IntentionsManager.getInstance().registerIntentionFactory(new multilinecomment_add_Intention());
+    IntentionsManager.getInstance().registerIntentionFactory(new multilinecomment_remove_Intention());
   }
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="-1" />
+    </dependencies>
+    <rename id="l1y1.2935010982282057110" type="CHILD" from="multilinecomment" to="line" />
+  </StructureModification>
+</history>
+

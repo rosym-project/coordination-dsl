@@ -32,6 +32,7 @@ public class State_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createComponent_sjqidp_c0(editorContext, node));
     editorCell.addEditorCell(this.createComponent_sjqidp_d0(editorContext, node));
     editorCell.addEditorCell(this.createComponent_sjqidp_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_sjqidp_f0(editorContext, node));
     return editorCell;
   }
 
@@ -84,7 +85,15 @@ public class State_Editor extends DefaultNodeEditor {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "coordination.editor.transitions");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
+    return editorCell;
+  }
+
+  private EditorCell createConstant_sjqidp_f0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
+    editorCell.setCellId("Constant_sjqidp_f0");
+    editorCell.setDefaultText("");
     return editorCell;
   }
 }

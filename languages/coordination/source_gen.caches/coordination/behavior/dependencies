@@ -9,9 +9,11 @@
     <classNode dependClassName="coordination.behavior.CompositeState_BehaviorDescriptor" />
     <classNode dependClassName="coordination.behavior.FireEvent_BehaviorDescriptor" />
     <classNode dependClassName="coordination.behavior.LogMessage_BehaviorDescriptor" />
+    <classNode dependClassName="coordination.behavior.MultiLineComment_BehaviorDescriptor" />
     <classNode dependClassName="coordination.behavior.ParallelState_BehaviorDescriptor" />
     <classNode dependClassName="coordination.behavior.StateMachine_BehaviorDescriptor" />
     <classNode dependClassName="coordination.behavior.State_BehaviorDescriptor" />
+    <classNode dependClassName="coordination.behavior.String_BehaviorDescriptor" />
     <classNode dependClassName="coordination.behavior.Transition_BehaviorDescriptor" />
     <classNode dependClassName="coordination.behavior.WaitDuration_BehaviorDescriptor" />
     <classNode dependClassName="coordination.behavior.WaitForEvent_BehaviorDescriptor" />
@@ -75,6 +77,12 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="coordination.behavior.MultiLineComment_BehaviorDescriptor" file="MultiLineComment_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.NodeAttribute_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="coordination.behavior.ParallelState_Behavior" file="ParallelState_Behavior.java">
@@ -145,6 +153,12 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="coordination.behavior.String_BehaviorDescriptor" file="String_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="coordination.behavior.Transition_BehaviorDescriptor" file="Transition_BehaviorDescriptor.java">

@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="Action_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="8" endPosition="0" unitName="coordination.behavior.Action_BehaviorDescriptor" />
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="42" endPosition="0" unitName="coordination.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="coordination.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="Comment_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="coordination.behavior.Comment_BehaviorDescriptor" />
   <unitInfo fileName="CompositeState_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="34" endPosition="0" unitName="coordination.behavior.CompositeState_BehaviorDescriptor" />
   <unitInfo fileName="Condition_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="10" endPosition="0" unitName="coordination.behavior.Condition_BehaviorDescriptor" />
   <unitInfo fileName="FireEvent_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="coordination.behavior.FireEvent_BehaviorDescriptor" />
   <unitInfo fileName="ICanBeCommented_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="8" endPosition="0" unitName="coordination.behavior.ICanBeCommented_BehaviorDescriptor" />
   <unitInfo fileName="LogMessage_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="coordination.behavior.LogMessage_BehaviorDescriptor" />
+  <unitInfo fileName="MultiLineComment_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="coordination.behavior.MultiLineComment_BehaviorDescriptor" />
   <unitInfo fileName="ParallelState_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="34" endPosition="0" unitName="coordination.behavior.ParallelState_BehaviorDescriptor" />
   <unitInfo fileName="StateContainer_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="9" endPosition="0" unitName="coordination.behavior.StateContainer_BehaviorDescriptor" />
   <unitInfo fileName="StateLike_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="13" endPosition="0" unitName="coordination.behavior.StateLike_BehaviorDescriptor" />
   <unitInfo fileName="StateMachine_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="coordination.behavior.StateMachine_BehaviorDescriptor" />
   <unitInfo fileName="State_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="35" endPosition="0" unitName="coordination.behavior.State_BehaviorDescriptor" />
+  <unitInfo fileName="String_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="coordination.behavior.String_BehaviorDescriptor" />
   <unitInfo fileName="Transition_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="coordination.behavior.Transition_BehaviorDescriptor" />
   <unitInfo fileName="WaitDuration_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="coordination.behavior.WaitDuration_BehaviorDescriptor" />
   <unitInfo fileName="WaitForEvent_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="coordination.behavior.WaitForEvent_BehaviorDescriptor" />
