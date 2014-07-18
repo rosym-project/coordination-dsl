@@ -134,9 +134,9 @@
     <nodeInfo nodeId="6168113672289652023" fileName="State_Behavior.java" startLine="18" startPosition="83" endLine="19" endPosition="147" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4593348108329479036" fileName="State_Behavior.java" startLine="22" startPosition="81" endLine="23" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="1031307029662257938" fileName="State_Behavior.java" startLine="23" startPosition="21" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="4593348108329481731" fileName="State_Behavior.java" startLine="25" startPosition="118" endLine="26" endPosition="215" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4593348108329481731" fileName="State_Behavior.java" startLine="25" startPosition="118" endLine="26" endPosition="221" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="1031307029662258826" fileName="State_Behavior.java" startLine="27" startPosition="5" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="4593348108329433323" fileName="State_Behavior.java" startLine="28" startPosition="0" endLine="29" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4593348108329433323" fileName="State_Behavior.java" startLine="28" startPosition="0" endLine="29" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6168113672289590056" fileName="State_Behavior.java" startLine="11" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
     <nodeInfo nodeId="6168113672289590056" fileName="State_Behavior.java" startLine="14" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getEntryMessage_6168113672289374367#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
     <nodeInfo nodeId="6168113672289590056" fileName="State_Behavior.java" startLine="18" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getExitMessage_6168113672289374913#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
@@ -145,7 +145,7 @@
     <scopeInfo nodeId="6168113672289590058" fileName="State_Behavior.java" startLine="11" startPosition="43" endLine="11" endPosition="43" />
     <scopeInfo nodeId="6168113672289590166" fileName="State_Behavior.java" startLine="14" startPosition="84" endLine="15" endPosition="148" />
     <scopeInfo nodeId="6168113672289621497" fileName="State_Behavior.java" startLine="18" startPosition="83" endLine="19" endPosition="147" />
-    <scopeInfo nodeId="1031307029662255858" fileName="State_Behavior.java" startLine="25" startPosition="118" endLine="26" endPosition="215" />
+    <scopeInfo nodeId="1031307029662255858" fileName="State_Behavior.java" startLine="25" startPosition="118" endLine="26" endPosition="221" />
     <scopeInfo nodeId="6168113672289590056" fileName="State_Behavior.java" startLine="11" startPosition="0" endLine="13" endPosition="0">
       <varInfo nodeId="6168113672289590056" varName="thisNode" />
     </scopeInfo>
@@ -155,7 +155,7 @@
     <scopeInfo nodeId="6168113672289590056" fileName="State_Behavior.java" startLine="18" startPosition="0" endLine="21" endPosition="0">
       <varInfo nodeId="6168113672289590056" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="6168113672289621513" fileName="State_Behavior.java" startLine="22" startPosition="81" endLine="29" endPosition="90">
+    <scopeInfo nodeId="6168113672289621513" fileName="State_Behavior.java" startLine="22" startPosition="81" endLine="29" endPosition="77">
       <varInfo nodeId="4593348108329479039" varName="name" />
     </scopeInfo>
     <scopeInfo nodeId="6168113672289590056" fileName="State_Behavior.java" startLine="22" startPosition="0" endLine="31" endPosition="0">
