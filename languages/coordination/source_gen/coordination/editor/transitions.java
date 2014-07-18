@@ -17,12 +17,6 @@ import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultReferenceSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
-import jetbrains.mps.openapi.editor.style.StyleRegistry;
-import jetbrains.mps.nodeEditor.MPSColors;
 
 public class transitions implements ConceptEditorComponent {
   public Collection<String> getContextHints() {
@@ -66,13 +60,9 @@ public class transitions implements ConceptEditorComponent {
 
     public EditorCell createEmptyCell(EditorContext editorContext) {
       EditorCell emptyCell = null;
-      emptyCell = this.createEmptyCell_internal(editorContext, this.getOwner());
+      emptyCell = super.createEmptyCell(editorContext);
       this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
       return emptyCell;
-    }
-
-    public EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
-      return this.createConstant_jq6ggv_a0a(editorContext, node);
     }
 
     public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
@@ -85,16 +75,6 @@ public class transitions implements ConceptEditorComponent {
           elementCell.setSubstituteInfo(new DefaultChildSubstituteInfo(listOwner, elementNode, super.getLinkDeclaration(), editorContext));
         }
       }
-    }
-
-    private EditorCell createConstant_jq6ggv_a0a(EditorContext editorContext, SNode node) {
-      EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-      editorCell.setCellId("Constant_jq6ggv_a0a");
-      Style style = new StyleImpl();
-      style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
-      editorCell.getStyle().putAll(style);
-      editorCell.setDefaultText("");
-      return editorCell;
     }
   }
 }

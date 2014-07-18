@@ -13,16 +13,20 @@
       <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
       <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="4593348108329966722" resolveInfo="System Idle" />
       <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.ParallelState" typeId="l1y1.6168113672289159428" id="4593348108329966717" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="Paarallel ds" />
+        <property name="name" nameId="tpck.1169194664001" value="foo Parallel" />
         <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
         <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="4593348108329966722" resolveInfo="System Idle" />
         <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="4593348108329966722" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="System Idle" />
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="l1y1.Comment" typeId="l1y1.4593348108329598434" id="4593348108330405430" nodeInfo="ng">
-            <property name="comment" nameId="l1y1.4593348108329598486" value="State A - Transition on specific event or after one second" />
-          </node>
           <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="6056228331389094445" nodeInfo="ng">
             <property name="message" nameId="l1y1.6168113672289314118" value="Entered State: System Idle" />
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="l1y1.Comment" typeId="l1y1.4593348108329598434" id="1031307029663005286" nodeInfo="ng">
+            <property name="comment" nameId="l1y1.4593348108329598486" value="State A - Transition on specific event or after one second" />
+          </node>
+          <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="1031307029663005288" nodeInfo="ng">
+            <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="6056228331389094433" resolveInfo="Human Present" />
+            <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.NoCondition" typeId="l1y1.1031307029662064176" id="1031307029663005292" nodeInfo="ng" />
           </node>
         </node>
         <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="6056228331389094433" nodeInfo="ng">
@@ -35,6 +39,9 @@
             <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitDuration" typeId="l1y1.6168113672289368875" id="6056228331389094581" nodeInfo="ng">
               <property name="milliseconds" nameId="l1y1.6168113672289368927" value="1000" />
             </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="l1y1.Comment" typeId="l1y1.4593348108329598434" id="1031307029663005284" nodeInfo="ng">
+            <property name="comment" nameId="l1y1.4593348108329598486" value="State A - Transition after one second" />
           </node>
         </node>
         <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="4593348108329966728" nodeInfo="ng">

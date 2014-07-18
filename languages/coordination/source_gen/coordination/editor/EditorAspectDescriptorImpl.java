@@ -34,10 +34,12 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 8:
         return Collections.<ConceptEditor>singletonList(new StateMachine_Editor());
       case 9:
-        return Collections.<ConceptEditor>singletonList(new Transition_Editor());
+        return Collections.<ConceptEditor>singletonList(new String_Editor());
       case 10:
-        return Collections.<ConceptEditor>singletonList(new WaitDuration_Editor());
+        return Collections.<ConceptEditor>singletonList(new Transition_Editor());
       case 11:
+        return Collections.<ConceptEditor>singletonList(new WaitDuration_Editor());
+      case 12:
         return Collections.<ConceptEditor>singletonList(new WaitForEvent_Editor());
       default:
     }
@@ -64,7 +66,7 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
 
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"coordination.structure.Comment", "coordination.structure.CompositeState", "coordination.structure.FireEvent", "coordination.structure.LogMessage", "coordination.structure.MultiLineComment", "coordination.structure.NoCondition", "coordination.structure.ParallelState", "coordination.structure.State", "coordination.structure.StateMachine", "coordination.structure.Transition", "coordination.structure.WaitDuration", "coordination.structure.WaitForEvent"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"coordination.structure.Comment", "coordination.structure.CompositeState", "coordination.structure.FireEvent", "coordination.structure.LogMessage", "coordination.structure.MultiLineComment", "coordination.structure.NoCondition", "coordination.structure.ParallelState", "coordination.structure.State", "coordination.structure.StateMachine", "coordination.structure.String", "coordination.structure.Transition", "coordination.structure.WaitDuration", "coordination.structure.WaitForEvent"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0a2 = new String[]{"coordination.editor.actions", "coordination.editor.finalstate", "coordination.editor.transitions"};
   private static String[] stringSwitchCases_xbvbvu_a0a0c = new String[]{"coordination.structure.StateLike"};
 }

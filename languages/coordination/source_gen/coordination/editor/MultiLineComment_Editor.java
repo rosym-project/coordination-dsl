@@ -35,7 +35,7 @@ public class MultiLineComment_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_petcxp_a");
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_petcxp_a0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_petcxp_b0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_petcxp_b0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_petcxp_c0(editorContext, node));
     editorCell.addEditorCell(this.createAttributedNodeCell_petcxp_d0(editorContext, node));
     return editorCell;
@@ -46,14 +46,24 @@ public class MultiLineComment_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Constant_petcxp_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_petcxp_b0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new MultiLineComment_Editor.lineListHandler_petcxp_b0(node, "line", editorContext);
+  private EditorCell createCollection_petcxp_b0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_petcxp_b0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.setCanBeFolded(true);
+    editorCell.addEditorCell(this.createRefNodeList_petcxp_a1a(editorContext, node));
+    return editorCell;
+  }
+
+  private EditorCell createRefNodeList_petcxp_a1a(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new MultiLineComment_Editor.lineListHandler_petcxp_a1a(node, "line", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_line");
     Style style = new StyleImpl();
@@ -64,8 +74,8 @@ public class MultiLineComment_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static class lineListHandler_petcxp_b0 extends RefNodeListHandler {
-    public lineListHandler_petcxp_b0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class lineListHandler_petcxp_a1a extends RefNodeListHandler {
+    public lineListHandler_petcxp_a1a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 
@@ -82,13 +92,9 @@ public class MultiLineComment_Editor extends DefaultNodeEditor {
 
     public EditorCell createEmptyCell(EditorContext editorContext) {
       EditorCell emptyCell = null;
-      emptyCell = this.createEmptyCell_internal(editorContext, this.getOwner());
+      emptyCell = super.createEmptyCell(editorContext);
       this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
       return emptyCell;
-    }
-
-    public EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
-      return this.createConstant_petcxp_a1a(editorContext, node);
     }
 
     public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
@@ -102,20 +108,10 @@ public class MultiLineComment_Editor extends DefaultNodeEditor {
         }
       }
     }
-
-    private EditorCell createConstant_petcxp_a1a(EditorContext editorContext, SNode node) {
-      EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "<no comment>");
-      editorCell.setCellId("Constant_petcxp_a1a");
-      Style style = new StyleImpl();
-      style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
-      editorCell.getStyle().putAll(style);
-      editorCell.setDefaultText("");
-      return editorCell;
-    }
   }
 
   private EditorCell createConstant_petcxp_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "--> ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "-->");
     editorCell.setCellId("Constant_petcxp_c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);

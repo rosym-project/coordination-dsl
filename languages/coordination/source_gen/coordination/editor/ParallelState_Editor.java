@@ -13,6 +13,7 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.openapi.editor.style.StyleRegistry;
 import jetbrains.mps.nodeEditor.MPSColors;
+import jetbrains.mps.nodeEditor.MPSFonts;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
@@ -42,12 +43,7 @@ public class ParallelState_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createComponent_pktb5_c0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_pktb5_d0(editorContext, node));
     editorCell.addEditorCell(this.createRefCell_pktb5_e0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_pktb5_f0(editorContext, node));
-    editorCell.addEditorCell(this.createComponent_pktb5_g0(editorContext, node));
-    editorCell.addEditorCell(this.createComponent_pktb5_h0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_pktb5_i0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_pktb5_j0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_pktb5_k0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_pktb5_f0(editorContext, node));
     return editorCell;
   }
 
@@ -55,7 +51,9 @@ public class ParallelState_Editor extends DefaultNodeEditor {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "parallel");
     editorCell.setCellId("Constant_pktb5_a0");
     Style style = new StyleImpl();
-    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_MAGENTA));
+    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_GREEN));
+    style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
+    style.set(StyleAttributes.UNDERLINED, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
@@ -155,17 +153,48 @@ public class ParallelState_Editor extends DefaultNodeEditor {
     }
   }
 
-  private EditorCell createConstant_pktb5_f0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_pktb5_f0");
+  private EditorCell createCollection_pktb5_f0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_pktb5_f0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.setCanBeFolded(true);
+    editorCell.addEditorCell(this.createConstant_pktb5_a5a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_pktb5_b5a(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_pktb5_c5a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_pktb5_d5a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_pktb5_e5a(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_pktb5_f5a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_pktb5_g5a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_pktb5_h5a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_pktb5_i5a(editorContext, node));
+    return editorCell;
+  }
+
+  private EditorCell createConstant_pktb5_a5a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "actions:");
+    editorCell.setCellId("Constant_pktb5_a5a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_MAGENTA));
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createComponent_pktb5_g0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_pktb5_b5a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "    ");
+    editorCell.setCellId("Constant_pktb5_b5a");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createComponent_pktb5_c5a(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "coordination.editor.actions");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
@@ -174,27 +203,50 @@ public class ParallelState_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createComponent_pktb5_h0(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "coordination.editor.transitions");
+  private EditorCell createConstant_pktb5_d5a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "transitions:");
+    editorCell.setCellId("Constant_pktb5_d5a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
-    editorCell.getStyle().putAll(style);
-    return editorCell;
-  }
-
-  private EditorCell createConstant_pktb5_i0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_pktb5_i0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_MAGENTA));
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_pktb5_j0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new ParallelState_Editor.statesListHandler_pktb5_j0(node, "states", editorContext);
+  private EditorCell createConstant_pktb5_e5a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "    ");
+    editorCell.setCellId("Constant_pktb5_e5a");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createComponent_pktb5_f5a(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "coordination.editor.transitions");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
+  }
+
+  private EditorCell createConstant_pktb5_g5a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
+    editorCell.setCellId("Constant_pktb5_g5a");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createRefNodeList_pktb5_h5a(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new ParallelState_Editor.statesListHandler_pktb5_h5a(node, "states", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_states");
     Style style = new StyleImpl();
@@ -206,8 +258,8 @@ public class ParallelState_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static class statesListHandler_pktb5_j0 extends RefNodeListHandler {
-    public statesListHandler_pktb5_j0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class statesListHandler_pktb5_h5a extends RefNodeListHandler {
+    public statesListHandler_pktb5_h5a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 
@@ -242,11 +294,12 @@ public class ParallelState_Editor extends DefaultNodeEditor {
     }
   }
 
-  private EditorCell createConstant_pktb5_k0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_pktb5_i5a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "/parallel");
-    editorCell.setCellId("Constant_pktb5_k0");
+    editorCell.setCellId("Constant_pktb5_i5a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_MAGENTA));
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
