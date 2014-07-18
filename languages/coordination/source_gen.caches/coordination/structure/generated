@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-cr9edghmw8eh2kdiutdlv5siwfe5voa">
+<dependencies version="2" modelHash="-4vc9583s23lktmbm2zy5q1o6bglvz02">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="5sdbpqxziyuazpb9j1p4zdk6bnvbn49" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="-5mgxduek28h3ywdzzsk4capaz4hgjm0" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <common hash="-30kywnsmsgbjt2mbkztb05taiw2rg6d" dependsOnNodes="true">
+    <dep root="1031307029662064176" />
     <dep root="2935010982282055171" />
     <dep root="2935010982282873333" />
     <dep root="3975843521651975716" />
@@ -47,5 +48,6 @@
   <source id="4593348108330089757" name="WaitForEvent" hash="-88gujb2vgjrlibg57q0el5z4m7a3a5" />
   <source id="2935010982282055171" name="MultiLineComment" hash="8k5woz0zo51wd3geit3bbz51yc0h58h" />
   <source id="2935010982282873333" name="String" hash="-wj0oms2jnq527snse4zh4ejui5myn8" />
+  <source id="1031307029662064176" name="NoCondition" hash="4pe3nqe0eg5uvutluuq96ahhgkd5hj0" />
 </dependencies>
 

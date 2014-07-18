@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-7fzwx1ms4kaya7ufccg3d3pql3ifkpm">
+<dependencies version="2" modelHash="-bgnl9all7al9jwcan9zvkoxbypfcxq8">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.runtime(MPS.Core/jetbrains.mps.generator.runtime@java_stub)" />
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.template(MPS.Core/jetbrains.mps.generator.template@java_stub)" />
@@ -9,12 +9,12 @@
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" hash="-15uwdtf1y5pg0o0e3fc6ujv2qcw23bv" />
   <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" hash="-8z73tx2nml9xagbxlfmq60ehji8q3f5" />
-  <dep model="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" hash="cheiqz5ccjwz4fq4yjlhxu9yr14v1lj" />
+  <dep model="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" hash="-cr9edghmw8eh2kdiutdlv5siwfe5voa" />
   <dep model="r:8dae407c-af73-48e9-affd-ab32cfe15628(coordination.behavior)" hash="d4blinrl50j4mpl9036yo61ehvqwzoi" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" hash="e5zswcvgdspmt039m3gg97emcadi0ez" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
-  <common hash="di9vc83jdgp2cjtxs115nf4g5cxv8zm" dependsOnNodes="true">
+  <common hash="8n15l345jb7uhn2audacc6yilx5gmfq" dependsOnNodes="true">
     <dep root="4593348108327725480" />
     <dep root="4593348108327730037" />
     <dep root="4593348108327730050" />
@@ -37,7 +37,7 @@
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="QueriesGenerated.java" />
   </common>
-  <source id="3975843521651967144" name="main" hash="-3r85pa9vlgl6unw7f4xp5u2v8002wz6">
+  <source id="3975843521651967144" name="main" hash="bc2lx3rczbti1zwim5nbsp11248n403">
     <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" />
   </source>
   <source id="6168113672290497350" name="map_StateMachine" hash="-7ojen0vboorhvmgd3yzvtghy93us0c7" />
@@ -47,8 +47,5 @@
   <source id="4593348108327744503" name="reduce_Transition" hash="7m9qzjscyafboassquxfo1e1xdp23q4" />
   <source id="4593348108327744520" name="reduce_LogMessage" hash="69r658820r7y8wsj3075fjhnxmfxxfi" />
   <source id="4593348108327744539" name="reduce_FireEvent" hash="-7m01cutxkuv5747nfocmubj4lbtdnz8" />
-  <source id="2935010982282458555" name="StateMachineExecutor" hash="6gdpie6i43b8sehf8pszklh20r4qgmn">
-    <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.runtime(MPS.Core/jetbrains.mps.generator.runtime@java_stub)" />
-  </source>
 </dependencies>
 

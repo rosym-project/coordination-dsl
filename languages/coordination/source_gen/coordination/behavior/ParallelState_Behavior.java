@@ -5,6 +5,7 @@ package coordination.behavior;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class ParallelState_Behavior {
   public static void init(SNode thisNode) {
@@ -19,12 +20,13 @@ public class ParallelState_Behavior {
   }
 
   public static String virtual_getStateName_6168113672289375101(SNode thisNode) {
+
     String name = "";
-    if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(thisNode), "coordination.structure.StateMachine")) {
-      name = "SM";
-    } else if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(thisNode), "coordination.structure.StateLike")) {
+
+    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(thisNode), "coordination.structure.StateMachine"))) {
       name = BehaviorReflection.invokeVirtual(String.class, SNodeOperations.cast(SNodeOperations.getParent(thisNode), "coordination.structure.StateLike"), "virtual_getStateName_6168113672289375101", new Object[]{});
     }
-    return name + "PS" + SNodeOperations.getIndexInParent(thisNode);
+
+    return name + "_" + SPropertyOperations.getString(thisNode, "name").replace(" ", "_");
   }
 }

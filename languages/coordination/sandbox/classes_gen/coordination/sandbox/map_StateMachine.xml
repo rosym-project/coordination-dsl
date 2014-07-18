@@ -1,68 +1,68 @@
-<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" initialstate="SMCS0">
-  <state id="SMCS0">
+<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:rsb="http://opensource.cit-ec.de/rsb" version="1.0" initialstate="_Bar">
+  <state id="_Bar">
     <onentry>
-      <log expr="Entering composite state SMCS0"></log>
+      <log expr="Entering composite state _Bar"></log>
     </onentry>
     <onexit>
-      <log expr="Leaving composite state SMCS0"></log>
+      <log expr="Leaving composite state _Bar"></log>
     </onexit>
-    <state id="SMCS0PS0">
+    <state id="_Bar_Paarallel_ds">
       <onentry>
-        <send event="enteringSMCS0PS0"></send>
-        <log expr="Entering parallel state SMCS0PS0"></log>
+        <send event="entering_Bar_Paarallel_ds"></send>
+        <log expr="Entering parallel state _Bar_Paarallel_ds"></log>
       </onentry>
       <onexit>
-        <send event="leavingSMCS0PS0"></send>
-        <log expr="Leaving parallel state SMCS0PS0"></log>
+        <send event="leaving_Bar_Paarallel_ds"></send>
+        <log expr="Leaving parallel state _Bar_Paarallel_ds"></log>
       </onexit>
       <!--State A - Transition on specific event or after one second-->
-      <state id="SMCS0PS0S0">
+      <state id="_Bar_Paarallel_ds_System_Idle">
         <onentry>
           <log expr="'Entering state System Idle'"></log>
           <log expr="'Entered State: System Idle'"></log>
         </onentry>
         <onexit>
-          <log expr="'Leaving state SMCS0PS0S0'"></log>
+          <log expr="'Leaving state System Idle'"></log>
         </onexit>
       </state>
-      <state id="SMCS0PS0S1">
+      <state id="_Bar_Paarallel_ds_Human_Present">
         <onentry>
           <log expr="'Entering state Human Present'"></log>
           <log expr="'Entered State: Human Present'"></log>
-          <send event="'SMCS0PS0S1wait1000ms'" delay="'1000ms'"></send>
+          <send event="'_Bar_Paarallel_ds_Human_Presentwait1000ms'" delay="'1000ms'"></send>
         </onentry>
         <onexit>
-          <log expr="'Leaving state SMCS0PS0S1'"></log>
+          <log expr="'Leaving state Human Present'"></log>
         </onexit>
-        <transition event="SMCS0PS0S1wait1000ms" target="SMCS0PS0S2"></transition>
+        <transition event="_Bar_Paarallel_ds_Human_Presentwait1000ms" target="_Bar_Paarallel_ds_Initialise_Interaction"></transition>
       </state>
-      <state id="SMCS0PS0S2">
+      <state id="_Bar_Paarallel_ds_Initialise_Interaction">
         <onentry>
           <log expr="'Entering state Initialise Interaction'"></log>
           <log expr="'Entered State: Initialise Interaction'"></log>
         </onentry>
         <onexit>
-          <log expr="'Leaving state SMCS0PS0S2'"></log>
+          <log expr="'Leaving state Initialise Interaction'"></log>
         </onexit>
       </state>
-      <state id="SMCS0PS0S3">
+      <state id="_Bar_Paarallel_ds_Interaction_Done">
         <onentry>
           <log expr="'Entering state Interaction Done'"></log>
           <log expr="'Entered State: Interaction Done'"></log>
-          <send event="'SMCS0PS0S3wait0ms'" delay="'0ms'"></send>
+          <send event="'_Bar_Paarallel_ds_Interaction_Donewait0ms'" delay="'0ms'"></send>
         </onentry>
         <onexit>
-          <log expr="'Leaving state SMCS0PS0S3'"></log>
+          <log expr="'Leaving state Interaction Done'"></log>
         </onexit>
-        <transition event="SMCS0PS0S3wait0ms" target="SMCS0PS0S0"></transition>
+        <transition event="_Bar_Paarallel_ds_Interaction_Donewait0ms" target="_Bar_Paarallel_ds_System_Idle"></transition>
       </state>
-      <state id="SMCS0PS0S4">
+      <state id="_Bar_Paarallel_ds_System_Error">
         <onentry>
           <log expr="'Entering state System Error'"></log>
           <log expr="'Entered State: System Error'"></log>
         </onentry>
         <onexit>
-          <log expr="'Leaving state SMCS0PS0S4'"></log>
+          <log expr="'Leaving state System Error'"></log>
         </onexit>
       </state>
     </state>
