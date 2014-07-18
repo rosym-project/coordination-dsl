@@ -24,9 +24,9 @@ public class ParallelState_Behavior {
     String name = "";
 
     if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(thisNode), "coordination.structure.StateMachine"))) {
-      name = BehaviorReflection.invokeVirtual(String.class, SNodeOperations.cast(SNodeOperations.getParent(thisNode), "coordination.structure.StateLike"), "virtual_getStateName_6168113672289375101", new Object[]{});
+      name = BehaviorReflection.invokeVirtual(String.class, SNodeOperations.cast(SNodeOperations.getParent(thisNode), "coordination.structure.StateLike"), "virtual_getStateName_6168113672289375101", new Object[]{}) + "_";
     }
 
-    return name + "_" + SPropertyOperations.getString(thisNode, "name").replace(" ", "_");
+    return SPropertyOperations.getString(thisNode, "name").replace(" ", "_");
   }
 }

@@ -168,9 +168,9 @@
     <nodeInfo nodeId="4593348108328675785" fileName="CompositeState_Behavior.java" startLine="18" startPosition="83" endLine="19" endPosition="157" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="1031307029662310194" fileName="CompositeState_Behavior.java" startLine="22" startPosition="81" endLine="23" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="1031307029662310198" fileName="CompositeState_Behavior.java" startLine="23" startPosition="21" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="1031307029662310208" fileName="CompositeState_Behavior.java" startLine="25" startPosition="118" endLine="26" endPosition="215" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1031307029662310208" fileName="CompositeState_Behavior.java" startLine="25" startPosition="118" endLine="26" endPosition="221" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="1031307029662310217" fileName="CompositeState_Behavior.java" startLine="27" startPosition="5" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="1031307029662310218" fileName="CompositeState_Behavior.java" startLine="28" startPosition="0" endLine="29" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1031307029662310218" fileName="CompositeState_Behavior.java" startLine="28" startPosition="0" endLine="29" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6168113672289637401" fileName="CompositeState_Behavior.java" startLine="11" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
     <nodeInfo nodeId="6168113672289637401" fileName="CompositeState_Behavior.java" startLine="14" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getEntryMessage_6168113672289374367#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
     <nodeInfo nodeId="6168113672289637401" fileName="CompositeState_Behavior.java" startLine="18" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getExitMessage_6168113672289374913#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
@@ -179,7 +179,7 @@
     <scopeInfo nodeId="6168113672289637403" fileName="CompositeState_Behavior.java" startLine="11" startPosition="43" endLine="11" endPosition="43" />
     <scopeInfo nodeId="4593348108328675774" fileName="CompositeState_Behavior.java" startLine="14" startPosition="84" endLine="15" endPosition="158" />
     <scopeInfo nodeId="4593348108328675784" fileName="CompositeState_Behavior.java" startLine="18" startPosition="83" endLine="19" endPosition="157" />
-    <scopeInfo nodeId="1031307029662310207" fileName="CompositeState_Behavior.java" startLine="25" startPosition="118" endLine="26" endPosition="215" />
+    <scopeInfo nodeId="1031307029662310207" fileName="CompositeState_Behavior.java" startLine="25" startPosition="118" endLine="26" endPosition="221" />
     <scopeInfo nodeId="6168113672289637401" fileName="CompositeState_Behavior.java" startLine="11" startPosition="0" endLine="13" endPosition="0">
       <varInfo nodeId="6168113672289637401" varName="thisNode" />
     </scopeInfo>
@@ -189,7 +189,7 @@
     <scopeInfo nodeId="6168113672289637401" fileName="CompositeState_Behavior.java" startLine="18" startPosition="0" endLine="21" endPosition="0">
       <varInfo nodeId="6168113672289637401" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="4593348108328675794" fileName="CompositeState_Behavior.java" startLine="22" startPosition="81" endLine="29" endPosition="90">
+    <scopeInfo nodeId="4593348108328675794" fileName="CompositeState_Behavior.java" startLine="22" startPosition="81" endLine="29" endPosition="77">
       <varInfo nodeId="1031307029662310195" varName="name" />
     </scopeInfo>
     <scopeInfo nodeId="6168113672289637401" fileName="CompositeState_Behavior.java" startLine="22" startPosition="0" endLine="31" endPosition="0">
@@ -203,9 +203,9 @@
     <nodeInfo nodeId="1031307029662295582" fileName="ParallelState_Behavior.java" startLine="22" startPosition="81" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
     <nodeInfo nodeId="1031307029662297375" fileName="ParallelState_Behavior.java" startLine="23" startPosition="0" endLine="24" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="1031307029662297379" fileName="ParallelState_Behavior.java" startLine="24" startPosition="21" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="1031307029662297389" fileName="ParallelState_Behavior.java" startLine="26" startPosition="118" endLine="27" endPosition="215" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1031307029662297389" fileName="ParallelState_Behavior.java" startLine="26" startPosition="118" endLine="27" endPosition="221" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="1031307029662297398" fileName="ParallelState_Behavior.java" startLine="28" startPosition="5" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="1031307029662297399" fileName="ParallelState_Behavior.java" startLine="29" startPosition="0" endLine="30" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1031307029662297399" fileName="ParallelState_Behavior.java" startLine="29" startPosition="0" endLine="30" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6168113672289638592" fileName="ParallelState_Behavior.java" startLine="11" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
     <nodeInfo nodeId="6168113672289638592" fileName="ParallelState_Behavior.java" startLine="14" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getEntryMessage_6168113672289374367#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
     <nodeInfo nodeId="6168113672289638592" fileName="ParallelState_Behavior.java" startLine="18" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getExitMessage_6168113672289374913#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
@@ -214,7 +214,7 @@
     <scopeInfo nodeId="6168113672289638594" fileName="ParallelState_Behavior.java" startLine="11" startPosition="43" endLine="11" endPosition="43" />
     <scopeInfo nodeId="6168113672289638598" fileName="ParallelState_Behavior.java" startLine="14" startPosition="84" endLine="15" endPosition="158" />
     <scopeInfo nodeId="6168113672289638610" fileName="ParallelState_Behavior.java" startLine="18" startPosition="83" endLine="19" endPosition="156" />
-    <scopeInfo nodeId="1031307029662297388" fileName="ParallelState_Behavior.java" startLine="26" startPosition="118" endLine="27" endPosition="215" />
+    <scopeInfo nodeId="1031307029662297388" fileName="ParallelState_Behavior.java" startLine="26" startPosition="118" endLine="27" endPosition="221" />
     <scopeInfo nodeId="6168113672289638592" fileName="ParallelState_Behavior.java" startLine="11" startPosition="0" endLine="13" endPosition="0">
       <varInfo nodeId="6168113672289638592" varName="thisNode" />
     </scopeInfo>
@@ -224,7 +224,7 @@
     <scopeInfo nodeId="6168113672289638592" fileName="ParallelState_Behavior.java" startLine="18" startPosition="0" endLine="21" endPosition="0">
       <varInfo nodeId="6168113672289638592" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="6168113672289638626" fileName="ParallelState_Behavior.java" startLine="22" startPosition="81" endLine="30" endPosition="90">
+    <scopeInfo nodeId="6168113672289638626" fileName="ParallelState_Behavior.java" startLine="22" startPosition="81" endLine="30" endPosition="77">
       <varInfo nodeId="1031307029662297376" varName="name" />
     </scopeInfo>
     <scopeInfo nodeId="6168113672289638592" fileName="ParallelState_Behavior.java" startLine="22" startPosition="0" endLine="32" endPosition="0">
