@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="degna2tk39wze9gk9vb7wbfpbv3xtm2">
-  <common hash="-q32e9l043orzmx7uyiptey4ohvvz6e" />
-  <source id="4593348108329555838" name="Scenario-Coordination" hash="c9j47pyd3fuhokb6r5j81ro543isb34">
-    <file name="Scenario-Coordination" />
-    <file name="map_StateMachine.xml" />
-  </source>
-</dependencies>
-
