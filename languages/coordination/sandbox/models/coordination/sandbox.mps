@@ -2,6 +2,7 @@
 <model modelUID="r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox)">
   <persistence version="8" />
   <language namespace="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" />
+  <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="0" implicit="yes" />
   <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="4593348108329555838" nodeInfo="ng">
@@ -17,14 +18,14 @@
         <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="4593348108329966722" resolveInfo="System Idle" />
         <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="4593348108329966722" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="System Idle" />
-          <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="4526341847718827701" nodeInfo="ng">
-            <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="6056228331389094433" resolveInfo="Human Present" />
-          </node>
           <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="6056228331389094445" nodeInfo="ng">
             <property name="message" nameId="l1y1.6168113672289314118" value="Entered State: System Idle" />
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="l1y1.Comment" typeId="l1y1.4593348108329598434" id="1031307029663005286" nodeInfo="ng">
             <property name="comment" nameId="l1y1.4593348108329598486" value="State A - Transition on specific event or after one second" />
+          </node>
+          <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="1031307029663005288" nodeInfo="ng">
+            <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="6056228331389094433" resolveInfo="Human Present" />
           </node>
         </node>
         <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="6056228331389094433" nodeInfo="ng">
@@ -68,6 +69,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="2985869118319538977" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Bla.Blubb-foo_u18" />
+    <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="2985869118319539638" resolveInfo="Blubb" />
+    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="2985869118319539638" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="Blubb" />
     </node>
   </root>
 </model>

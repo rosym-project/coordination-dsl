@@ -6,7 +6,6 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="0" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3975843521651975716" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="StateMachine" />
     <property name="rootable" nameId="tpce.1096454100552" value="true" />
@@ -170,14 +169,9 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4593348108329598434" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Comment" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;!--" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="//" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="comment" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="960596369751815945" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="foo" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.6823176311001356881" resolveInfo="StringToken" />
-    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4593348108329598486" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="comment" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
@@ -191,6 +185,7 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4593348108329608142" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ICanBeCommented" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="comment" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4593348108330089757" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="conditions" />
@@ -203,6 +198,33 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4593348108330100239" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6168113672289313808" resolveInfo="Condition" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2935010982282055171" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="MultiLineComment" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;!--" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="comment" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpce.AttributeInfo" typeId="tpce.2992811758677295509" id="2935010982282056944" nodeInfo="ng">
+      <property name="role" nameId="tpce.7588428831955550663" value="multilinecomment" />
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="2935010982282056947" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="4593348108329608142" resolveInfo="ICanBeCommented" />
+      </node>
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2935010982282057110" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="line" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="2935010982282873333" resolveInfo="String" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2935010982282873333" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="String" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="comment" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2935010982282873551" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="String" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
 </model>
