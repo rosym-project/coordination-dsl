@@ -7,7 +7,7 @@
     <format property="date" pattern="yyyyMMdd" />
   </tstamp>
   <property name="build.number" value="Coordination-135.SNAPSHOT" />
-  <property name="mps.home" location="${basedir}/../../../local/MPS 3.1" />
+  <property name="mps.home" location="${basedir}/../../../local/MPS3.1" />
   <property name="artifacts.mpsStandalone" location="${mps.home}" />
   <property name="artifacts.mpsMakePlugin" location="${mps.home}" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
@@ -176,7 +176,7 @@
     </copy>
     <mkdir dir="${build.layout}/plugins/mps-make" />
     <copy todir="${build.layout}/plugins/mps-make">
-      <fileset dir="${artifacts.mpsMakePlugin}/plugins/mps-make" />
+      <fileset dir="${artifacts.mpsMakePlugin}/mps-make" />
     </copy>
     <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=1.0</echo>
     <echo file="${build.layout}/build.properties">buildIDE.date=${date}${line.separator}buildIDE.build.number=${build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
