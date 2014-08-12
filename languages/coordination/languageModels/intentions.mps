@@ -10,6 +10,7 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="2935010982282484276" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="multilinecomment_add" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="comment" />
     <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="l1y1.4593348108329608142" resolveInfo="ICanBeCommented" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="2935010982282484277" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2935010982282484278" nodeInfo="sn">

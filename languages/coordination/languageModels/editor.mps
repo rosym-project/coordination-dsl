@@ -580,6 +580,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4593348108329604354" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="comment" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="l1y1.4593348108329598434" resolveInfo="Comment" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4593348108329604407" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4593348108329608208" nodeInfo="nn">
@@ -621,6 +622,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2935010982282125970" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="comment" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="l1y1.2935010982282055171" resolveInfo="MultiLineComment" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2935010982282133279" nodeInfo="nn">
       <property name="usesFolding" nameId="tpc2.1160590353935" value="false" />
@@ -660,17 +662,8 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2935010982282133288" nodeInfo="nn" />
     </node>
   </root>
-  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1031307029662091995" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="conditions" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="l1y1.1031307029662064176" resolveInfo="NoCondition" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1031307029662092280" nodeInfo="nn">
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1031307029662092281" nodeInfo="nn" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1031307029662092282" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="no condition" />
-      </node>
-    </node>
-  </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1031307029662563559" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="comment" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="l1y1.2935010982282873333" resolveInfo="String" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1031307029662563561" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1031307029662563562" nodeInfo="nn" />

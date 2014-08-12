@@ -26,7 +26,6 @@
           </node>
           <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="1031307029663005288" nodeInfo="ng">
             <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="6056228331389094433" resolveInfo="Human Present" />
-            <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.NoCondition" typeId="l1y1.1031307029662064176" id="1031307029663005292" nodeInfo="ng" />
           </node>
         </node>
         <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="6056228331389094433" nodeInfo="ng">
@@ -70,6 +69,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="2985869118319538977" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Bla.Blubb-foo_u18" />
+    <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="2985869118319539638" resolveInfo="Blubb" />
+    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="2985869118319539638" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="Blubb" />
     </node>
   </root>
 </model>
