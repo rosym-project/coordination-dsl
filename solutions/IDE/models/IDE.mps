@@ -346,9 +346,6 @@
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="635009691521286447" nodeInfo="ng">
           <link role="language" roleId="kdzh.322010710375832947" targetNodeId="635009691520869046" resolveInfo="coordination" />
         </node>
-        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportSolution" typeId="kdzh.322010710375832954" id="635009691521291751" nodeInfo="ng">
-          <link role="solution" roleId="kdzh.322010710375832955" targetNodeId="635009691521291411" resolveInfo="coordination.runtime" />
-        </node>
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="635009691520869046" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="false" />
@@ -384,26 +381,6 @@
             <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="635009691521286449" nodeInfo="ng">
               <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
               <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="635009691520869046" resolveInfo="coordination" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="635009691521291411" nodeInfo="ng">
-        <property name="compact" nameId="kdzh.8369506495128725901" value="false" />
-        <property name="name" nameId="tpck.1169194664001" value="coordination.runtime" />
-        <property name="uuid" nameId="kdzh.322010710375892619" value="bf28e680-3162-429e-9844-eec7d9dbc3c6" />
-        <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
-        <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceProjectRelativePath" typeId="3ior.5481553824944787378" id="635009691521291414" nodeInfo="ng">
-          <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="635009691521291550" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="languages" />
-            <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="635009691521291590" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="coordination" />
-              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="635009691521291630" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="runtime" />
-                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="635009691521291670" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="coordination.runtime.msd" />
-                </node>
-              </node>
             </node>
           </node>
         </node>

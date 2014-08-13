@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="Coordination" uuid="fd53cdf4-ff12-495f-a45a-213f5b741141">
   <exported-language name="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" />
-  <exported-solutions>
-    <exported-solution>bf28e680-3162-429e-9844-eec7d9dbc3c6(coordination.runtime)</exported-solution>
-  </exported-solutions>
 </dev-kit>
 

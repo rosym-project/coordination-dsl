@@ -10,14 +10,7 @@
   <property name="mps.home" location="${basedir}/../../../local/MPS3.1" />
   <property name="artifacts.mpsStandalone" location="${mps.home}" />
   <property name="artifacts.mpsMakePlugin" location="${mps.home}" />
-  <property name="artifacts.mpsBuild" location="${mps.home}" />
-  <property name="artifacts.mpsBuildUI" location="${mps.home}" />
-  <property name="artifacts.mpsBootstrapCore" location="${mps.home}" />
   <property name="artifacts.mps" location="${mps.home}" />
-  <property name="artifacts.mpsCore" location="${mps.home}" />
-  <property name="artifacts.mpsDevKit" location="${mps.home}" />
-  <property name="artifacts.mpsDistribution" location="${mps.home}" />
-  <property name="artifacts.mpsWorkbench" location="${mps.home}" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mpsBootstrapCore.version" value="${import.mpsStandalone.mpsBootstrapCore.version}" />
@@ -115,9 +108,6 @@
         <name>Coordination</name>
         <version>1.0</version>
         <depends>jetbrains.mps.core</depends>
-        <depends>jetbrains.mps.build</depends>
-        <depends>jetbrains.mps.ide.make</depends>
-        <depends>jetbrains.mps.ide.devkit</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -171,35 +161,12 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-coordination-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-coordination-languageModels" prefix="module/languageModels" />
     </jar>
-    <mkdir dir="${build.tmp}/default/coordination.runtime.jar" />
-    <mkdir dir="${build.tmp}/default/coordination.runtime.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/coordination.runtime.jar/META-INF/module.xml">
-      <module namespace="coordination.runtime" type="solution" uuid="bf28e680-3162-429e-9844-eec7d9dbc3c6">
-        <dependencies />
-        <sources jar="coordination.runtime-src.jar" descriptor="coordination.runtime.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/coordination.runtime.jar">
-      <fileset dir="${build.tmp}/java/out/coordination.runtime" />
-      <fileset dir="${basedir}/languages/coordination/runtime" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/coordination.runtime.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-coordination-runtime-models">
-      <fileset dir="${basedir}/languages/coordination/runtime/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/coordination.runtime-src.jar">
-      <fileset dir="${basedir}/languages/coordination/runtime/source_gen">
-        <exclude name="**/trace.info" />
-      </fileset>
-      <zipfileset file="${basedir}/languages/coordination/runtime/coordination.runtime.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-coordination-runtime-models" prefix="module/models" />
-    </jar>
     <copy todir="${build.layout}/plugins/Coordination/languages/Coordination">
       <fileset file="${basedir}/devkits/Coordination.devkit" />
     </copy>
     <mkdir dir="${build.layout}/plugins/mps-make" />
     <copy todir="${build.layout}/plugins/mps-make">
-      <fileset dir="${artifacts.mpsMakePlugin}/plugins/mps-make" />
+      <fileset dir="${artifacts.mpsMakePlugin}/mps-make" />
     </copy>
     <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=1.0</echo>
     <echo file="${build.layout}/build.properties">buildIDE.date=${date}${line.separator}buildIDE.build.number=${build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}</echo>
@@ -216,7 +183,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.coordination, java.compile.coordination#3975843521651967143, java.compile.coordination.runtime" />
+  <target name="compileJava" depends="java.compile.coordination, java.compile.coordination#3975843521651967143" />
   
   <target name="processResources" />
   
@@ -229,10 +196,7 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" fork="true">
-      <plugin path="${artifacts.mpsBuild}/mps-build" />
-      <plugin path="${artifacts.mpsMakePlugin}/plugins/mps-make" />
       <plugin path="${artifacts.mpsStandalone}/plugins/mps-core/META-INF/plugin.xml/../.." />
-      <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -288,7 +252,6 @@
       <chunk>
         <module file="${basedir}/devkits/Coordination.devkit" />
         <module file="${basedir}/languages/coordination/coordination.mpl" />
-        <module file="${basedir}/languages/coordination/runtime/coordination.runtime.msd" />
       </chunk>
       <chunk />
       <jvmargs>
@@ -387,21 +350,8 @@
     </javac>
   </target>
   
-  <target name="java.compile.coordination.runtime">
-    <mkdir dir="${basedir}/languages/coordination/runtime/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/coordination.runtime" />
-    <javac destdir="${build.tmp}/java/out/coordination.runtime" fork="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/languages/coordination/runtime/source_gen" />
-      </src>
-      <classpath />
-    </javac>
-  </target>
-  
   <target name="cleanSources">
     <delete dir="${basedir}/languages/coordination/source_gen" />
-    <delete dir="${basedir}/languages/coordination/runtime/source_gen" />
     <delete dir="${basedir}/languages/coordination/generator/source_gen" />
   </target>
 </project>
