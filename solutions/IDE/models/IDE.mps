@@ -130,7 +130,10 @@
       <node role="initialValue" roleId="3ior.2755237150521975432" type="3ior.BuildVariableMacroInitWithString" typeId="3ior.2755237150521975431" id="635009691520868988" nodeInfo="ng">
         <node role="value" roleId="3ior.2755237150521975437" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="635009691520868989" nodeInfo="ng">
           <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="635009691520868990" nodeInfo="ng">
-            <property name="text" nameId="3ior.4903714810883755350" value="Coordination-135.SNAPSHOT" />
+            <property name="text" nameId="3ior.4903714810883755350" value="Coordination-" />
+          </node>
+          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="8362523663360773524" nodeInfo="ng">
+            <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="ffeo.6592112598314709133" resolveInfo="version" />
           </node>
         </node>
       </node>
@@ -345,6 +348,9 @@
         </node>
         <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="635009691521286447" nodeInfo="ng">
           <link role="language" roleId="kdzh.322010710375832947" targetNodeId="635009691520869046" resolveInfo="coordination" />
+        </node>
+        <node role="exports" roleId="kdzh.322010710375832962" type="kdzh.BuildMps_DevKitExportLanguage" typeId="kdzh.322010710375832938" id="3177877371210632831" nodeInfo="ng">
+          <link role="language" roleId="kdzh.322010710375832947" targetNodeId="ffeo.5875180246328869238" resolveInfo="jetbrains.mps.core.xml" />
         </node>
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="635009691520869046" nodeInfo="ng">

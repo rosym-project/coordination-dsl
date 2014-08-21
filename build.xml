@@ -6,7 +6,7 @@
   <tstamp>
     <format property="date" pattern="yyyyMMdd" />
   </tstamp>
-  <property name="build.number" value="Coordination-135.SNAPSHOT" />
+  <property name="build.number" value="Coordination-${mpsBootstrapCore.version}" />
   <property name="mps.home" location="${basedir}/../../../local/MPS3.1" />
   <property name="artifacts.mpsStandalone" location="${mps.home}" />
   <property name="artifacts.mpsMakePlugin" location="${mps.home}" />

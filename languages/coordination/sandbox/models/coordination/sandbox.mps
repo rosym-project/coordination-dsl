@@ -2,9 +2,10 @@
 <model modelUID="r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox)">
   <persistence version="8" />
   <language namespace="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" />
-  <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
+  <devkit namespace="fd53cdf4-ff12-495f-a45a-213f5b741141(Coordination)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="0" implicit="yes" />
+  <import index="iuxj" modelUID="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" version="2" implicit="yes" />
   <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="4593348108329555838" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Scenario-Coordination" />
     <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="4593348108329966684" resolveInfo="Bar" />
@@ -74,8 +75,37 @@
   <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="2985869118319538977" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Bla.Blubb-foo_u18" />
     <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="2985869118319539638" resolveInfo="Blubb" />
+    <node role="data" roleId="l1y1.3177877371209483855" type="l1y1.GenericData" typeId="l1y1.3177877371209945109" id="3177877371210003415" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="foo" />
+      <property name="src" nameId="l1y1.3177877371210003313" value="bar" />
+      <property name="expr" nameId="l1y1.3177877371210003315" value="baz" />
+      <node role="content" roleId="l1y1.3177877371210292330" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="3177877371210332020" nodeInfo="ng">
+        <property name="tagName" nameId="iuxj.6666499814681415862" value="foo" />
+        <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="3177877371210332075" nodeInfo="ng">
+          <property name="attrName" nameId="iuxj.6666499814681447926" value="bar" />
+          <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="3177877371210332077" nodeInfo="ng">
+            <property name="text" nameId="iuxj.6666499814681541920" value="baz" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="data" roleId="l1y1.3177877371209483855" type="l1y1.GenericData" typeId="l1y1.3177877371209945109" id="3177877371210533793" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="blubb" />
+      <property name="src" nameId="l1y1.3177877371210003313" value="foo" />
+      <node role="content" roleId="l1y1.3177877371210292330" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="3177877371210533812" nodeInfo="ng">
+        <property name="tagName" nameId="iuxj.6666499814681415862" value="blubb" />
+        <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="3177877371210533816" nodeInfo="ng">
+          <property name="attrName" nameId="iuxj.6666499814681447926" value="true" />
+          <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="3177877371210533818" nodeInfo="ng">
+            <property name="text" nameId="iuxj.6666499814681541920" value="false" />
+          </node>
+        </node>
+        <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlText" typeId="iuxj.1622293396948952339" id="3177877371210533814" nodeInfo="nn" />
+      </node>
+    </node>
     <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="2985869118319539638" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Blubb" />
+      <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
     </node>
   </root>
 </model>

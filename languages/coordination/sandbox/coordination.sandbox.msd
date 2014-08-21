@@ -9,5 +9,8 @@
   <usedLanguages>
     <usedLanguage>05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)</usedLanguage>
   </usedLanguages>
+  <usedDevKits>
+    <usedDevKit>fd53cdf4-ff12-495f-a45a-213f5b741141(Coordination)</usedDevKit>
+  </usedDevKits>
 </solution>
 
