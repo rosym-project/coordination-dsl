@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="dyrkl0ykpnxnht578a5iq82il96e9dl">
+  <common hash="db60hldrj8lt4d2o4e7b252dzw3n5p6" />
+  <source id="4593348108329555838" name="Scenario-Coordination" hash="-5smi6hhjbkhxnijbi9ibhr4e9d14olu">
+    <file name="Scenario-Coordination.xml" />
+  </source>
+  <source id="2985869118319538977" name="Bla.Blubb-foo_u18" hash="820qjmousbi2jqjg6izpvcld4dqifxz">
+    <file name="Bla.Blubb-foo_u18.xml" />
+  </source>
+</dependencies>
+

@@ -1,0 +1,72 @@
+<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:rsb="http://opensource.cit-ec.de/rsb" version="1.0" initialstate="Bar" name="Scenario-Coordination">
+  <state id="Bar">
+    <onentry>
+      <log expr="'Entering composite state Bar'"></log>
+    </onentry>
+    <onexit>
+      <log expr="'Leaving composite state Bar'"></log>
+    </onexit>
+    <state id="foo_Parallel">
+      <onentry>
+        <send event="enteringfoo_Parallel"></send>
+        <log expr="'Entering parallel state foo_Parallel'"></log>
+      </onentry>
+      <onexit>
+        <send event="leavingfoo_Parallel"></send>
+        <log expr="'Leaving parallel state foo_Parallel'"></log>
+      </onexit>
+      <!--State A - Transition on specific event or after one second-->
+      <state id="System_Idle">
+        <onentry>
+          <log expr="'Entering state System Idle'"></log>
+          <log expr="'Entered State: System Idle'"></log>
+        </onentry>
+        <onexit>
+          <log expr="'Leaving state System Idle'"></log>
+        </onexit>
+        <transition event="" target="Human_Present"></transition>
+      </state>
+      <!--State A - Transition after one second-->
+      <state id="Human_Present">
+        <onentry>
+          <log expr="'Entering state Human Present'"></log>
+          <log expr="'Entered State: Human Present'"></log>
+          <send event="'Human_Presentwait1000ms'" delay="'1000ms'"></send>
+        </onentry>
+        <onexit>
+          <log expr="'Leaving state Human Present'"></log>
+        </onexit>
+        <transition event="Human_Presentwait1000ms" target="Initialise_Interaction"></transition>
+      </state>
+      <state id="Initialise_Interaction">
+        <onentry>
+          <log expr="'Entering state Initialise Interaction'"></log>
+          <log expr="'Entered State: Initialise Interaction'"></log>
+        </onentry>
+        <onexit>
+          <log expr="'Leaving state Initialise Interaction'"></log>
+        </onexit>
+      </state>
+      <state id="Interaction_Done">
+        <onentry>
+          <log expr="'Entering state Interaction Done'"></log>
+          <log expr="'Entered State: Interaction Done'"></log>
+          <send event="'Interaction_Donewait0ms'" delay="'0ms'"></send>
+        </onentry>
+        <onexit>
+          <log expr="'Leaving state Interaction Done'"></log>
+        </onexit>
+        <transition event="Interaction_Donewait0ms" target="System_Idle"></transition>
+      </state>
+      <state id="System_Error">
+        <onentry>
+          <log expr="'Entering state System Error'"></log>
+          <log expr="'Entered State: System Error'"></log>
+        </onentry>
+        <onexit>
+          <log expr="'Leaving state System Error'"></log>
+        </onexit>
+      </state>
+    </state>
+  </state>
+</scxml>

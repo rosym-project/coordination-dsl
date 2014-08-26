@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeRef="r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox)/2985869118319538977">
+    <unitInfo nodeId="2985869118319538977" fileName="Bla.Blubb-foo_u18.xml" startLine="1" startPosition="0" endLine="18" endPosition="8" unitName="coordination.sandbox.Bla$Blubb-foo_u18" />
+  </root>
+  <root nodeRef="r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox)/4593348108329555838">
+    <unitInfo nodeId="4593348108329555838" fileName="Scenario-Coordination.xml" startLine="1" startPosition="0" endLine="72" endPosition="8" unitName="coordination.sandbox.Scenario-Coordination" />
+  </root>
+</debugInfo>
+

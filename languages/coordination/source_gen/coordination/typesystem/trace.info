@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="TypesystemDescriptor.java" startLine="8" startPosition="0" endLine="20" endPosition="0" unitName="coordination.typesystem.TypesystemDescriptor" />
+  <root nodeRef="r:3d73eed1-12be-4e9c-825b-07051d38a984(coordination.typesystem)/6168113672290253936">
+    <nodeInfo nodeId="6168113672290272099" fileName="parallelstates_NonTypesystemRule.java" startLine="23" startPosition="7" endLine="24" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6168113672290272099" fileName="parallelstates_NonTypesystemRule.java" startLine="24" startPosition="60" endLine="25" endPosition="258" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="30" startPosition="46" endLine="31" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="35" startPosition="5" endLine="36" endPosition="130" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="36" startPosition="130" endLine="37" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="41" startPosition="30" endLine="42" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="18" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="parallelstates_NonTypesystemRule#()V" />
+    <nodeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="30" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getApplicableConceptFQName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="41" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="overrides#()Z" />
+    <nodeInfo nodeId="6168113672290272099" fileName="parallelstates_NonTypesystemRule.java" startLine="22" startPosition="103" endLine="26" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="34" startPosition="68" endLine="38" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6168113672290254005" fileName="parallelstates_NonTypesystemRule.java" startLine="21" startPosition="126" endLine="27" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="34" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+    <nodeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="21" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+    <scopeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="18" startPosition="45" endLine="18" endPosition="45" />
+    <scopeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="30" startPosition="46" endLine="31" endPosition="50" />
+    <scopeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="41" startPosition="30" endLine="42" endPosition="17" />
+    <scopeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="18" startPosition="0" endLine="20" endPosition="0" />
+    <scopeInfo nodeId="6168113672290272099" fileName="parallelstates_NonTypesystemRule.java" startLine="23" startPosition="7" endLine="25" endPosition="258">
+      <varInfo nodeId="6168113672290272099" varName="_reporter_2309309498" />
+      <varInfo nodeId="6168113672290272099" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="35" startPosition="5" endLine="37" endPosition="45">
+      <varInfo nodeId="6168113672290253936" varName="b" />
+    </scopeInfo>
+    <scopeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="30" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="41" startPosition="0" endLine="44" endPosition="0" />
+    <scopeInfo nodeId="6168113672290254006" fileName="parallelstates_NonTypesystemRule.java" startLine="22" startPosition="103" endLine="26" endPosition="7" />
+    <scopeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="34" startPosition="68" endLine="38" endPosition="5" />
+    <scopeInfo nodeId="6168113672290253937" fileName="parallelstates_NonTypesystemRule.java" startLine="21" startPosition="126" endLine="27" endPosition="5" />
+    <scopeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="34" startPosition="0" endLine="40" endPosition="0">
+      <varInfo nodeId="6168113672290253936" varName="argument" />
+    </scopeInfo>
+    <scopeInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="21" startPosition="0" endLine="29" endPosition="0">
+      <varInfo nodeId="6168113672290253936" varName="parallelState" />
+      <varInfo nodeId="6168113672290253936" varName="status" />
+      <varInfo nodeId="6168113672290253936" varName="typeCheckingContext" />
+    </scopeInfo>
+    <unitInfo nodeId="6168113672290253936" fileName="parallelstates_NonTypesystemRule.java" startLine="17" startPosition="0" endLine="45" endPosition="0" unitName="coordination.typesystem.parallelstates_NonTypesystemRule" />
+  </root>
+  <root nodeRef="r:3d73eed1-12be-4e9c-825b-07051d38a984(coordination.typesystem)/6168113672290273257">
+    <nodeInfo nodeId="6168113672290274042" fileName="finalstate_NonTypesystemRule.java" startLine="22" startPosition="127" endLine="23" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6168113672290279745" fileName="finalstate_NonTypesystemRule.java" startLine="25" startPosition="66" endLine="26" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6168113672290281305" fileName="finalstate_NonTypesystemRule.java" startLine="30" startPosition="7" endLine="31" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6168113672290281305" fileName="finalstate_NonTypesystemRule.java" startLine="31" startPosition="60" endLine="32" endPosition="291" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="37" startPosition="46" endLine="38" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="42" startPosition="5" endLine="43" endPosition="130" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="43" startPosition="130" endLine="44" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="48" startPosition="30" endLine="49" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="19" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="finalstate_NonTypesystemRule#()V" />
+    <nodeInfo nodeId="6168113672290276242" fileName="finalstate_NonTypesystemRule.java" startLine="24" startPosition="107" endLine="27" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="37" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getApplicableConceptFQName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="48" startPosition="0" endLine="51" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="overrides#()Z" />
+    <nodeInfo nodeId="6168113672290281305" fileName="finalstate_NonTypesystemRule.java" startLine="29" startPosition="27" endLine="33" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="41" startPosition="68" endLine="45" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6168113672290274117" fileName="finalstate_NonTypesystemRule.java" startLine="23" startPosition="34" endLine="28" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="6168113672290280901" fileName="finalstate_NonTypesystemRule.java" startLine="28" startPosition="5" endLine="34" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="41" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+    <nodeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="22" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+    <scopeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="19" startPosition="41" endLine="19" endPosition="41" />
+    <scopeInfo nodeId="6168113672290276243" fileName="finalstate_NonTypesystemRule.java" startLine="25" startPosition="66" endLine="26" endPosition="29" />
+    <scopeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="37" startPosition="46" endLine="38" endPosition="51" />
+    <scopeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="48" startPosition="30" endLine="49" endPosition="17" />
+    <scopeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="19" startPosition="0" endLine="21" endPosition="0" />
+    <scopeInfo nodeId="6168113672290281305" fileName="finalstate_NonTypesystemRule.java" startLine="30" startPosition="7" endLine="32" endPosition="291">
+      <varInfo nodeId="6168113672290281305" varName="_reporter_2309309498" />
+      <varInfo nodeId="6168113672290281305" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="42" startPosition="5" endLine="44" endPosition="45">
+      <varInfo nodeId="6168113672290273257" varName="b" />
+    </scopeInfo>
+    <scopeInfo nodeId="6168113672290274123" fileName="finalstate_NonTypesystemRule.java" startLine="24" startPosition="107" endLine="27" endPosition="7" />
+    <scopeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="37" startPosition="0" endLine="40" endPosition="0" />
+    <scopeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="48" startPosition="0" endLine="51" endPosition="0" />
+    <scopeInfo nodeId="6168113672290280904" fileName="finalstate_NonTypesystemRule.java" startLine="29" startPosition="27" endLine="33" endPosition="7" />
+    <scopeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="41" startPosition="68" endLine="45" endPosition="5" />
+    <scopeInfo nodeId="6168113672290274117" fileName="finalstate_NonTypesystemRule.java" startLine="23" startPosition="34" endLine="28" endPosition="5">
+      <varInfo nodeId="6168113672290274119" varName="state" />
+    </scopeInfo>
+    <scopeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="41" startPosition="0" endLine="47" endPosition="0">
+      <varInfo nodeId="6168113672290273257" varName="argument" />
+    </scopeInfo>
+    <scopeInfo nodeId="6168113672290273258" fileName="finalstate_NonTypesystemRule.java" startLine="22" startPosition="127" endLine="34" endPosition="5">
+      <varInfo nodeId="6168113672290274045" varName="hasfinalstate" />
+    </scopeInfo>
+    <scopeInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="22" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="6168113672290273257" varName="stateContainer" />
+      <varInfo nodeId="6168113672290273257" varName="status" />
+      <varInfo nodeId="6168113672290273257" varName="typeCheckingContext" />
+    </scopeInfo>
+    <unitInfo nodeId="6168113672290273257" fileName="finalstate_NonTypesystemRule.java" startLine="18" startPosition="0" endLine="52" endPosition="0" unitName="coordination.typesystem.finalstate_NonTypesystemRule" />
+  </root>
+</debugInfo>
+

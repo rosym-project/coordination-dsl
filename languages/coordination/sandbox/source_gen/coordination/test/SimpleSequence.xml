@@ -1,0 +1,20 @@
+<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:rsb="http://opensource.cit-ec.de/rsb" version="1.0" initialstate="Start" name="SimpleSequence">
+  <state id="End">
+    <onentry>
+      <log expr="'Entering state End'"></log>
+    </onentry>
+    <onexit>
+      <log expr="'Leaving state End'"></log>
+    </onexit>
+  </state>
+  <state id="Start">
+    <onentry>
+      <log expr="'Entering state Start'"></log>
+      <send event="'Startwait1000ms'" delay="'1000ms'"></send>
+    </onentry>
+    <onexit>
+      <log expr="'Leaving state Start'"></log>
+    </onexit>
+    <transition event="Startwait1000ms" target="End"></transition>
+  </state>
+</scxml>

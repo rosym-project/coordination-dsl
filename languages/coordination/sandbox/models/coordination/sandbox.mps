@@ -4,7 +4,7 @@
   <language namespace="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" />
   <devkit namespace="fd53cdf4-ff12-495f-a45a-213f5b741141(Coordination)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="0" implicit="yes" />
+  <import index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="2" implicit="yes" />
   <import index="iuxj" modelUID="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" version="2" implicit="yes" />
   <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="4593348108329555838" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Scenario-Coordination" />
@@ -27,6 +27,9 @@
           </node>
           <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="1031307029663005288" nodeInfo="ng">
             <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="6056228331389094433" resolveInfo="Human Present" />
+            <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitForEvent" typeId="l1y1.4593348108330089757" id="7693917789697747619" nodeInfo="ng">
+              <property name="eventname" nameId="l1y1.4593348108330089834" value="FaceDetected" />
+            </node>
           </node>
         </node>
         <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="6056228331389094433" nodeInfo="ng">
@@ -39,6 +42,9 @@
             <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitDuration" typeId="l1y1.6168113672289368875" id="6056228331389094581" nodeInfo="ng">
               <property name="milliseconds" nameId="l1y1.6168113672289368927" value="1000" />
             </node>
+            <node role="jexlCondition" roleId="l1y1.7693917789697543497" type="l1y1.JEXLCondition" typeId="l1y1.7693917789697262148" id="7693917789697780259" nodeInfo="ng">
+              <property name="jexlExpression" nameId="l1y1.7693917789697262239" value="_event.data.data.x &gt; 10" />
+            </node>
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="l1y1.Comment" typeId="l1y1.4593348108329598434" id="1031307029663005284" nodeInfo="ng">
             <property name="comment" nameId="l1y1.4593348108329598486" value="State A - Transition after one second" />
@@ -48,6 +54,15 @@
           <property name="name" nameId="tpck.1169194664001" value="Initialise Interaction" />
           <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="487138097217812163" nodeInfo="ng">
             <property name="message" nameId="l1y1.6168113672289314118" value="Entered State: Initialise Interaction" />
+          </node>
+          <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="7693917789697405840" nodeInfo="ng">
+            <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="6056228331389094555" resolveInfo="Interaction Done" />
+            <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitForEvent" typeId="l1y1.4593348108330089757" id="7693917789697652366" nodeInfo="ng">
+              <property name="eventname" nameId="l1y1.4593348108330089834" value="flap" />
+            </node>
+            <node role="jexlCondition" roleId="l1y1.7693917789697543497" type="l1y1.JEXLCondition" typeId="l1y1.7693917789697262148" id="7693917789697683871" nodeInfo="ng">
+              <property name="jexlExpression" nameId="l1y1.7693917789697262239" value="nab" />
+            </node>
           </node>
         </node>
         <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="6056228331389094555" nodeInfo="ng">

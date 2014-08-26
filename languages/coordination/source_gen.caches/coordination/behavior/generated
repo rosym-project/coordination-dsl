@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="168o2gmr40qd1f6607lu9rk5x6uhery">
+  <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+  <dep model="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+  <dep model="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" hash="61wht9cj3icmq9lpyigsv7597eepxrl" />
+  <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="5sdbpqxziyuazpb9j1p4zdk6bnvbn49" />
+  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
+  <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" hash="-8z73tx2nml9xagbxlfmq60ehji8q3f5" />
+  <dep model="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" hash="-1vtu6uptzx5l7n2n68xt5em9d6nhvec" />
+  <dep model="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" hash="45cuzidlv8196ebstp8n0y54t8uywkv" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
+  <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" hash="e5zswcvgdspmt039m3gg97emcadi0ez" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
+  <common hash="-c1a39jykrwon04vxghjvhueci1shkjs" dependsOnNodes="true">
+    <dep root="4593348108330088560" />
+    <dep root="4593348108330090053" />
+    <dep root="4593348108330100236" />
+    <dep root="6168113672289369105" />
+    <dep root="6168113672289590056" />
+    <dep root="6168113672289637401" />
+    <dep root="6168113672289638592" />
+    <dep model="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" />
+    <dep model="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="Action_BehaviorDescriptor.java" />
+    <file name="BehaviorAspectDescriptor.java" />
+    <file name="Comment_BehaviorDescriptor.java" />
+    <file name="CompositeState_BehaviorDescriptor.java" />
+    <file name="Condition_BehaviorDescriptor.java" />
+    <file name="Data_BehaviorDescriptor.java" />
+    <file name="FireEvent_BehaviorDescriptor.java" />
+    <file name="GenericData_BehaviorDescriptor.java" />
+    <file name="ICanBeCommented_BehaviorDescriptor.java" />
+    <file name="LogMessage_BehaviorDescriptor.java" />
+    <file name="MultiLineComment_BehaviorDescriptor.java" />
+    <file name="ParallelState_BehaviorDescriptor.java" />
+    <file name="StateContainer_BehaviorDescriptor.java" />
+    <file name="StateLike_BehaviorDescriptor.java" />
+    <file name="StateMachine_BehaviorDescriptor.java" />
+    <file name="State_BehaviorDescriptor.java" />
+    <file name="String_BehaviorDescriptor.java" />
+    <file name="Transition_BehaviorDescriptor.java" />
+    <file name="WaitDuration_BehaviorDescriptor.java" />
+    <file name="WaitForEvent_BehaviorDescriptor.java" />
+  </common>
+  <source id="6168113672289369105" name="StateLike_Behavior" hash="alwmt3d07vvo6ml02bitotrcfybu3at">
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" />
+    <dep model="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" />
+    <file name="StateLike_Behavior.java" />
+  </source>
+  <source id="6168113672289590056" name="State_Behavior" hash="-6t06tt8ozovrin81bp81spjvojy5xvn">
+    <dep root="6168113672289369105" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" />
+    <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
+    <file name="State_Behavior.java" />
+  </source>
+  <source id="6168113672289637401" name="CompositeState_Behavior" hash="-exi5hunu1rh7waml73k88hy5p5k1lmz">
+    <dep root="6168113672289369105" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" />
+    <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
+    <file name="CompositeState_Behavior.java" />
+  </source>
+  <source id="6168113672289638592" name="ParallelState_Behavior" hash="6qv4c3hxecyj5va56jll823msrnwyn0">
+    <dep root="6168113672289369105" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" />
+    <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
+    <file name="ParallelState_Behavior.java" />
+  </source>
+  <source id="4593348108330088560" name="Condition_Behavior" hash="4bq5us0n42dsykpqyuxm8tjlses9nbd">
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <dep model="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" />
+    <dep model="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" />
+    <file name="Condition_Behavior.java" />
+  </source>
+  <source id="4593348108330090053" name="WaitDuration_Behavior" hash="2yvui4ncbgcilheh7w1yzizkw36iimc">
+    <dep root="4593348108330088560" />
+    <dep root="6168113672289369105" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" />
+    <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
+    <file name="WaitDuration_Behavior.java" />
+  </source>
+  <source id="4593348108330100236" name="WaitForEvent_Behavior" hash="3yf276bi1nzmpuz1m14j2phmigt97kn">
+    <dep root="4593348108330088560" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" />
+    <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
+    <file name="WaitForEvent_Behavior.java" />
+  </source>
+</dependencies>
+

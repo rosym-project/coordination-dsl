@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="45cuzidlv8196ebstp8n0y54t8uywkv">
+  <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="5sdbpqxziyuazpb9j1p4zdk6bnvbn49" />
+  <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="-5mgxduek28h3ywdzzsk4capaz4hgjm0" />
+  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
+  <common hash="5qkbuwnfj86bqqlo51vekq44c8se0ne" dependsOnNodes="true">
+    <dep root="2935010982282055171" />
+    <dep root="2935010982282873333" />
+    <dep root="3177877371209945109" />
+    <dep root="3975843521651975716" />
+    <dep root="4593348108329598434" />
+    <dep root="4593348108329608142" />
+    <dep root="4593348108330089757" />
+    <dep root="6168113672288816540" />
+    <dep root="6168113672288816999" />
+    <dep root="6168113672288845302" />
+    <dep root="6168113672288855555" />
+    <dep root="6168113672289159428" />
+    <dep root="6168113672289313808" />
+    <dep root="6168113672289313860" />
+    <dep root="6168113672289313863" />
+    <dep root="6168113672289314072" />
+    <dep root="6168113672289368875" />
+    <dep root="6168113672289375071" />
+    <dep root="7799346718418850514" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="StructureAspectDescriptor.java" />
+  </common>
+  <source id="3975843521651975716" name="StateMachine" hash="-4lyd4dnlofaplq2kf6799ax5nypt96q" />
+  <source id="6168113672288816540" name="State" hash="74ii8gkyk5v6bog7xewn2saij1fmofp" />
+  <source id="6168113672288816999" name="StateLike" hash="-9lklzhai5rnnwvlivpc1avzuzygc86b" />
+  <source id="6168113672288845302" name="StateContainer" hash="-5z2hcd4ep7uo89r2hpoc20g9vf23t18" />
+  <source id="6168113672288855555" name="CompositeState" hash="3zcz9bdkzpld4mi2y5zwapk0cljn7mz" />
+  <source id="6168113672289159428" name="ParallelState" hash="ddqco3os5d72pr49prrrpxvr83d8wrm" />
+  <source id="6168113672289313808" name="Condition" hash="6afzcqeytnaxbnv32a23taq0unb0j0j" />
+  <source id="6168113672289313860" name="Action" hash="-4odmpdlowmkmjq9n6civoq4wcww3t30" />
+  <source id="6168113672289313863" name="Transition" hash="2z6oqff7agaqepogp4qjhmf4ngie9wf" />
+  <source id="6168113672289314072" name="LogMessage" hash="4o4ev7llxz4yap2odlrxur7lknq7yiz" />
+  <source id="6168113672289368875" name="WaitDuration" hash="1b2rgoebbfi6idiwegz3h64cc8v5cx7" />
+  <source id="6168113672289375071" name="FireEvent" hash="5sw65jy6du20jwwo121eknpea2uwszk" />
+  <source id="4593348108329598434" name="Comment" hash="57pfewn3mq1w9vho980oo4lthgsr6z1" />
+  <source id="4593348108329608142" name="ICanBeCommented" hash="-6jk4x9wix10eb2cn7r0g5kp1rh60kt2" />
+  <source id="4593348108330089757" name="WaitForEvent" hash="-88gujb2vgjrlibg57q0el5z4m7a3a5" />
+  <source id="2935010982282055171" name="MultiLineComment" hash="b1anbc2qhcf6h2asufgubcidjk2q339" />
+  <source id="2935010982282873333" name="String" hash="-bfskhiybv90s6yd2mukl6d1o4i7odlu" />
+  <source id="7799346718418850514" name="Data" hash="-36mfosiild9m6gjbpuvs48iwr5a2gie" />
+  <source id="3177877371209945109" name="GenericData" hash="-4yqzrqp1539fpl62y6jwsqod951oq0m" />
+</dependencies>
+
