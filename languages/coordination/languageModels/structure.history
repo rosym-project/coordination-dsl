@@ -6,5 +6,17 @@
     </dependencies>
     <rename id="l1y1.2935010982282057110" type="CHILD" from="multilinecomment" to="line" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="0" />
+    </dependencies>
+    <rename id="l1y1.7693917789697262239" type="PROPERTY" from="jexl" to="jexlExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="1" />
+    </dependencies>
+    <rename id="l1y1.7693917789697543497" type="CHILD" from="jexl" to="jexlCondition" />
+  </StructureModification>
 </history>
 
