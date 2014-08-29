@@ -1,2 +1,12 @@
 *.class
-languages/coordination/source_gen.caches/*
+languages/coordination/classes_gen/
+languages/coordination/generator/source_gen.caches/
+languages/coordination/generator/source_gen/
+languages/coordination/sandbox/classes_gen/coordination/sandbox/
+languages/coordination/sandbox/classes_gen/coordination/test/SimpleSequence.xml
+languages/coordination/sandbox/source_gen.caches/coordination/sandbox/generated
+languages/coordination/sandbox/source_gen/
+languages/coordination/source_gen/
+languages/coordination/generator/classes_gen/
+languages/coordination/source_gen.caches/
+solutions/IDE/classes_gen/
