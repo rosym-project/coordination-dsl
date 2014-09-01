@@ -2,30 +2,6 @@
 <history>
   <StructureModification>
     <dependencies>
-      <model index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="-1" />
-    </dependencies>
-    <rename id="l1y1.2935010982282057110" type="CHILD" from="multilinecomment" to="line" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="0" />
-    </dependencies>
-    <rename id="l1y1.7693917789697262239" type="PROPERTY" from="jexl" to="jexlExpression" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="1" />
-    </dependencies>
-    <rename id="l1y1.7693917789697543497" type="CHILD" from="jexl" to="jexlCondition" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="2" />
-    </dependencies>
-    <rename id="l1y1.3560655027475031354" type="PROPERTY" from="expression" to="expr" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
       <model index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="3" />
       <model index="zqbp" modelUID="r:dacce2b7-4de7-43fa-881b-a73dfba17b75(rsbcoordination.editor)" version="-1" />
       <model index="al01" modelUID="r:e50525e2-4b2e-4c28-aaed-c6f15b36a9ea(rsbcoordination.structure)" version="12" />

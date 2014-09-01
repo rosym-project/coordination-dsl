@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/CoordinationDistribution" />
   <property name="build.layout" location="${build.dir}/artifacts/CoordinationDistribution" />
-  <property name="mps.home" location="${basedir}/../../../local/MPS3.1" />
+  <property name="mps.home" location="${basedir}/../../../../Applications/MPS 3.1.app" />
   <property name="version" value="2.5" />
   <property name="artifacts.buildIDE" location="${build.dir}/artifacts/buildIDE" />
   <property file="${artifacts.buildIDE}/build.properties" prefix="import.buildIDE" />
