@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-91hxyegp1xf7kqzb32ijfwx4dbbf9lq">
-  <common hash="5o3isn90uafu1a9c1hnjxwboaby9cc0" />
-  <source id="1142711098295440938" name="SimpleSequence" hash="6e77ru8r83bnku53rhy74iobmi943mn">
-    <file name="SimpleSequence" />
-    <file name="SimpleSequence.xml" />
-  </source>
-</dependencies>
-
