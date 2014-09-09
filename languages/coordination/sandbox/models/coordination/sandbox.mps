@@ -89,7 +89,7 @@
   </root>
   <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="2985869118319538977" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Bla.Blubb-foo_u18" />
-    <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="2985869118319539638" resolveInfo="Blubb" />
+    <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="2985869118319539638" resolveInfo="BlubbFAAAALSE" />
     <node role="data" roleId="l1y1.3177877371209483855" type="l1y1.GenericData" typeId="l1y1.3177877371209945109" id="3177877371210003415" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="foo" />
       <property name="src" nameId="l1y1.3177877371210003313" value="bar" />
@@ -105,7 +105,7 @@
       </node>
     </node>
     <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="2985869118319539638" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Blubb" />
+      <property name="name" nameId="tpck.1169194664001" value="BlubbFAAAALSE" />
       <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
     </node>
   </root>

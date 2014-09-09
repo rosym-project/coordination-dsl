@@ -20,6 +20,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6168113672288845313" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6168113672288845302" resolveInfo="StateContainer" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4229671687300552501" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.3734116213129792499" resolveInfo="ScopeProvider" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6168113672288816540" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="State" />
@@ -87,7 +90,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6168113672288855555" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CompositeState" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="composite" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3560655027468541261" resolveInfo="AbstractState" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4229671687300669222" resolveInfo="AbstractStateContainer" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6168113672288855556" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6168113672288816999" resolveInfo="StateLike" />
     </node>
@@ -98,7 +101,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6168113672289159428" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ParallelState" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="parallel" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3560655027468541261" resolveInfo="AbstractState" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4229671687300669222" resolveInfo="AbstractStateContainer" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6168113672289159429" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6168113672288816999" resolveInfo="StateLike" />
     </node>
@@ -330,6 +333,15 @@
       <property name="role" nameId="tpce.1071599776563" value="initialExpression" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2935010982282873333" resolveInfo="String" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4229671687300669222" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="AbstractStateContainer" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3560655027468541261" resolveInfo="AbstractState" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4229671687300672263" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="6168113672288845302" resolveInfo="StateContainer" />
     </node>
   </root>
 </model>
