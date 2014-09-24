@@ -389,9 +389,7 @@
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1031307029662310225" nodeInfo="nn">
                 <property name="value" nameId="tpee.1070475926801" value=" " />
               </node>
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1031307029662310226" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="_" />
-              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1031307029662310226" nodeInfo="nn" />
             </node>
             <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4229671687301761682" nodeInfo="nn">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1031307029662310195" resolveInfo="name" />

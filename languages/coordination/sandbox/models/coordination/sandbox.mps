@@ -130,6 +130,7 @@
       </node>
       <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="3560655027470659362" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="AB  C" />
+        <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
         <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="3560655027470662960" nodeInfo="ng">
           <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="3560655027470662945" resolveInfo="D" />
           <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitForEvent" typeId="l1y1.4593348108330089757" id="3560655027471613154" nodeInfo="ng">
@@ -152,6 +153,9 @@
       <property name="name" nameId="tpck.1169194664001" value="B" />
       <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="3560655027469606754" nodeInfo="ng">
         <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="3560655027468213190" resolveInfo="A" />
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="l1y1.Comment" typeId="l1y1.4593348108329598434" id="2705144409484233460" nodeInfo="ng">
+        <property name="comment" nameId="l1y1.4593348108329598486" value="This is a multiline comment" />
       </node>
     </node>
     <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="3560655027468213190" nodeInfo="ng">
