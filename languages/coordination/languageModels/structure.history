@@ -42,29 +42,5 @@
     <move id="zqbp.7693917789698381716" to="aqdy.3560655027475411621" />
     <move id="zqbp.7693917789698453890" to="aqdy.3560655027475411618" />
   </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="4" />
-    </dependencies>
-    <rename id="l1y1.7751562694796638040" type="CONCEPT" from="Invokable" to="Invoke" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="5" />
-    </dependencies>
-    <rename id="l1y1.926862060402921862" type="CONCEPT" from="If" to="IfAction" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="6" />
-    </dependencies>
-    <rename id="l1y1.926862060402921862" type="CONCEPT" from="IfAction" to="If" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="7" />
-    </dependencies>
-    <rename id="l1y1.926862060403049730" type="CONCEPT" from="NameAsd" to="If" />
-  </StructureModification>
 </history>
 

@@ -6,8 +6,8 @@
   <tstamp>
     <format property="date" pattern="yyyyMMdd" />
   </tstamp>
-  <property name="build.number" value="Coordination-135.SNAPSHOT" />
-  <property name="mps.home" location="${basedir}/../../../local/MPS 3.1" />
+  <property name="build.number" value="Coordination-${mpsBootstrapCore.version}" />
+  <property name="mps.home" location="${basedir}/../../../local/MPS3.1" />
   <property name="plantuml.lang" location="${basedir}/../plantuml-dsl" />
   <property name="artifacts.mpsStandalone" location="${mps.home}" />
   <property name="artifacts.mpsMakePlugin" location="${mps.home}" />
@@ -338,7 +338,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.3.2.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.4.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/asm4-all.jar" />
@@ -382,7 +381,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.3.2.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.4.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/asm4-all.jar" />
@@ -424,7 +422,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.3.2.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.4.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/asm4-all.jar" />
@@ -466,7 +463,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.3.2.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.4.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.3.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/asm4-all.jar" />
