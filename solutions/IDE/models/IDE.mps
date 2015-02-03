@@ -130,10 +130,7 @@
       <node role="initialValue" roleId="3ior.2755237150521975432" type="3ior.BuildVariableMacroInitWithString" typeId="3ior.2755237150521975431" id="635009691520868988" nodeInfo="ng">
         <node role="value" roleId="3ior.2755237150521975437" type="3ior.BuildString" typeId="3ior.4380385936562003279" id="635009691520868989" nodeInfo="ng">
           <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="635009691520868990" nodeInfo="ng">
-            <property name="text" nameId="3ior.4903714810883755350" value="Coordination-" />
-          </node>
-          <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildVarRefStringPart" typeId="3ior.4903714810883702017" id="8362523663360773524" nodeInfo="ng">
-            <link role="macro" roleId="3ior.4903714810883702018" targetNodeId="ffeo.6592112598314709133" resolveInfo="version" />
+            <property name="text" nameId="3ior.4903714810883755350" value="Coordination-135.SNAPSHOT" />
           </node>
         </node>
       </node>
@@ -150,7 +147,7 @@
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="635009691521425008" nodeInfo="nn">
                 <property name="head" nameId="3ior.8618885170173601779" value="local" />
                 <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="635009691521425068" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="MPS3.1" />
+                  <property name="head" nameId="3ior.8618885170173601779" value="MPS 3.1" />
                 </node>
               </node>
             </node>
