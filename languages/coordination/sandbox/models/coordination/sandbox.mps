@@ -145,6 +145,10 @@
             <property name="eventname" nameId="l1y1.4593348108330089834" value="Foobar" />
           </node>
         </node>
+        <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.FireEvent" typeId="l1y1.6168113672289375071" id="1828569902082982904" nodeInfo="ng">
+          <property name="eventname" nameId="l1y1.6168113672289375076" value="test" />
+          <property name="toParent" nameId="l1y1.926862060402798269" value="true" />
+        </node>
       </node>
       <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="3560655027470659367" nodeInfo="ng">
         <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="3560655027470659362" resolveInfo="AB  C" />
