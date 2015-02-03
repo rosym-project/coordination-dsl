@@ -2,13 +2,11 @@
 <dependenciesRoot>
   <dependency className="coordination.sandbox.Bla.Blubb-foo_u18" file="Bla.Blubb-foo_u18.plant" />
   <dependency className="coordination.sandbox.Bla.Blubb-foo_u18" file="Bla.Blubb-foo_u18.xml" />
-  <dependency className="coordination.sandbox.S" file="S.plant" />
-  <dependency className="coordination.sandbox.S" file="S.xml" />
+  <dependency className="coordination.sandbox.Conditions" file="Conditions.plant" />
+  <dependency className="coordination.sandbox.Conditions" file="Conditions.xml" />
+  <dependency className="coordination.sandbox.Scenario-Coordination" file="Scenario-Coordination.plant" />
+  <dependency className="coordination.sandbox.Scenario-Coordination" file="Scenario-Coordination.xml" />
   <dependency className="coordination.sandbox.Test" file="Test.plant" />
   <dependency className="coordination.sandbox.Test" file="Test.xml" />
-  <dependency className="coordination.sandbox.invoked" file="invoked.plant" />
-  <dependency className="coordination.sandbox.invoked" file="invoked.xml" />
-  <dependency className="coordination.sandbox.invoker" file="invoker.plant" />
-  <dependency className="coordination.sandbox.invoker" file="invoker.xml" />
 </dependenciesRoot>
 
