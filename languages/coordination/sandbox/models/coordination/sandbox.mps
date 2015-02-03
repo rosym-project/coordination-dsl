@@ -91,7 +91,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Bla.Blubb-foo_u18" />
     <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="2985869118319539638" resolveInfo="BlubbFAAAALSE" />
     <node role="data" roleId="l1y1.3177877371209483855" type="l1y1.GenericData" typeId="l1y1.3177877371209945109" id="3177877371210003415" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="foo" />
+      <property name="name" nameId="tpck.1169194664001" value="f" />
       <property name="src" nameId="l1y1.3177877371210003313" value="bar" />
       <property name="expr" nameId="l1y1.3177877371210003315" value="baz" />
       <node role="content" roleId="l1y1.3177877371210292330" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="3177877371210332020" nodeInfo="ng">
@@ -126,6 +126,14 @@
         <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.Assign" typeId="l1y1.3560655027475031348" id="3560655027477921891" nodeInfo="ng">
           <property name="expr" nameId="l1y1.3560655027475031354" value="test + 1" />
           <link role="location" roleId="l1y1.3560655027475193065" targetNodeId="3560655027476041115" resolveInfo="test" />
+        </node>
+        <node role="invokes" roleId="l1y1.7751562694797195676" type="l1y1.SCXMLInvoke" typeId="l1y1.7751562694797191060" id="1828569902081054641" nodeInfo="ng">
+          <property name="id" nameId="l1y1.1828569902081958365" value="test" />
+          <link role="statemachine" roleId="l1y1.7751562694797191064" targetNodeId="6554030746416355693" resolveInfo="Conditions" />
+          <node role="parameter" roleId="l1y1.1828569902081035538" type="l1y1.Parameter" typeId="l1y1.1828569902081047056" id="1828569902082936036" nodeInfo="ng">
+            <property name="name" nameId="l1y1.1828569902082160563" value="test" />
+            <property name="expression" nameId="l1y1.1828569902082241262" value="5" />
+          </node>
         </node>
       </node>
       <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="3560655027470659362" nodeInfo="ng">
@@ -184,7 +192,7 @@
         </node>
         <node role="actions" roleId="l1y1.6554030746416082338" type="l1y1.Assign" typeId="l1y1.3560655027475031348" id="5312151214955384269" nodeInfo="ng">
           <property name="expr" nameId="l1y1.3560655027475031354" value="'5'" />
-          <link role="location" roleId="l1y1.3560655027475193065" targetNodeId="6554030746416355818" resolveInfo="fun" />
+          <link role="location" roleId="l1y1.3560655027475193065" targetNodeId="6554030746416355818" resolveInfo="f" />
         </node>
       </node>
       <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.ForEach" typeId="l1y1.6554030746416402267" id="5312151214955656544" nodeInfo="ng">
@@ -192,7 +200,7 @@
         <link role="array" roleId="l1y1.5312151214955390144" targetNodeId="5312151214955705212" resolveInfo="list" />
         <node role="actions" roleId="l1y1.6554030746416410525" type="l1y1.Assign" typeId="l1y1.3560655027475031348" id="5312151214955751463" nodeInfo="ng">
           <property name="expr" nameId="l1y1.3560655027475031354" value="item + 1" />
-          <link role="location" roleId="l1y1.3560655027475193065" targetNodeId="6554030746416355818" resolveInfo="fun" />
+          <link role="location" roleId="l1y1.3560655027475193065" targetNodeId="6554030746416355818" resolveInfo="f" />
         </node>
       </node>
       <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="5312151214956118244" nodeInfo="ng">
@@ -200,7 +208,7 @@
       </node>
     </node>
     <node role="data" roleId="l1y1.3177877371209483855" type="l1y1.VariableDeclaration" typeId="l1y1.3560655027475411612" id="6554030746416355818" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="fun" />
+      <property name="name" nameId="tpck.1169194664001" value="f" />
     </node>
     <node role="data" roleId="l1y1.3177877371209483855" type="l1y1.VariableDeclaration" typeId="l1y1.3560655027475411612" id="5312151214955705184" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="item" />
