@@ -376,6 +376,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7751562694797191060" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="datamodel" />
     <property name="name" nameId="tpck.1169194664001" value="SCXMLInvoke" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="invoke" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7751562694797191061" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7751562694796638040" resolveInfo="Invoke" />
@@ -447,6 +448,19 @@
     </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1828569902082241262" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="expression" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6610381906022130272" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="datamodel" />
+    <property name="name" nameId="tpck.1169194664001" value="SCXMLInvokeVariable" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="invokeFromVar" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6610381906022130273" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7751562694796638040" resolveInfo="Invoke" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6610381906022313557" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="sourceExpression" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
