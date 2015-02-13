@@ -562,7 +562,7 @@
             <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="4593348108330280242" nodeInfo="ng">
               <property name="tagName" nameId="iuxj.6666499814681415862" value="send" />
               <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="4593348108330330175" nodeInfo="ng">
-                <property name="attrName" nameId="iuxj.6666499814681447926" value="event" />
+                <property name="attrName" nameId="iuxj.6666499814681447926" value="eventexpr" />
                 <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="4593348108330332725" nodeInfo="ng">
                   <property name="text" nameId="iuxj.6666499814681541920" value="wait condition" />
                   <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="4593348108330332727" nodeInfo="nn">
@@ -601,7 +601,7 @@
                 </node>
               </node>
               <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="4593348108330348027" nodeInfo="ng">
-                <property name="attrName" nameId="iuxj.6666499814681447926" value="delay" />
+                <property name="attrName" nameId="iuxj.6666499814681447926" value="delayexpr" />
                 <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="4593348108330351827" nodeInfo="ng">
                   <property name="text" nameId="iuxj.6666499814681541920" value="duration" />
                   <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="4593348108330351829" nodeInfo="nn">
@@ -973,7 +973,7 @@
             <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="3560655027465582751" nodeInfo="ng">
               <property name="tagName" nameId="iuxj.6666499814681415862" value="send" />
               <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="3560655027465582752" nodeInfo="ng">
-                <property name="attrName" nameId="iuxj.6666499814681447926" value="event" />
+                <property name="attrName" nameId="iuxj.6666499814681447926" value="eventexpr" />
                 <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="3560655027465582753" nodeInfo="ng">
                   <property name="text" nameId="iuxj.6666499814681541920" value="wait condition" />
                   <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="3560655027465582754" nodeInfo="nn">
@@ -1012,7 +1012,7 @@
                 </node>
               </node>
               <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="3560655027465582768" nodeInfo="ng">
-                <property name="attrName" nameId="iuxj.6666499814681447926" value="delay" />
+                <property name="attrName" nameId="iuxj.6666499814681447926" value="delayexpr" />
                 <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="3560655027465582769" nodeInfo="ng">
                   <property name="text" nameId="iuxj.6666499814681541920" value="duration" />
                   <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="3560655027465582770" nodeInfo="nn">
@@ -1427,7 +1427,7 @@
           <node role="content" roleId="iuxj.1622293396948928802" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="3560655027465607016" nodeInfo="ng">
             <property name="tagName" nameId="iuxj.6666499814681415862" value="send" />
             <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="3560655027465607017" nodeInfo="ng">
-              <property name="attrName" nameId="iuxj.6666499814681447926" value="event" />
+              <property name="attrName" nameId="iuxj.6666499814681447926" value="eventexpr" />
               <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="3560655027465607018" nodeInfo="ng">
                 <property name="text" nameId="iuxj.6666499814681541920" value="wait condition" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="3560655027465607019" nodeInfo="nn">
@@ -1466,7 +1466,7 @@
               </node>
             </node>
             <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="3560655027465607033" nodeInfo="ng">
-              <property name="attrName" nameId="iuxj.6666499814681447926" value="delay" />
+              <property name="attrName" nameId="iuxj.6666499814681447926" value="delayexpr" />
               <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="3560655027465607034" nodeInfo="ng">
                 <property name="text" nameId="iuxj.6666499814681541920" value="duration" />
                 <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="3560655027465607035" nodeInfo="nn">
