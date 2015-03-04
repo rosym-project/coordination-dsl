@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="7ojkaxbmihmyo39u310amuiy5x91k4q">
+  <dep model="r:54537613-52b5-40a8-b223-e87f0960b04f(jetbrains.mps.build.mps.generator.template.main@generator)" hash="-41bkl3hsv7tltenb2y8p4edyuahfxfl" />
+  <dep model="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" hash="16uetnj2j6v04lnnqhlgd5br52635ao" />
+  <dep model="r:d8d06a40-eb90-4ad9-a679-19e3fc235859(jetbrains.mps.build.workflow.generator.template.main@generator)" hash="2z1ts4v77srp8lktdojvl9w7aby1kwi" />
+  <dep model="r:ed179f4d-7cf2-479d-8348-50c1fc63b96a(jetbrains.mps.build.workflow.structure)" hash="1zcaenwdxabv98ggujzfb757e5odwn9" />
+  <dep model="r:fdebfc98-bbd7-4c50-8a8d-eda16da9406e(jetbrains.mps.build.generator.template.main@generator)" hash="-6he4i96uisto2i1kh4g6wt0gjbmjfw2" />
+  <common hash="bokwecvy4tn3mq6okwf6qey51n08lh9" />
+  <source id="635009691520868982" name="buildIDE" hash="-cuiwkfqp4kb78w7zjw392tames134va">
+    <dep model="r:54537613-52b5-40a8-b223-e87f0960b04f(jetbrains.mps.build.mps.generator.template.main@generator)" />
+    <dep model="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
+    <dep model="r:d8d06a40-eb90-4ad9-a679-19e3fc235859(jetbrains.mps.build.workflow.generator.template.main@generator)" />
+    <dep model="r:ed179f4d-7cf2-479d-8348-50c1fc63b96a(jetbrains.mps.build.workflow.structure)" />
+    <dep model="r:fdebfc98-bbd7-4c50-8a8d-eda16da9406e(jetbrains.mps.build.generator.template.main@generator)" />
+    <file name="buildIDE.xml" />
+  </source>
+  <source id="635009691520886675" name="CoordinationDistribution" hash="6pl8zcl2hfumyqr1b61k00d8gx2r72t">
+    <dep root="635009691520868982" />
+    <dep model="r:d8d06a40-eb90-4ad9-a679-19e3fc235859(jetbrains.mps.build.workflow.generator.template.main@generator)" />
+    <dep model="r:ed179f4d-7cf2-479d-8348-50c1fc63b96a(jetbrains.mps.build.workflow.structure)" />
+    <dep model="r:fdebfc98-bbd7-4c50-8a8d-eda16da9406e(jetbrains.mps.build.generator.template.main@generator)" />
+    <file name="CoordinationDistribution.xml" />
+  </source>
+</dependencies>
+
