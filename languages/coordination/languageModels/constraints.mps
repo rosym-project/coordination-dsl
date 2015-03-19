@@ -4,6 +4,7 @@
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="8" />
+  <import index="o8zo" modelUID="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" version="-1" />
   <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="9" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4229671687300546214" nodeInfo="ng">
@@ -30,6 +31,26 @@
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="1828569902081737704" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="datamodel" />
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="l1y1.1828569902081047056" resolveInfo="Parameter" />
+  </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3814223991397209328" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="actions" />
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="l1y1.3814223991396602359" resolveInfo="FireEventTargetInvoke" />
+    <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="3814223991397540062" nodeInfo="ng">
+      <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="l1y1.3814223991396602387" />
+      <node role="searchScopeFactory" roleId="tp1t.1148687345559" type="tp1t.InheritedNodeScopeFactory" typeId="tp1t.8401916545537438642" id="3814223991397540064" nodeInfo="ng">
+        <link role="kind" roleId="tp1t.8401916545537438643" targetNodeId="l1y1.7751562694796638040" resolveInfo="Invoke" />
+      </node>
+    </node>
+  </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="3814223991398317173" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="conditions" />
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="l1y1.3814223991398315747" resolveInfo="InvokeFinished" />
+    <node role="referent" roleId="tp1t.1213100494875" type="tp1t.NodeReferentConstraint" typeId="tp1t.1148687176410" id="3814223991398317252" nodeInfo="ng">
+      <link role="applicableLink" roleId="tp1t.1148687202698" targetNodeId="l1y1.3814223991398315887" />
+      <node role="searchScopeFactory" roleId="tp1t.1148687345559" type="tp1t.InheritedNodeScopeFactory" typeId="tp1t.8401916545537438642" id="3814223991398317267" nodeInfo="ng">
+        <link role="kind" roleId="tp1t.8401916545537438643" targetNodeId="l1y1.7751562694796638040" resolveInfo="Invoke" />
+      </node>
+    </node>
   </root>
 </model>
 
