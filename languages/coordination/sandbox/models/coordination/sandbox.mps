@@ -131,6 +131,9 @@
           <property name="name" nameId="tpck.1169194664001" value="testASD" />
           <link role="statemachine" roleId="l1y1.7751562694797191064" targetNodeId="6554030746416355693" resolveInfo="Conditions" />
         </node>
+        <node role="invokes" roleId="l1y1.7751562694797195676" type="l1y1.SCXMLInvoke" typeId="l1y1.7751562694797191060" id="3814223991398588816" nodeInfo="ng">
+          <link role="statemachine" roleId="l1y1.7751562694797191064" targetNodeId="3814223991397523735" resolveInfo="invoker" />
+        </node>
       </node>
       <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="3560655027470659362" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="AB  C" />
