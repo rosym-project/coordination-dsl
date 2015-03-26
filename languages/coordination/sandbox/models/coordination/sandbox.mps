@@ -289,5 +289,50 @@
       <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
     </node>
   </root>
+  <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="7529839211440236739" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="WaitFail" />
+    <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="7529839211440237073" resolveInfo="waitState" />
+    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="7529839211440237073" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="waitState" />
+      <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="7529839211440237079" nodeInfo="ng">
+        <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="7529839211440237063" resolveInfo="otherState" />
+        <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitDuration" typeId="l1y1.6168113672289368875" id="7529839211440237081" nodeInfo="ng">
+          <property name="milliseconds" nameId="l1y1.6168113672289368927" value="1000" />
+        </node>
+      </node>
+      <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="7529839211440237277" nodeInfo="ng">
+        <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="7529839211440237063" resolveInfo="otherState" />
+      </node>
+    </node>
+    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="7529839211440237063" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="otherState" />
+      <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="7529839211440237375" nodeInfo="ng">
+        <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="7529839211440237050" resolveInfo="good" />
+        <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitDuration" typeId="l1y1.6168113672289368875" id="7529839211440237377" nodeInfo="ng">
+          <property name="milliseconds" nameId="l1y1.6168113672289368927" value="2000" />
+        </node>
+      </node>
+      <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="7529839211440237477" nodeInfo="ng">
+        <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="7529839211440237055" resolveInfo="failed" />
+        <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitForEvent" typeId="l1y1.4593348108330089757" id="7529839211440237684" nodeInfo="ng">
+          <property name="eventname" nameId="l1y1.4593348108330089834" value="waitStatewait1000ms" />
+        </node>
+      </node>
+    </node>
+    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="7529839211440237055" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="failed" />
+      <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
+      <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="7529839211440237784" nodeInfo="ng">
+        <property name="message" nameId="l1y1.6168113672289314118" value="FAILED" />
+      </node>
+    </node>
+    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="7529839211440237050" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="good" />
+      <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
+      <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="7529839211440237885" nodeInfo="ng">
+        <property name="message" nameId="l1y1.6168113672289314118" value="GOOD" />
+      </node>
+    </node>
+  </root>
 </model>
 
