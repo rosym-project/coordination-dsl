@@ -145,9 +145,12 @@
             <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="635009691521424948" nodeInfo="nn">
               <property name="head" nameId="3ior.8618885170173601779" value=".." />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="635009691521425008" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="local" />
-                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="635009691521425068" nodeInfo="nn">
-                  <property name="head" nameId="3ior.8618885170173601779" value="MPS 3.1" />
+                <property name="head" nameId="3ior.8618885170173601779" value=".." />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1714485260226551298" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="local" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="1714485260226551314" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="MPS3.2" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -161,7 +164,7 @@
         <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="4229671687299658278" nodeInfo="nn">
           <property name="head" nameId="3ior.8618885170173601779" value=".." />
           <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="4229671687299658302" nodeInfo="nn">
-            <property name="head" nameId="3ior.8618885170173601779" value="plantuml-dsl" />
+            <property name="head" nameId="3ior.8618885170173601779" value="plantuml" />
           </node>
         </node>
       </node>
