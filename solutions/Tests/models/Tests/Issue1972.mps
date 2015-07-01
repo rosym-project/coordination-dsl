@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:467a8af4-10f0-4b4a-b292-ca5745808f04(Tests.Issue1972)">
+<model ref="b0b9ee69-626f-4bed-b886-381ef65b97f1/r:467a8af4-10f0-4b4a-b292-ca5745808f04(Tests/Tests.Issue1972)">
   <persistence version="9" />
   <languages>
     <use id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination" version="-1" />

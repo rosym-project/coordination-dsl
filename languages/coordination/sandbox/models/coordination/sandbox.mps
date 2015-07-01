@@ -1,338 +1,438 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox)">
-  <persistence version="8" />
-  <language namespace="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" />
-  <devkit namespace="fd53cdf4-ff12-495f-a45a-213f5b741141(Coordination)" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="l1y1" modelUID="r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination.structure)" version="8" implicit="yes" />
-  <import index="iuxj" modelUID="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" version="2" implicit="yes" />
-  <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="4593348108329555838" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Scenario-Coordination" />
-    <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="4593348108329966684" resolveInfo="Bar" />
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.CompositeState" typeId="l1y1.6168113672288855555" id="4593348108329966684" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Bar" />
-      <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
-      <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="4593348108329966722" resolveInfo="System Idle" />
-      <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.ParallelState" typeId="l1y1.6168113672289159428" id="4593348108329966717" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="foo Parallel" />
-        <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
-        <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="4593348108329966722" resolveInfo="System Idle" />
-        <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="4593348108329966722" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="System Idle" />
-          <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="6056228331389094445" nodeInfo="ng">
-            <property name="message" nameId="l1y1.6168113672289314118" value="Entered State: System Idle" />
+<model ref="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)">
+  <persistence version="9" />
+  <languages>
+    <use id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination" version="-1" />
+    <devkit ref="fd53cdf4-ff12-495f-a45a-213f5b741141(Coordination)" />
+  </languages>
+  <imports />
+  <registry>
+    <language id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination">
+      <concept id="3975843521651975716" name="coordination.structure.StateMachine" flags="ng" index="1HUUU">
+        <child id="3177877371209483855" name="data" index="3AET3I" />
+      </concept>
+      <concept id="2935010982282873333" name="coordination.structure.String" flags="ng" index="ar0$5">
+        <property id="2935010982282873551" name="String" index="ar0CZ" />
+      </concept>
+      <concept id="6168113672289368875" name="coordination.structure.WaitDuration" flags="ng" index="A$36v">
+        <property id="6168113672289368927" name="milliseconds" index="A$37F" />
+      </concept>
+      <concept id="6168113672289375071" name="coordination.structure.FireEvent" flags="ng" index="A$5BF">
+        <property id="6168113672289375076" name="eventname" index="A$5Bg" />
+        <child id="3814223991396602497" name="target" index="306kC3" />
+      </concept>
+      <concept id="6168113672289313863" name="coordination.structure.Transition" flags="ng" index="A$mVN">
+        <reference id="6168113672289313866" name="target" index="A$mVY" />
+        <child id="926862060402702775" name="actions" index="mMxAl" />
+        <child id="6168113672289314051" name="condition" index="A$mYR" />
+        <child id="7693917789697543497" name="jexlCondition" index="1rfkgY" />
+      </concept>
+      <concept id="6168113672289314072" name="coordination.structure.LogMessage" flags="ng" index="A$mYG">
+        <property id="6168113672289314118" name="message" index="A$mZM" />
+      </concept>
+      <concept id="6168113672288845302" name="coordination.structure.StateContainer" flags="ng" index="AA3t2">
+        <reference id="6168113672289185112" name="initialstate" index="ABQvG" />
+        <child id="6168113672288845303" name="states" index="AA3t3" />
+      </concept>
+      <concept id="6168113672288855555" name="coordination.structure.CompositeState" flags="ng" index="AA6MR" />
+      <concept id="6168113672288816999" name="coordination.structure.StateLike" flags="ng" index="AAcnj">
+        <property id="6168113672289985564" name="isfinalstate" index="AyEUC" />
+        <child id="6168113672289314061" name="transitions" index="A$mYT" />
+        <child id="6168113672289314063" name="onentry" index="A$mYV" />
+        <child id="7751562694797195676" name="invokes" index="3A7mMJ" />
+      </concept>
+      <concept id="6168113672288816540" name="coordination.structure.State" flags="ng" index="AAcsC" />
+      <concept id="6168113672289159428" name="coordination.structure.ParallelState" flags="ng" index="ABKeK" />
+      <concept id="4593348108330089757" name="coordination.structure.WaitForEvent" flags="ng" index="2D1ejp">
+        <property id="4593348108330089834" name="eventname" index="2D1eiI" />
+      </concept>
+      <concept id="4593348108329598434" name="coordination.structure.Comment" flags="ng" index="2D36gA">
+        <property id="4593348108329598486" name="comment" index="2D36vi" />
+      </concept>
+      <concept id="3814223991396602359" name="coordination.structure.FireEventTargetInvoke" flags="ng" index="306k_P">
+        <reference id="3814223991396602387" name="invoke" index="306kEh" />
+      </concept>
+      <concept id="3814223991396602145" name="coordination.structure.FireEventTargetParent" flags="ng" index="306kAz" />
+      <concept id="3814223991398315747" name="coordination.structure.InvokeFinished" flags="ng" index="31ZQTx">
+        <reference id="3814223991398315887" name="invoke" index="31ZQZH" />
+      </concept>
+      <concept id="3560655027475411612" name="coordination.structure.VariableDeclaration" flags="ng" index="3h28TX">
+        <child id="3560655027476822467" name="initialExpression" index="3h7Kky" />
+      </concept>
+      <concept id="3560655027475031348" name="coordination.structure.Assign" flags="ng" index="3hc_Bl">
+        <property id="3560655027475031354" name="expr" index="3hc_Br" />
+        <reference id="3560655027475193065" name="location" index="3hdY08" />
+      </concept>
+      <concept id="7693917789697262148" name="coordination.structure.JEXLCondition" flags="ng" index="1rc8GN">
+        <property id="7693917789697262239" name="jexlExpression" index="1rc8JC" />
+      </concept>
+      <concept id="7751562694797191060" name="coordination.structure.SCXMLInvoke" flags="ng" index="3A7naB">
+        <reference id="7751562694797191064" name="statemachine" index="3A7naF" />
+      </concept>
+      <concept id="3177877371209945109" name="coordination.structure.GenericData" flags="ng" index="3ACCqO">
+        <property id="3177877371210003313" name="src" index="3ACQng" />
+        <property id="3177877371210003315" name="expr" index="3ACQni" />
+        <child id="3177877371210292330" name="content" index="3ADWFb" />
+      </concept>
+      <concept id="6554030746416402267" name="coordination.structure.ForEach" flags="ng" index="1HPXtA">
+        <reference id="5312151214955390144" name="array" index="3paYAy" />
+        <reference id="5312151214955390155" name="item" index="3paYAD" />
+        <child id="6554030746416410525" name="actions" index="1HPZuw" />
+      </concept>
+      <concept id="6554030746415586596" name="coordination.structure.If" flags="ng" index="1HS$kp">
+        <property id="6554030746415631408" name="condition" index="1HSLgd" />
+        <child id="6554030746416082338" name="actions" index="1HUJmv" />
+      </concept>
+    </language>
+    <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
+      <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
+        <property id="6666499814681541920" name="text" index="2pMdty" />
+      </concept>
+      <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
+        <property id="6666499814681415862" name="tagName" index="2pNNFO" />
+        <child id="6666499814681415861" name="attributes" index="2pNNFR" />
+      </concept>
+      <concept id="6666499814681447923" name="jetbrains.mps.core.xml.structure.XmlAttribute" flags="ng" index="2pNUuL">
+        <property id="6666499814681447926" name="attrName" index="2pNUuO" />
+        <child id="6666499814681541918" name="value" index="2pMdts" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1HUUU" id="3YYQsimGxtY">
+    <property role="TrG5h" value="Scenario-Coordination" />
+    <ref role="ABQvG" node="3YYQsimI5Ls" resolve="Bar" />
+    <node concept="AA6MR" id="3YYQsimI5Ls" role="AA3t3">
+      <property role="TrG5h" value="Bar" />
+      <property role="AyEUC" value="true" />
+      <ref role="ABQvG" node="3YYQsimI5M2" resolve="System Idle" />
+      <node concept="ABKeK" id="3YYQsimI5LX" role="AA3t3">
+        <property role="TrG5h" value="foo Parallel" />
+        <property role="AyEUC" value="true" />
+        <ref role="ABQvG" node="3YYQsimI5M2" resolve="System Idle" />
+        <node concept="AAcsC" id="3YYQsimI5M2" role="AA3t3">
+          <property role="TrG5h" value="System Idle" />
+          <node concept="A$mYG" id="5gc2Ti36CCH" role="A$mYV">
+            <property role="A$mZM" value="Entered State: System Idle" />
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="l1y1.Comment" typeId="l1y1.4593348108329598434" id="1031307029663005286" nodeInfo="ng">
-            <property name="comment" nameId="l1y1.4593348108329598486" value="State A - Transition on specific event or after one second" />
+          <node concept="2D36gA" id="TfW4u5rjDA" role="lGtFl">
+            <property role="2D36vi" value="State A - Transition on specific event or after one second" />
           </node>
-          <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="1031307029663005288" nodeInfo="ng">
-            <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="6056228331389094433" resolveInfo="Human Present" />
-            <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitForEvent" typeId="l1y1.4593348108330089757" id="7693917789697747619" nodeInfo="ng">
-              <property name="eventname" nameId="l1y1.4593348108330089834" value="FaceDetected" />
+          <node concept="A$mVN" id="TfW4u5rjDC" role="A$mYT">
+            <ref role="A$mVY" node="5gc2Ti36CCx" resolve="Human Present" />
+            <node concept="2D1ejp" id="6F6insLZyEz" role="A$mYR">
+              <property role="2D1eiI" value="FaceDetected" />
             </node>
           </node>
         </node>
-        <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="6056228331389094433" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="Human Present" />
-          <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="6056228331389094473" nodeInfo="ng">
-            <property name="message" nameId="l1y1.6168113672289314118" value="Entered State: Human Present" />
+        <node concept="AAcsC" id="5gc2Ti36CCx" role="AA3t3">
+          <property role="TrG5h" value="Human Present" />
+          <node concept="A$mYG" id="5gc2Ti36CD9" role="A$mYV">
+            <property role="A$mZM" value="Entered State: Human Present" />
           </node>
-          <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="6056228331389094510" nodeInfo="ng">
-            <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="4593348108329966728" resolveInfo="Initialise Interaction" />
-            <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitDuration" typeId="l1y1.6168113672289368875" id="6056228331389094581" nodeInfo="ng">
-              <property name="milliseconds" nameId="l1y1.6168113672289368927" value="1000" />
+          <node concept="A$mVN" id="5gc2Ti36CDI" role="A$mYT">
+            <ref role="A$mVY" node="3YYQsimI5M8" resolve="Initialise Interaction" />
+            <node concept="A$36v" id="5gc2Ti36CEP" role="A$mYR">
+              <property role="A$37F" value="1000" />
             </node>
-            <node role="jexlCondition" roleId="l1y1.7693917789697543497" type="l1y1.JEXLCondition" typeId="l1y1.7693917789697262148" id="7693917789697780259" nodeInfo="ng">
-              <property name="jexlExpression" nameId="l1y1.7693917789697262239" value="_event.data.data.x &gt; 10" />
+            <node concept="1rc8GN" id="6F6insLZECz" role="1rfkgY">
+              <property role="1rc8JC" value="_event.data.data.x &gt; 10" />
             </node>
           </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="l1y1.Comment" typeId="l1y1.4593348108329598434" id="1031307029663005284" nodeInfo="ng">
-            <property name="comment" nameId="l1y1.4593348108329598486" value="State A - Transition after one second" />
+          <node concept="2D36gA" id="TfW4u5rjD$" role="lGtFl">
+            <property role="2D36vi" value="State A - Transition after one second" />
           </node>
         </node>
-        <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="4593348108329966728" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="Initialise Interaction" />
-          <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="487138097217812163" nodeInfo="ng">
-            <property name="message" nameId="l1y1.6168113672289314118" value="Entered State: Initialise Interaction" />
+        <node concept="AAcsC" id="3YYQsimI5M8" role="AA3t3">
+          <property role="TrG5h" value="Initialise Interaction" />
+          <node concept="A$mYG" id="r2EoiTezr3" role="A$mYV">
+            <property role="A$mZM" value="Entered State: Initialise Interaction" />
           </node>
-          <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="7693917789697405840" nodeInfo="ng">
-            <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="6056228331389094555" resolveInfo="Interaction Done" />
-            <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitForEvent" typeId="l1y1.4593348108330089757" id="7693917789697652366" nodeInfo="ng">
-              <property name="eventname" nameId="l1y1.4593348108330089834" value="flap" />
+          <node concept="A$mVN" id="6F6insLYfeg" role="A$mYT">
+            <ref role="A$mVY" node="5gc2Ti36CEr" resolve="Interaction Done" />
+            <node concept="2D1ejp" id="6F6insLZbqe" role="A$mYR">
+              <property role="2D1eiI" value="flap" />
             </node>
-            <node role="jexlCondition" roleId="l1y1.7693917789697543497" type="l1y1.JEXLCondition" typeId="l1y1.7693917789697262148" id="7693917789697683871" nodeInfo="ng">
-              <property name="jexlExpression" nameId="l1y1.7693917789697262239" value="nab" />
-            </node>
-          </node>
-        </node>
-        <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="6056228331389094555" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="Interaction Done" />
-          <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="6056228331389094568" nodeInfo="ng">
-            <property name="message" nameId="l1y1.6168113672289314118" value="Entered State: Interaction Done" />
-          </node>
-          <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="6056228331389094570" nodeInfo="ng">
-            <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="4593348108329966722" resolveInfo="System Idle" />
-            <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitDuration" typeId="l1y1.6168113672289368875" id="6056228331389094583" nodeInfo="ng">
-              <property name="milliseconds" nameId="l1y1.6168113672289368927" value="0" />
+            <node concept="1rc8GN" id="6F6insLZj6v" role="1rfkgY">
+              <property role="1rc8JC" value="nab" />
             </node>
           </node>
         </node>
-        <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="6056228331389094612" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="System Error" />
-          <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
-          <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="6056228331389094631" nodeInfo="ng">
-            <property name="message" nameId="l1y1.6168113672289314118" value="Entered State: System Error" />
+        <node concept="AAcsC" id="5gc2Ti36CEr" role="AA3t3">
+          <property role="TrG5h" value="Interaction Done" />
+          <node concept="A$mYG" id="5gc2Ti36CEC" role="A$mYV">
+            <property role="A$mZM" value="Entered State: Interaction Done" />
+          </node>
+          <node concept="A$mVN" id="5gc2Ti36CEE" role="A$mYT">
+            <ref role="A$mVY" node="3YYQsimI5M2" resolve="System Idle" />
+            <node concept="A$36v" id="5gc2Ti36CER" role="A$mYR">
+              <property role="A$37F" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="AAcsC" id="5gc2Ti36CFk" role="AA3t3">
+          <property role="TrG5h" value="System Error" />
+          <property role="AyEUC" value="true" />
+          <node concept="A$mYG" id="5gc2Ti36CFB" role="A$mYV">
+            <property role="A$mZM" value="Entered State: System Error" />
           </node>
         </node>
       </node>
     </node>
-  </root>
-  <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="2985869118319538977" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Bla.Blubb-foo_u18" />
-    <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="2985869118319539638" resolveInfo="BlubbFAAAALSE" />
-    <node role="data" roleId="l1y1.3177877371209483855" type="l1y1.GenericData" typeId="l1y1.3177877371209945109" id="3177877371210003415" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="f" />
-      <property name="src" nameId="l1y1.3177877371210003313" value="bar" />
-      <property name="expr" nameId="l1y1.3177877371210003315" value="baz" />
-      <node role="content" roleId="l1y1.3177877371210292330" type="iuxj.XmlElement" typeId="iuxj.6666499814681415858" id="3177877371210332020" nodeInfo="ng">
-        <property name="tagName" nameId="iuxj.6666499814681415862" value="foo" />
-        <node role="attributes" roleId="iuxj.6666499814681415861" type="iuxj.XmlAttribute" typeId="iuxj.6666499814681447923" id="3177877371210332075" nodeInfo="ng">
-          <property name="attrName" nameId="iuxj.6666499814681447926" value="bar" />
-          <node role="value" roleId="iuxj.6666499814681541918" type="iuxj.XmlTextValue" typeId="iuxj.6666499814681541919" id="3177877371210332077" nodeInfo="ng">
-            <property name="text" nameId="iuxj.6666499814681541920" value="baz" />
+  </node>
+  <node concept="1HUUU" id="2_JW2iJfFcx">
+    <property role="TrG5h" value="Bla.Blubb-foo_u18" />
+    <ref role="ABQvG" node="2_JW2iJfFmQ" resolve="BlubbFAAAALSE" />
+    <node concept="3ACCqO" id="2Kq5E7aInfn" role="3AET3I">
+      <property role="TrG5h" value="f" />
+      <property role="3ACQng" value="bar" />
+      <property role="3ACQni" value="baz" />
+      <node concept="2pNNFK" id="2Kq5E7aJBtO" role="3ADWFb">
+        <property role="2pNNFO" value="foo" />
+        <node concept="2pNUuL" id="2Kq5E7aJBuF" role="2pNNFR">
+          <property role="2pNUuO" value="bar" />
+          <node concept="2pMdtt" id="2Kq5E7aJBuH" role="2pMdts">
+            <property role="2pMdty" value="baz" />
           </node>
         </node>
       </node>
     </node>
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="2985869118319539638" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="BlubbFAAAALSE" />
-      <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
+    <node concept="AAcsC" id="2_JW2iJfFmQ" role="AA3t3">
+      <property role="TrG5h" value="BlubbFAAAALSE" />
+      <property role="AyEUC" value="true" />
     </node>
-  </root>
-  <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="3560655027468213158" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Test" />
-    <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="3560655027468213190" resolveInfo="A" />
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.CompositeState" typeId="l1y1.6168113672288855555" id="3560655027470659340" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="AB" />
-      <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="3560655027470659362" resolveInfo="AB  C" />
-      <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="3560655027470662945" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="D" />
-        <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="3560655027470662955" nodeInfo="ng">
-          <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="3560655027469606743" resolveInfo="B" />
-          <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitDuration" typeId="l1y1.6168113672289368875" id="3560655027471251876" nodeInfo="ng">
-            <property name="milliseconds" nameId="l1y1.6168113672289368927" value="12" />
+  </node>
+  <node concept="1HUUU" id="35DZe7vWTIA">
+    <property role="TrG5h" value="Test" />
+    <ref role="ABQvG" node="35DZe7vWTJ6" resolve="A" />
+    <node concept="AA6MR" id="35DZe7w6eWc" role="AA3t3">
+      <property role="TrG5h" value="AB" />
+      <ref role="ABQvG" node="35DZe7w6eWy" resolve="AB  C" />
+      <node concept="AAcsC" id="35DZe7w6fOx" role="AA3t3">
+        <property role="TrG5h" value="D" />
+        <node concept="A$mVN" id="35DZe7w6fOF" role="A$mYT">
+          <ref role="A$mVY" node="35DZe7w2dXn" resolve="B" />
+          <node concept="A$36v" id="35DZe7w8vA$" role="A$mYR">
+            <property role="A$37F" value="12" />
           </node>
         </node>
-        <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.Assign" typeId="l1y1.3560655027475031348" id="3560655027477921891" nodeInfo="ng">
-          <property name="expr" nameId="l1y1.3560655027475031354" value="test + 1" />
-          <link role="location" roleId="l1y1.3560655027475193065" targetNodeId="3560655027476041115" resolveInfo="test" />
+        <node concept="3hc_Bl" id="35DZe7wxW1z" role="A$mYV">
+          <property role="3hc_Br" value="test + 1" />
+          <ref role="3hdY08" node="35DZe7wqKQr" resolve="test" />
         </node>
-        <node role="invokes" roleId="l1y1.7751562694797195676" type="l1y1.SCXMLInvoke" typeId="l1y1.7751562694797191060" id="3814223991397467661" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="testASD" />
-          <link role="statemachine" roleId="l1y1.7751562694797191064" targetNodeId="6554030746416355693" resolveInfo="Conditions" />
+        <node concept="3A7naB" id="3jIQ8bP1cod" role="3A7mMJ">
+          <property role="TrG5h" value="testASD" />
+          <ref role="3A7naF" node="5FOA3OR8D_H" resolve="Conditions" />
         </node>
-        <node role="invokes" roleId="l1y1.7751562694797195676" type="l1y1.SCXMLInvoke" typeId="l1y1.7751562694797191060" id="3814223991398588816" nodeInfo="ng">
-          <link role="statemachine" roleId="l1y1.7751562694797191064" targetNodeId="3814223991397523735" resolveInfo="invoker" />
+        <node concept="3A7naB" id="3jIQ8bP5u6g" role="3A7mMJ">
+          <ref role="3A7naF" node="3jIQ8bP1q4n" resolve="invoker" />
         </node>
       </node>
-      <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="3560655027470659362" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="AB  C" />
-        <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
-        <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="3560655027470662960" nodeInfo="ng">
-          <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="3560655027470662945" resolveInfo="D" />
-          <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitForEvent" typeId="l1y1.4593348108330089757" id="3560655027471613154" nodeInfo="ng">
-            <property name="eventname" nameId="l1y1.4593348108330089834" value="Foobar" />
+      <node concept="AAcsC" id="35DZe7w6eWy" role="AA3t3">
+        <property role="TrG5h" value="AB  C" />
+        <property role="AyEUC" value="true" />
+        <node concept="A$mVN" id="35DZe7w6fOK" role="A$mYT">
+          <ref role="A$mVY" node="35DZe7w6fOx" resolve="D" />
+          <node concept="2D1ejp" id="35DZe7w9RNy" role="A$mYR">
+            <property role="2D1eiI" value="Foobar" />
           </node>
         </node>
-        <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.FireEvent" typeId="l1y1.6168113672289375071" id="3814223991397530647" nodeInfo="ng">
-          <property name="eventname" nameId="l1y1.6168113672289375076" value="test" />
+        <node concept="A$5BF" id="3jIQ8bP1rKn" role="A$mYV">
+          <property role="A$5Bg" value="test" />
         </node>
       </node>
-      <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="3560655027470659367" nodeInfo="ng">
-        <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="3560655027470659362" resolveInfo="AB  C" />
-        <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitDuration" typeId="l1y1.6168113672289368875" id="3560655027471613149" nodeInfo="ng">
-          <property name="milliseconds" nameId="l1y1.6168113672289368927" value="10" />
+      <node concept="A$mVN" id="35DZe7w6eWB" role="A$mYT">
+        <ref role="A$mVY" node="35DZe7w6eWy" resolve="AB  C" />
+        <node concept="A$36v" id="35DZe7w9RNt" role="A$mYR">
+          <property role="A$37F" value="10" />
         </node>
       </node>
-      <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.Assign" typeId="l1y1.3560655027475031348" id="3560655027476765424" nodeInfo="ng">
-        <property name="expr" nameId="l1y1.3560655027475031354" value="test + 1" />
-        <link role="location" roleId="l1y1.3560655027475193065" targetNodeId="3560655027476041115" resolveInfo="test" />
+      <node concept="3hc_Bl" id="35DZe7wtxFK" role="A$mYV">
+        <property role="3hc_Br" value="test + 1" />
+        <ref role="3hdY08" node="35DZe7wqKQr" resolve="test" />
       </node>
     </node>
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="3560655027469606743" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="B" />
-      <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="3560655027469606754" nodeInfo="ng">
-        <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="3560655027468213190" resolveInfo="A" />
+    <node concept="AAcsC" id="35DZe7w2dXn" role="AA3t3">
+      <property role="TrG5h" value="B" />
+      <node concept="A$mVN" id="35DZe7w2dXy" role="A$mYT">
+        <ref role="A$mVY" node="35DZe7vWTJ6" resolve="A" />
       </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="l1y1.Comment" typeId="l1y1.4593348108329598434" id="2705144409484233460" nodeInfo="ng">
-        <property name="comment" nameId="l1y1.4593348108329598486" value="This is a multiline comment" />
-      </node>
-    </node>
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="3560655027468213190" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="A" />
-      <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
-      <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="3560655027468213194" nodeInfo="ng">
-        <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="3560655027469606743" resolveInfo="B" />
+      <node concept="2D36gA" id="2maAC89sgFO" role="lGtFl">
+        <property role="2D36vi" value="This is a multiline comment" />
       </node>
     </node>
-    <node role="data" roleId="l1y1.3177877371209483855" type="l1y1.VariableDeclaration" typeId="l1y1.3560655027475411612" id="3560655027476041115" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="test" />
-      <node role="initialExpression" roleId="l1y1.3560655027476822467" type="l1y1.String" typeId="l1y1.2935010982282873333" id="3560655027477504327" nodeInfo="ng">
-        <property name="String" nameId="l1y1.2935010982282873551" value="0" />
+    <node concept="AAcsC" id="35DZe7vWTJ6" role="AA3t3">
+      <property role="TrG5h" value="A" />
+      <property role="AyEUC" value="true" />
+      <node concept="A$mVN" id="35DZe7vWTJa" role="A$mYT">
+        <ref role="A$mVY" node="35DZe7w2dXn" resolve="B" />
       </node>
     </node>
-  </root>
-  <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="6554030746416355693" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Conditions" />
-    <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="6554030746416355694" resolveInfo="init" />
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="6554030746416355694" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="init" />
-      <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.If" typeId="l1y1.6554030746415586596" id="6554030746416355752" nodeInfo="ng">
-        <property name="condition" nameId="l1y1.6554030746415631408" value="true" />
-        <node role="actions" roleId="l1y1.6554030746416082338" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="5312151214955384297" nodeInfo="ng">
-          <property name="message" nameId="l1y1.6168113672289314118" value="test" />
+    <node concept="3h28TX" id="35DZe7wqKQr" role="3AET3I">
+      <property role="TrG5h" value="test" />
+      <node concept="ar0$5" id="35DZe7wwm57" role="3h7Kky">
+        <property role="ar0CZ" value="0" />
+      </node>
+    </node>
+  </node>
+  <node concept="1HUUU" id="5FOA3OR8D_H">
+    <property role="TrG5h" value="Conditions" />
+    <ref role="ABQvG" node="5FOA3OR8D_I" resolve="init" />
+    <node concept="AAcsC" id="5FOA3OR8D_I" role="AA3t3">
+      <property role="TrG5h" value="init" />
+      <node concept="1HS$kp" id="5FOA3OR8DAC" role="A$mYV">
+        <property role="1HSLgd" value="true" />
+        <node concept="A$mYG" id="4ASzmag$ORD" role="1HUJmv">
+          <property role="A$mZM" value="test" />
         </node>
-        <node role="actions" roleId="l1y1.6554030746416082338" type="l1y1.Assign" typeId="l1y1.3560655027475031348" id="5312151214955384269" nodeInfo="ng">
-          <property name="expr" nameId="l1y1.3560655027475031354" value="5" />
-          <link role="location" roleId="l1y1.3560655027475193065" targetNodeId="6554030746416355818" resolveInfo="f" />
-        </node>
-      </node>
-      <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.ForEach" typeId="l1y1.6554030746416402267" id="5312151214955656544" nodeInfo="ng">
-        <link role="item" roleId="l1y1.5312151214955390155" targetNodeId="5312151214955705184" resolveInfo="item" />
-        <link role="array" roleId="l1y1.5312151214955390144" targetNodeId="5312151214955705212" resolveInfo="list" />
-        <node role="actions" roleId="l1y1.6554030746416410525" type="l1y1.Assign" typeId="l1y1.3560655027475031348" id="5312151214955751463" nodeInfo="ng">
-          <property name="expr" nameId="l1y1.3560655027475031354" value="item + 1" />
-          <link role="location" roleId="l1y1.3560655027475193065" targetNodeId="6554030746416355818" resolveInfo="f" />
+        <node concept="3hc_Bl" id="4ASzmag$ORd" role="1HUJmv">
+          <property role="3hc_Br" value="5" />
+          <ref role="3hdY08" node="5FOA3OR8DBE" resolve="f" />
         </node>
       </node>
-      <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="5312151214956118244" nodeInfo="ng">
-        <property name="message" nameId="l1y1.6168113672289314118" value="fun" />
-      </node>
-    </node>
-    <node role="data" roleId="l1y1.3177877371209483855" type="l1y1.VariableDeclaration" typeId="l1y1.3560655027475411612" id="6554030746416355818" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="f" />
-    </node>
-    <node role="data" roleId="l1y1.3177877371209483855" type="l1y1.VariableDeclaration" typeId="l1y1.3560655027475411612" id="5312151214955705184" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="item" />
-    </node>
-    <node role="data" roleId="l1y1.3177877371209483855" type="l1y1.VariableDeclaration" typeId="l1y1.3560655027475411612" id="5312151214955705212" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="list" />
-      <node role="initialExpression" roleId="l1y1.3560655027476822467" type="l1y1.String" typeId="l1y1.2935010982282873333" id="5312151214956117776" nodeInfo="ng">
-        <property name="String" nameId="l1y1.2935010982282873551" value="java.util.Arrays.asList(0,1,2,3,4)" />
-      </node>
-    </node>
-  </root>
-  <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="3814223991397523735" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="invoker" />
-    <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="3814223991397523763" resolveInfo="invoke" />
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.CompositeState" typeId="l1y1.6168113672288855555" id="3814223991397523763" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="invoke" />
-      <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="3814223991397523778" resolveInfo="start" />
-      <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="3814223991397523778" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="start" />
-        <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="3814223991397523853" nodeInfo="ng">
-          <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="3814223991397523770" resolveInfo="initialised" />
-          <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitForEvent" typeId="l1y1.4593348108330089757" id="3814223991397523855" nodeInfo="ng">
-            <property name="eventname" nameId="l1y1.4593348108330089834" value="child.initialized" />
-          </node>
+      <node concept="1HPXtA" id="4ASzmag_Rlw" role="A$mYV">
+        <ref role="3paYAD" node="4ASzmagA3dw" resolve="item" />
+        <ref role="3paYAy" node="4ASzmagA3dW" resolve="list" />
+        <node concept="3hc_Bl" id="4ASzmagAewB" role="1HPZuw">
+          <property role="3hc_Br" value="item + 1" />
+          <ref role="3hdY08" node="5FOA3OR8DBE" resolve="f" />
         </node>
       </node>
-      <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="3814223991397523770" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="initialised" />
-        <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.FireEvent" typeId="l1y1.6168113672289375071" id="3814223991397756195" nodeInfo="ng">
-          <property name="eventname" nameId="l1y1.6168113672289375076" value="finish" />
-          <node role="target" roleId="l1y1.3814223991396602497" type="l1y1.FireEventTargetInvoke" typeId="l1y1.3814223991396602359" id="3814223991398312818" nodeInfo="ng">
-            <link role="invoke" roleId="l1y1.3814223991396602387" targetNodeId="3814223991397524760" resolveInfo="child" />
-          </node>
-        </node>
-        <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="3814223991398429578" nodeInfo="ng">
-          <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="3814223991398314148" resolveInfo="finished" />
-          <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.InvokeFinished" typeId="l1y1.3814223991398315747" id="3814223991398429580" nodeInfo="ng">
-            <link role="invoke" roleId="l1y1.3814223991398315887" targetNodeId="3814223991397524760" resolveInfo="child" />
+      <node concept="A$mYG" id="4ASzmagBC3$" role="A$mYV">
+        <property role="A$mZM" value="fun" />
+      </node>
+    </node>
+    <node concept="3h28TX" id="5FOA3OR8DBE" role="3AET3I">
+      <property role="TrG5h" value="f" />
+    </node>
+    <node concept="3h28TX" id="4ASzmagA3dw" role="3AET3I">
+      <property role="TrG5h" value="item" />
+    </node>
+    <node concept="3h28TX" id="4ASzmagA3dW" role="3AET3I">
+      <property role="TrG5h" value="list" />
+      <node concept="ar0$5" id="4ASzmagBBWg" role="3h7Kky">
+        <property role="ar0CZ" value="java.util.Arrays.asList(0,1,2,3,4)" />
+      </node>
+    </node>
+  </node>
+  <node concept="1HUUU" id="3jIQ8bP1q4n">
+    <property role="TrG5h" value="invoker" />
+    <ref role="ABQvG" node="3jIQ8bP1q4N" resolve="invoke" />
+    <node concept="AA6MR" id="3jIQ8bP1q4N" role="AA3t3">
+      <property role="TrG5h" value="invoke" />
+      <ref role="ABQvG" node="3jIQ8bP1q52" resolve="start" />
+      <node concept="AAcsC" id="3jIQ8bP1q52" role="AA3t3">
+        <property role="TrG5h" value="start" />
+        <node concept="A$mVN" id="3jIQ8bP1q6d" role="A$mYT">
+          <ref role="A$mVY" node="3jIQ8bP1q4U" resolve="initialised" />
+          <node concept="2D1ejp" id="3jIQ8bP1q6f" role="A$mYR">
+            <property role="2D1eiI" value="child.initialized" />
           </node>
         </node>
       </node>
-      <node role="invokes" roleId="l1y1.7751562694797195676" type="l1y1.SCXMLInvoke" typeId="l1y1.7751562694797191060" id="3814223991397524760" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="child" />
-        <link role="statemachine" roleId="l1y1.7751562694797191064" targetNodeId="3814223991397754898" resolveInfo="invoked" />
+      <node concept="AAcsC" id="3jIQ8bP1q4U" role="AA3t3">
+        <property role="TrG5h" value="initialised" />
+        <node concept="A$5BF" id="3jIQ8bP2iOz" role="A$mYV">
+          <property role="A$5Bg" value="finish" />
+          <node concept="306k_P" id="3jIQ8bP4qHM" role="306kC3">
+            <ref role="306kEh" node="3jIQ8bP1qko" resolve="child" />
+          </node>
+        </node>
+        <node concept="A$mVN" id="3jIQ8bP4Rea" role="A$mYT">
+          <ref role="A$mVY" node="3jIQ8bP4r2$" resolve="finished" />
+          <node concept="31ZQTx" id="3jIQ8bP4Rec" role="A$mYR">
+            <ref role="31ZQZH" node="3jIQ8bP1qko" resolve="child" />
+          </node>
+        </node>
+      </node>
+      <node concept="3A7naB" id="3jIQ8bP1qko" role="3A7mMJ">
+        <property role="TrG5h" value="child" />
+        <ref role="3A7naF" node="3jIQ8bP2iwi" resolve="invoked" />
       </node>
     </node>
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="3814223991398314148" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="finished" />
-      <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
+    <node concept="AAcsC" id="3jIQ8bP4r2$" role="AA3t3">
+      <property role="TrG5h" value="finished" />
+      <property role="AyEUC" value="true" />
     </node>
-  </root>
-  <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="3814223991397754898" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="invoked" />
-    <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="3814223991397754926" resolveInfo="initialize" />
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="3814223991397754926" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="initialize" />
-      <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="3814223991397755443" nodeInfo="ng">
-        <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="3814223991397754939" resolveInfo="running" />
-        <node role="actions" roleId="l1y1.926862060402702775" type="l1y1.FireEvent" typeId="l1y1.6168113672289375071" id="3814223991397755529" nodeInfo="ng">
-          <property name="eventname" nameId="l1y1.6168113672289375076" value="child.initialized" />
-          <node role="target" roleId="l1y1.3814223991396602497" type="l1y1.FireEventTargetParent" typeId="l1y1.3814223991396602145" id="3814223991397755531" nodeInfo="ng" />
+  </node>
+  <node concept="1HUUU" id="3jIQ8bP2iwi">
+    <property role="TrG5h" value="invoked" />
+    <ref role="ABQvG" node="3jIQ8bP2iwI" resolve="initialize" />
+    <node concept="AAcsC" id="3jIQ8bP2iwI" role="AA3t3">
+      <property role="TrG5h" value="initialize" />
+      <node concept="A$mVN" id="3jIQ8bP2iCN" role="A$mYT">
+        <ref role="A$mVY" node="3jIQ8bP2iwV" resolve="running" />
+        <node concept="A$5BF" id="3jIQ8bP2iE9" role="mMxAl">
+          <property role="A$5Bg" value="child.initialized" />
+          <node concept="306kAz" id="3jIQ8bP2iEb" role="306kC3" />
         </node>
       </node>
     </node>
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="3814223991397754939" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="running" />
-      <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="3814223991397755025" nodeInfo="ng">
-        <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="3814223991397754931" resolveInfo="finished" />
-        <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitForEvent" typeId="l1y1.4593348108330089757" id="3814223991397755109" nodeInfo="ng">
-          <property name="eventname" nameId="l1y1.4593348108330089834" value="finish" />
+    <node concept="AAcsC" id="3jIQ8bP2iwV" role="AA3t3">
+      <property role="TrG5h" value="running" />
+      <node concept="A$mVN" id="3jIQ8bP2iyh" role="A$mYT">
+        <ref role="A$mVY" node="3jIQ8bP2iwN" resolve="finished" />
+        <node concept="2D1ejp" id="3jIQ8bP2iz_" role="A$mYR">
+          <property role="2D1eiI" value="finish" />
         </node>
       </node>
     </node>
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="3814223991397754931" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="finished" />
-      <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
+    <node concept="AAcsC" id="3jIQ8bP2iwN" role="AA3t3">
+      <property role="TrG5h" value="finished" />
+      <property role="AyEUC" value="true" />
     </node>
-  </root>
-  <root type="l1y1.StateMachine" typeId="l1y1.3975843521651975716" id="7529839211440236739" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="WaitFail" />
-    <link role="initialstate" roleId="l1y1.6168113672289185112" targetNodeId="7529839211440237073" resolveInfo="waitState" />
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="7529839211440237073" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="waitState" />
-      <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="7529839211440237079" nodeInfo="ng">
-        <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="7529839211440237063" resolveInfo="otherState" />
-        <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitDuration" typeId="l1y1.6168113672289368875" id="7529839211440237081" nodeInfo="ng">
-          <property name="milliseconds" nameId="l1y1.6168113672289368927" value="1000" />
+  </node>
+  <node concept="1HUUU" id="6xZndSPGYz3">
+    <property role="TrG5h" value="WaitFail" />
+    <ref role="ABQvG" node="6xZndSPGYCh" resolve="waitState" />
+    <node concept="AAcsC" id="6xZndSPGYCh" role="AA3t3">
+      <property role="TrG5h" value="waitState" />
+      <node concept="A$mVN" id="6xZndSPGYCn" role="A$mYT">
+        <ref role="A$mVY" node="6xZndSPGYC7" resolve="otherState" />
+        <node concept="A$36v" id="6xZndSPGYCp" role="A$mYR">
+          <property role="A$37F" value="1000" />
         </node>
       </node>
-      <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="7529839211440237277" nodeInfo="ng">
-        <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="7529839211440237063" resolveInfo="otherState" />
+      <node concept="A$mVN" id="6xZndSPGYFt" role="A$mYT">
+        <ref role="A$mVY" node="6xZndSPGYC7" resolve="otherState" />
       </node>
     </node>
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="7529839211440237063" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="otherState" />
-      <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="7529839211440237375" nodeInfo="ng">
-        <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="7529839211440237050" resolveInfo="good" />
-        <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitDuration" typeId="l1y1.6168113672289368875" id="7529839211440237377" nodeInfo="ng">
-          <property name="milliseconds" nameId="l1y1.6168113672289368927" value="2000" />
+    <node concept="AAcsC" id="6xZndSPGYC7" role="AA3t3">
+      <property role="TrG5h" value="otherState" />
+      <node concept="A$mVN" id="6xZndSPGYGZ" role="A$mYT">
+        <ref role="A$mVY" node="6xZndSPGYBU" resolve="good" />
+        <node concept="A$36v" id="6xZndSPGYH1" role="A$mYR">
+          <property role="A$37F" value="2000" />
         </node>
       </node>
-      <node role="transitions" roleId="l1y1.6168113672289314061" type="l1y1.Transition" typeId="l1y1.6168113672289313863" id="7529839211440237477" nodeInfo="ng">
-        <link role="target" roleId="l1y1.6168113672289313866" targetNodeId="7529839211440237055" resolveInfo="failed" />
-        <node role="condition" roleId="l1y1.6168113672289314051" type="l1y1.WaitForEvent" typeId="l1y1.4593348108330089757" id="7529839211440237684" nodeInfo="ng">
-          <property name="eventname" nameId="l1y1.4593348108330089834" value="waitStatewait1000ms" />
+      <node concept="A$mVN" id="6xZndSPGYI_" role="A$mYT">
+        <ref role="A$mVY" node="6xZndSPGYBZ" resolve="failed" />
+        <node concept="2D1ejp" id="6xZndSPGYLO" role="A$mYR">
+          <property role="2D1eiI" value="waitStatewait1000ms" />
         </node>
       </node>
     </node>
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="7529839211440237055" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="failed" />
-      <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
-      <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="7529839211440237784" nodeInfo="ng">
-        <property name="message" nameId="l1y1.6168113672289314118" value="FAILED" />
+    <node concept="AAcsC" id="6xZndSPGYBZ" role="AA3t3">
+      <property role="TrG5h" value="failed" />
+      <property role="AyEUC" value="true" />
+      <node concept="A$mYG" id="6xZndSPGYNo" role="A$mYV">
+        <property role="A$mZM" value="FAILED" />
       </node>
     </node>
-    <node role="states" roleId="l1y1.6168113672288845303" type="l1y1.State" typeId="l1y1.6168113672288816540" id="7529839211440237050" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="good" />
-      <property name="isfinalstate" nameId="l1y1.6168113672289985564" value="true" />
-      <node role="onentry" roleId="l1y1.6168113672289314063" type="l1y1.LogMessage" typeId="l1y1.6168113672289314072" id="7529839211440237885" nodeInfo="ng">
-        <property name="message" nameId="l1y1.6168113672289314118" value="GOOD" />
+    <node concept="AAcsC" id="6xZndSPGYBU" role="AA3t3">
+      <property role="TrG5h" value="good" />
+      <property role="AyEUC" value="true" />
+      <node concept="A$mYG" id="6xZndSPGYOX" role="A$mYV">
+        <property role="A$mZM" value="GOOD" />
       </node>
     </node>
-  </root>
+  </node>
 </model>
 
