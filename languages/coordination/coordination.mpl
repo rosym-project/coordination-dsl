@@ -31,13 +31,11 @@
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
         <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
         <usedLanguage>f9a14289-1671-4e1f-964f-453efed867e3(plantUML)</usedLanguage>
-        <usedLanguage>3250ce9f-2510-46c5-a637-85bd413276c0(ProjectCfg)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <languageVersions>
-        <language id="3250ce9f-2510-46c5-a637-85bd413276c0" fqName="ProjectCfg" version="0" />
         <language id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" fqName="coordination" version="0" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
