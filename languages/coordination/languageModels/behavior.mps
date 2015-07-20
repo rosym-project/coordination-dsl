@@ -328,15 +328,6 @@
       <property role="TrG5h" value="getEventName" />
       <ref role="13i0hy" node="3YYQsimIzyA" resolve="getEventName" />
       <node concept="3clFbS" id="3YYQsimIzTb" role="3clF47">
-        <node concept="3cpWs8" id="35DZe7vZ3gh" role="3cqZAp">
-          <node concept="3cpWsn" id="35DZe7vZ3gk" role="3cpWs9">
-            <property role="TrG5h" value="name" />
-            <node concept="17QB3L" id="35DZe7vZ3gf" role="1tU5fm" />
-            <node concept="Xl_RD" id="35DZe7vZ8zp" role="33vP2m">
-              <property role="Xl_RC" value="unknown event name" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="35DZe7vZ3xp" role="3cqZAp">
           <node concept="3clFbS" id="35DZe7vZ3xs" role="3clFbx">
             <node concept="3cpWs6" id="3YYQsimIzTk" role="3cqZAp">
@@ -391,8 +382,8 @@
           </node>
         </node>
         <node concept="3cpWs6" id="35DZe7vZ5pN" role="3cqZAp">
-          <node concept="37vLTw" id="35DZe7vZ8RK" role="3cqZAk">
-            <ref role="3cqZAo" node="35DZe7vZ3gk" resolve="name" />
+          <node concept="Xl_RD" id="35DZe7vZ8zp" role="3cqZAk">
+            <property role="Xl_RC" value="unknown event name" />
           </node>
         </node>
       </node>
