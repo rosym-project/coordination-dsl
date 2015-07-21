@@ -237,6 +237,7 @@
           <ref role="3A7naF" node="5FOA3OR8D_H" resolve="Conditions" />
         </node>
         <node concept="3A7naB" id="3jIQ8bP5u6g" role="3A7mMJ">
+          <property role="TrG5h" value="test" />
           <ref role="3A7naF" node="3jIQ8bP1q4n" resolve="invoker" />
         </node>
       </node>
