@@ -566,5 +566,30 @@
       <ref role="PrY4T" node="5mpyFhN2egg" resolve="Condition" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7RTBPMszk1k">
+    <property role="3GE5qa" value="actions" />
+    <property role="TrG5h" value="IfElse" />
+    <property role="34LRSv" value="ifelse" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7RTBPMszk1l" role="1TKVEl">
+      <property role="TrG5h" value="condition" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="7RTBPMszk1m" role="PzmwI">
+      <ref role="PrY4T" node="5mpyFhN2eh4" resolve="Action" />
+    </node>
+    <node concept="1TJgyj" id="7RTBPMszk1n" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ifactions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5mpyFhN2eh4" resolve="Action" />
+    </node>
+    <node concept="1TJgyj" id="7RTBPMszpsd" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elseactions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5mpyFhN2eh4" resolve="Action" />
+    </node>
+  </node>
 </model>
 

@@ -66,6 +66,11 @@
       <concept id="7693917789697262148" name="coordination.structure.JEXLCondition" flags="ng" index="1rc8GN">
         <property id="7693917789697262239" name="jexlExpression" index="1rc8JC" />
       </concept>
+      <concept id="9077461744054255700" name="coordination.structure.IfElse" flags="ng" index="3xtdW8">
+        <property id="9077461744054255701" name="condition" index="3xtdW9" />
+        <child id="9077461744054277901" name="elseactions" index="3xt0xh" />
+        <child id="9077461744054255703" name="ifactions" index="3xtdWb" />
+      </concept>
       <concept id="7751562694797191060" name="coordination.structure.SCXMLInvoke" flags="ng" index="3A7naB">
         <reference id="7751562694797191064" name="statemachine" index="3A7naF" />
       </concept>
@@ -294,6 +299,17 @@
         </node>
         <node concept="3hc_Bl" id="4ASzmag$ORd" role="1HUJmv">
           <property role="3hc_Br" value="5" />
+          <ref role="3hdY08" node="5FOA3OR8DBE" resolve="f" />
+        </node>
+      </node>
+      <node concept="3xtdW8" id="7RTBPMsAKxP" role="A$mYV">
+        <property role="3xtdW9" value="fun" />
+        <node concept="3hc_Bl" id="7RTBPMsB1mf" role="3xtdWb">
+          <property role="3hc_Br" value="'fun'" />
+          <ref role="3hdY08" node="5FOA3OR8DBE" resolve="f" />
+        </node>
+        <node concept="3hc_Bl" id="7RTBPMsB1mi" role="3xt0xh">
+          <property role="3hc_Br" value="'nuf'" />
           <ref role="3hdY08" node="5FOA3OR8DBE" resolve="f" />
         </node>
       </node>
