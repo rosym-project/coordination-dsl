@@ -73,7 +73,7 @@
         <welcome-screen caption-url="/caption.png" slogan-url="/slogan.png" logo-url="/logo.png" />
       </component>
     </echoxml>
-    <jar destfile="${build.layout}/lib/branding.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/lib/branding.jar">
       <fileset file="${basedir}/icons/MPS16.png" />
       <fileset file="${basedir}/icons/MPS32.png" />
       <fileset file="${basedir}/icons/caption.png" />
@@ -139,13 +139,12 @@
         <sources jar="coordination-src.jar" descriptor="coordination.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/coordination.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/coordination.jar">
       <fileset dir="${build.tmp}/java/out/coordination" />
       <fileset dir="${basedir}/languages/coordination" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/languages/coordination/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/coordination.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/coordination-generator.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/coordination-generator.jar">
       <fileset dir="${build.tmp}/java/out/coordination#3975843521651967143" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-coordination-generator-template">
@@ -154,14 +153,12 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-coordination-languageModels">
       <fileset dir="${basedir}/languages/coordination/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/coordination-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/coordination-src.jar">
       <fileset dir="${basedir}/languages/coordination/generator/source_gen">
         <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${basedir}/languages/coordination/source_gen">
         <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/languages/coordination/coordination.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-coordination-generator-template" prefix="module/generator/template" />
@@ -187,13 +184,12 @@
         <sources jar="plantUML-src.jar" descriptor="plantUML.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/plantUML.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/plantUML.jar">
       <fileset dir="${build.tmp}/java/out/plantUML" />
       <fileset dir="${plantuml.lang}/languages/plantUML" includes="icons/**, resources/**" />
-      <fileset dir="${plantuml.lang}/languages/plantUML/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/plantUML.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/plantUML-generator.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/plantUML-generator.jar">
       <fileset dir="${build.tmp}/java/out/plantUML#3560655027465713227" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-plantUML-generator-template">
@@ -202,14 +198,12 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-plantUML-languageModels">
       <fileset dir="${plantuml.lang}/languages/plantUML/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/plantUML-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/plantUML-src.jar">
       <fileset dir="${plantuml.lang}/languages/plantUML/generator/source_gen">
         <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${plantuml.lang}/languages/plantUML/source_gen">
         <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${plantuml.lang}/languages/plantUML/plantUML.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-plantUML-generator-template" prefix="module/generator/template" />
@@ -274,7 +268,6 @@
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.classLike.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.dataFlow.analyzers.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
