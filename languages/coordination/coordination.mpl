@@ -22,6 +22,7 @@
         <dependency reexport="false">479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</dependency>
         <dependency reexport="false">f9a14289-1671-4e1f-964f-453efed867e3(plantUML)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+        <dependency reexport="false">26f686fb-6830-4017-9754-818a6fc03a3c(graph)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)</usedLanguage>
@@ -32,12 +33,14 @@
         <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
         <usedLanguage>f9a14289-1671-4e1f-964f-453efed867e3(plantUML)</usedLanguage>
         <usedLanguage>18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</usedLanguage>
+        <usedLanguage>26f686fb-6830-4017-9754-818a6fc03a3c(graph)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <languageVersions>
         <language id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" fqName="coordination" version="0" />
+        <language id="26f686fb-6830-4017-9754-818a6fc03a3c" fqName="graph" version="0" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" fqName="jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -57,7 +60,7 @@
         <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="0" />
         <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="0" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
-        <language id="f9a14289-1671-4e1f-964f-453efed867e3" fqName="plantUML" version="-1" />
+        <language id="f9a14289-1671-4e1f-964f-453efed867e3" fqName="plantUML" version="0" />
       </languageVersions>
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
