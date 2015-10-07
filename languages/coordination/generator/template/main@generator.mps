@@ -1868,7 +1868,7 @@
       </node>
       <node concept="3o6iSG" id="2maAC89s5KI" role="3o6s8t" />
       <node concept="2pNNFK" id="3YYQsim_A2n" role="3o6s8t">
-        <property role="2pNNFO" value="state" />
+        <property role="2pNNFO" value="parallel" />
         <node concept="3o6iSG" id="1_woEd4AiJr" role="3o6s8t">
           <property role="3o6i5n" value="invokes" />
           <node concept="2b32R4" id="1_woEd4AiJs" role="lGtFl">
