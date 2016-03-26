@@ -7,7 +7,7 @@
     <format property="date" pattern="yyyyMMdd" />
   </tstamp>
   <property name="build.number" value="Coordination-135.SNAPSHOT" />
-  <property name="mps.home" location="${basedir}/../../../local/MPS 3.2" />
+  <property name="mps.home" location="${basedir}/../../../../../Applications/MPS 3.3.app/Contents" />
   <property name="plantuml.lang" location="${basedir}/../plantuml-dsl" />
   <property name="graph.lang" location="${basedir}/../graph-dsl" />
   <property name="artifacts.mpsStandalone" location="${mps.home}" />
@@ -21,6 +21,8 @@
   <property name="mps.build.vcs.number" value="${import.mps.mps.build.vcs.number}" />
   <property name="mps.teamcity.buildConfName" value="${import.mps.mps.teamcity.buildConfName}" />
   <property name="mps.idea.platform.build.number" value="${import.mps.mps.idea.platform.build.number}" />
+  <property name="env.JAVA_HOME" value="${java.home}/.." />
+  <property name="jdk.home" value="${env.JAVA_HOME}" />
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mpsStandalone}/lib/ant/lib/ant-mps.jar" />
@@ -63,22 +65,24 @@
     <mkdir dir="${build.tmp}/default/branding.jar/idea" />
     <echoxml file="${build.tmp}/default/branding.jar/idea/IdeaApplicationInfo.xml">
       <component>
-        <version codename="Coordination" major="1" minor="0" eap="false" />
-        <build date="${date}" number="${build.number}" />
-        <logo url="/splash.png" textcolor="002387" />
+        <version codename="" major="1" minor="0" eap="false" />
+        <build number="${build.number}" date="${date}" />
+        <logo url="/splash.png" />
         <about url="/about.png" />
         <icon size32="/MPS32.png" size16="/MPS16.png" size32opaque="/MPS32.png" />
         <dialogs-image url="/dialogImage.png" />
         <package code="code" />
         <names product="Coordination" fullname="Coordination" />
-        <welcome-screen caption-url="/caption.png" slogan-url="/slogan.png" logo-url="/logo.png" />
+        
+        <welcome-screen logo-url="/logo.png" />
+        
+        
+        
       </component>
     </echoxml>
-    <jar destfile="${build.layout}/lib/branding.jar">
+    <jar destfile="${build.layout}/lib/branding.jar" duplicate="preserve">
       <fileset file="${basedir}/icons/MPS16.png" />
       <fileset file="${basedir}/icons/MPS32.png" />
-      <fileset file="${basedir}/icons/caption.png" />
-      <fileset file="${basedir}/icons/slogan.png" />
       <fileset file="${basedir}/icons/logo.png" />
       <fileset file="${basedir}/icons/splash.png" />
       <fileset file="${basedir}/icons/about.png" />
@@ -132,18 +136,22 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="coordination-src.jar" descriptor="coordination.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/coordination.jar">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/coordination.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/coordination" />
       <fileset dir="${basedir}/languages/coordination" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/coordination/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/coordination.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/coordination-generator.jar">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/coordination-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/coordination#3975843521651967143" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-coordination-generator-template">
@@ -152,12 +160,14 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-coordination-languageModels">
       <fileset dir="${basedir}/languages/coordination/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/coordination-src.jar">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/coordination-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/coordination/generator/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${basedir}/languages/coordination/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/languages/coordination/coordination.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-coordination-generator-template" prefix="module/generator/template" />
@@ -177,18 +187,22 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="graph-src.jar" descriptor="graph.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/graph.jar">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/graph.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/graph" />
       <fileset dir="${graph.lang}/languages/graph" includes="icons/**, resources/**" />
+      <fileset dir="${graph.lang}/languages/graph/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/graph.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/graph-generator.jar">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/graph-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/graph#1713180196390123199" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-graph-generator-template">
@@ -197,12 +211,14 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-graph-languageModels">
       <fileset dir="${graph.lang}/languages/graph/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/graph-src.jar">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/graph-src.jar" duplicate="preserve">
       <fileset dir="${graph.lang}/languages/graph/generator/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${graph.lang}/languages/graph/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${graph.lang}/languages/graph/graph.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-graph-generator-template" prefix="module/generator/template" />
@@ -222,18 +238,22 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="plantUML-src.jar" descriptor="plantUML.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/plantUML.jar">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/plantUML.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/plantUML" />
       <fileset dir="${plantuml.lang}/languages/plantUML" includes="icons/**, resources/**" />
+      <fileset dir="${plantuml.lang}/languages/plantUML/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/plantUML.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/plantUML-generator.jar">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/plantUML-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/plantUML#3560655027465713227" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-plantUML-generator-template">
@@ -242,20 +262,19 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-plantUML-languageModels">
       <fileset dir="${plantuml.lang}/languages/plantUML/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/plantUML-src.jar">
+    <jar destfile="${build.layout}/plugins/Coordination/languages/Coordination/plantUML-src.jar" duplicate="preserve">
       <fileset dir="${plantuml.lang}/languages/plantUML/generator/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${plantuml.lang}/languages/plantUML/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${plantuml.lang}/languages/plantUML/plantUML.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-plantUML-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-plantUML-languageModels" prefix="module/languageModels" />
     </jar>
-    <copy todir="${build.layout}/plugins/Coordination/languages/Coordination">
-      <fileset file="${basedir}/devkits/Coordination.devkit" />
-    </copy>
     <copy todir="${build.layout}/plugins/Coordination/languages/Coordination">
       <fileset file="${basedir}/devkits/Coordination.devkit" />
     </copy>
@@ -309,12 +328,14 @@
       <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.bootstrap-languages.devkit" />
       <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.general-purpose.devkit" />
       <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.language-design.devkit" />
+      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.baseLanguage.lightweightdsl.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.aspect.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.checkedName.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.classLike.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.dataFlow.analyzers.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
@@ -335,6 +356,7 @@
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.script.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.smodel.query.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.textGen.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
@@ -344,10 +366,13 @@
       <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.script.jar" />
       <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.tool.gentest.jar" />
       <library file="${artifacts.mpsStandalone}/languages/xml/jetbrains.mps.core.xml.jar" />
+      <library file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+      <library file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+      <library file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-test.jar" />
@@ -356,7 +381,6 @@
       <library file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.ide.build.jar" />
       <chunk>
-        <module file="${basedir}/devkits/Coordination.devkit" />
         <module file="${basedir}/devkits/Coordination.devkit" />
         <module file="${basedir}/languages/coordination/coordination.mpl" />
         <module file="${graph.lang}/languages/graph/graph.mpl" />
@@ -381,20 +405,23 @@
   <target name="java.compile.coordination" depends="java.compile.graph, java.compile.plantUML, fetchDependencies">
     <mkdir dir="${basedir}/languages/coordination/source_gen" />
     <mkdir dir="${build.tmp}/java/out/coordination" />
-    <javac destdir="${build.tmp}/java/out/coordination" fork="true" includeantruntime="false" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/coordination" fork="false" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/coordination/source_gen" />
       </src>
       <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/graph" />
         <pathelement path="${build.tmp}/java/out/plantUML" />
@@ -415,9 +442,9 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/xml/jetbrains.mps.core.xml.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
@@ -432,20 +459,23 @@
   <target name="java.compile.coordination#3975843521651967143" depends="java.compile.coordination, java.compile.graph, java.compile.plantUML, fetchDependencies">
     <mkdir dir="${basedir}/languages/coordination/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/coordination#3975843521651967143" />
-    <javac destdir="${build.tmp}/java/out/coordination#3975843521651967143" fork="true" includeantruntime="false" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/coordination#3975843521651967143" fork="false" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/coordination/generator/source_gen" />
       </src>
       <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/coordination" />
         <pathelement path="${build.tmp}/java/out/graph" />
@@ -469,9 +499,9 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/xml/jetbrains.mps.core.xml.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
@@ -486,20 +516,23 @@
   <target name="java.compile.graph" depends="fetchDependencies">
     <mkdir dir="${graph.lang}/languages/graph/source_gen" />
     <mkdir dir="${build.tmp}/java/out/graph" />
-    <javac destdir="${build.tmp}/java/out/graph" fork="true" includeantruntime="false" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/graph" fork="false" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${graph.lang}/languages/graph/source_gen" />
       </src>
       <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
@@ -516,11 +549,10 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/xml/jetbrains.mps.core.xml.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
@@ -535,20 +567,23 @@
   <target name="java.compile.graph#1713180196390123199" depends="java.compile.graph, fetchDependencies">
     <mkdir dir="${graph.lang}/languages/graph/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/graph#1713180196390123199" />
-    <javac destdir="${build.tmp}/java/out/graph#1713180196390123199" fork="true" includeantruntime="false" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/graph#1713180196390123199" fork="false" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${graph.lang}/languages/graph/generator/source_gen" />
       </src>
       <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/graph" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-icons.jar" />
@@ -568,11 +603,10 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/xml/jetbrains.mps.core.xml.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
@@ -587,20 +621,23 @@
   <target name="java.compile.plantUML" depends="fetchDependencies">
     <mkdir dir="${plantuml.lang}/languages/plantUML/source_gen" />
     <mkdir dir="${build.tmp}/java/out/plantUML" />
-    <javac destdir="${build.tmp}/java/out/plantUML" fork="true" includeantruntime="false" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/plantUML" fork="false" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${plantuml.lang}/languages/plantUML/source_gen" />
       </src>
       <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
@@ -615,6 +652,7 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -627,20 +665,23 @@
   <target name="java.compile.plantUML#3560655027465713227" depends="java.compile.plantUML, fetchDependencies">
     <mkdir dir="${plantuml.lang}/languages/plantUML/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/plantUML#3560655027465713227" />
-    <javac destdir="${build.tmp}/java/out/plantUML#3560655027465713227" fork="true" includeantruntime="false" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/plantUML#3560655027465713227" fork="false" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${plantuml.lang}/languages/plantUML/generator/source_gen" />
       </src>
       <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/plantUML" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
@@ -653,6 +694,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>

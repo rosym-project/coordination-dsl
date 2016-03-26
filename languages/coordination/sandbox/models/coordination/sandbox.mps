@@ -2,7 +2,7 @@
 <model ref="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination" version="-1" />
+    <use id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination" version="0" />
     <devkit ref="fd53cdf4-ff12-495f-a45a-213f5b741141(Coordination)" />
   </languages>
   <imports />

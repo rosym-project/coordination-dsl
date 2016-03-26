@@ -2,7 +2,7 @@
 <model ref="b0b9ee69-626f-4bed-b886-381ef65b97f1/r:4eb73468-ab54-44b6-91b9-41b2cfef2eee(Tests/Tests.Issue2054)">
   <persistence version="9" />
   <languages>
-    <use id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination" version="-1" />
+    <use id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination" version="0" />
   </languages>
   <imports />
   <registry>

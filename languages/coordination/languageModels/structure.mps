@@ -2,7 +2,7 @@
 <model ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -22,6 +22,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -59,6 +60,7 @@
   <node concept="1TIwiD" id="3sH29SQAEo$">
     <property role="TrG5h" value="StateMachine" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1841802946" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2Kq5E7aGopf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -76,6 +78,7 @@
   <node concept="1TIwiD" id="5mpyFhN0kQs">
     <property role="TrG5h" value="State" />
     <property role="34LRSv" value="state" />
+    <property role="1pbfSe" value="929376176" />
     <ref role="1TJDcQ" node="35DZe7vY9Pd" resolve="AbstractState" />
     <node concept="PrWs8" id="5mpyFhN0unV" role="PzmwI">
       <ref role="PrY4T" node="5mpyFhN0kXB" resolve="StateLike" />
@@ -86,6 +89,7 @@
   </node>
   <node concept="PlHQZ" id="5mpyFhN0kXB">
     <property role="TrG5h" value="StateLike" />
+    <property role="1pbfSe" value="929375717" />
     <node concept="1TJgyj" id="6Ij5jedzBAs" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="invokes" />
@@ -132,6 +136,7 @@
   </node>
   <node concept="PlHQZ" id="5mpyFhN0rRQ">
     <property role="TrG5h" value="StateContainer" />
+    <property role="1pbfSe" value="929347414" />
     <node concept="1TJgyj" id="5mpyFhN0rRR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="states" />
@@ -154,6 +159,7 @@
   <node concept="1TIwiD" id="5mpyFhN0uo3">
     <property role="TrG5h" value="CompositeState" />
     <property role="34LRSv" value="composite" />
+    <property role="1pbfSe" value="929337161" />
     <ref role="1TJDcQ" node="3EMNZPA5lWA" resolve="AbstractStateContainer" />
     <node concept="PrWs8" id="5mpyFhN0uo4" role="PzmwI">
       <ref role="PrY4T" node="5mpyFhN0kXB" resolve="StateLike" />
@@ -165,6 +171,7 @@
   <node concept="1TIwiD" id="5mpyFhN1C$4">
     <property role="TrG5h" value="ParallelState" />
     <property role="34LRSv" value="parallel" />
+    <property role="1pbfSe" value="929033288" />
     <ref role="1TJDcQ" node="3EMNZPA5lWA" resolve="AbstractStateContainer" />
     <node concept="PrWs8" id="5mpyFhN1C$5" role="PzmwI">
       <ref role="PrY4T" node="5mpyFhN0kXB" resolve="StateLike" />
@@ -175,9 +182,11 @@
   </node>
   <node concept="PlHQZ" id="5mpyFhN2egg">
     <property role="TrG5h" value="Condition" />
+    <property role="1pbfSe" value="928878908" />
   </node>
   <node concept="PlHQZ" id="5mpyFhN2eh4">
     <property role="TrG5h" value="Action" />
+    <property role="1pbfSe" value="928878856" />
     <node concept="PrWs8" id="3YYQsimGIft" role="PrDN$">
       <ref role="PrY4T" node="3YYQsimGIfe" resolve="ICanBeCommented" />
     </node>
@@ -185,6 +194,7 @@
   <node concept="1TIwiD" id="5mpyFhN2eh7">
     <property role="TrG5h" value="Transition" />
     <property role="34LRSv" value="-&gt;" />
+    <property role="1pbfSe" value="928878853" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5mpyFhN2ek3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -217,6 +227,7 @@
     <property role="TrG5h" value="LogMessage" />
     <property role="34LRSv" value="log" />
     <property role="3GE5qa" value="actions" />
+    <property role="1pbfSe" value="928878644" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5mpyFhN2el6" role="1TKVEl">
       <property role="TrG5h" value="message" />
@@ -230,6 +241,7 @@
     <property role="TrG5h" value="WaitDuration" />
     <property role="34LRSv" value="wait" />
     <property role="3GE5qa" value="conditions" />
+    <property role="1pbfSe" value="928823841" />
     <ref role="1TJDcQ" node="35DZe7wbKmA" resolve="AbstractCondition" />
     <node concept="1TJgyi" id="5mpyFhN2rHv" role="1TKVEl">
       <property role="TrG5h" value="milliseconds" />
@@ -243,6 +255,7 @@
     <property role="3GE5qa" value="actions" />
     <property role="TrG5h" value="FireEvent" />
     <property role="34LRSv" value="event" />
+    <property role="1pbfSe" value="928817645" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5mpyFhN2td$" role="1TKVEl">
       <property role="TrG5h" value="eventname" />
@@ -262,6 +275,7 @@
     <property role="TrG5h" value="Comment" />
     <property role="34LRSv" value="//" />
     <property role="3GE5qa" value="comment" />
+    <property role="1pbfSe" value="697198682" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyi" id="3YYQsimGFSm" role="1TKVEl">
       <property role="TrG5h" value="comment" />
@@ -277,11 +291,13 @@
   <node concept="PlHQZ" id="3YYQsimGIfe">
     <property role="TrG5h" value="ICanBeCommented" />
     <property role="3GE5qa" value="comment" />
+    <property role="1pbfSe" value="697188974" />
   </node>
   <node concept="1TIwiD" id="3YYQsimIzOt">
     <property role="3GE5qa" value="conditions" />
     <property role="TrG5h" value="WaitForEvent" />
     <property role="34LRSv" value="event" />
+    <property role="1pbfSe" value="696707359" />
     <ref role="1TJDcQ" node="35DZe7wbKmA" resolve="AbstractCondition" />
     <node concept="1TJgyi" id="3YYQsimIzPE" role="1TKVEl">
       <property role="TrG5h" value="eventname" />
@@ -295,6 +311,7 @@
     <property role="TrG5h" value="MultiLineComment" />
     <property role="34LRSv" value="&lt;!--" />
     <property role="3GE5qa" value="comment" />
+    <property role="1pbfSe" value="1267076851" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="2yVgf0yMHjK" role="lGtFl">
       <property role="Hh88m" value="multilinecomment" />
@@ -312,6 +329,7 @@
   <node concept="1TIwiD" id="2yVgf0yPOBP">
     <property role="TrG5h" value="String" />
     <property role="3GE5qa" value="comment" />
+    <property role="1pbfSe" value="1267895013" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2yVgf0yPOFf" role="1TKVEl">
       <property role="TrG5h" value="String" />
@@ -321,6 +339,7 @@
   <node concept="PlHQZ" id="6KWQ8i7tHbi">
     <property role="TrG5h" value="Data" />
     <property role="3GE5qa" value="datamodel" />
+    <property role="1pbfSe" value="206329002" />
     <node concept="PrWs8" id="2Kq5E7aI923" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -329,6 +348,7 @@
     <property role="3GE5qa" value="datamodel" />
     <property role="TrG5h" value="GenericData" />
     <property role="34LRSv" value="data" />
+    <property role="1pbfSe" value="153966922" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2Kq5E7aJtLE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -353,6 +373,7 @@
     <property role="TrG5h" value="JEXLCondition" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1665332293" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6F6insLXGav" role="1TKVEl">
       <property role="TrG5h" value="jexlExpression" />
@@ -363,6 +384,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="AbstractState" />
+    <property role="1pbfSe" value="291674670" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="35DZe7vY9Qe" role="PzmwI">
       <ref role="PrY4T" node="5mpyFhN0kXB" resolve="StateLike" />
@@ -372,6 +394,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="AbstractCondition" />
+    <property role="1pbfSe" value="295240327" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="35DZe7wbKmB" role="PzmwI">
       <ref role="PrY4T" node="5mpyFhN2egg" resolve="Condition" />
@@ -381,6 +404,7 @@
     <property role="3GE5qa" value="actions" />
     <property role="TrG5h" value="Assign" />
     <property role="34LRSv" value="assign" />
+    <property role="1pbfSe" value="298164757" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="35DZe7wmUkP" role="PzmwI">
       <ref role="PrY4T" node="5mpyFhN2eh4" resolve="Action" />
@@ -400,6 +424,7 @@
     <property role="3GE5qa" value="datamodel" />
     <property role="TrG5h" value="VariableDeclaration" />
     <property role="34LRSv" value="Variable Declaration" />
+    <property role="1pbfSe" value="298545021" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="35DZe7wonat" role="PzmwI">
       <ref role="PrY4T" node="6KWQ8i7tHbi" resolve="Data" />
@@ -415,6 +440,7 @@
     <property role="TrG5h" value="AbstractStateContainer" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1597493469" />
     <ref role="1TJDcQ" node="35DZe7vY9Pd" resolve="AbstractState" />
     <node concept="PrWs8" id="3EMNZPA5mG7" role="PzmwI">
       <ref role="PrY4T" node="5mpyFhN0rRQ" resolve="StateContainer" />
@@ -422,6 +448,7 @@
   </node>
   <node concept="PlHQZ" id="6Ij5jedxvto">
     <property role="TrG5h" value="Invoke" />
+    <property role="1pbfSe" value="115798901" />
     <node concept="1TJgyj" id="1_woEd4wGOi" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="parameter" />
@@ -436,6 +463,7 @@
     <property role="3GE5qa" value="datamodel" />
     <property role="TrG5h" value="SCXMLInvoke" />
     <property role="34LRSv" value="invoke" />
+    <property role="1pbfSe" value="115245881" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6Ij5jedzAul" role="PzmwI">
       <ref role="PrY4T" node="6Ij5jedxvto" resolve="Invoke" />
@@ -451,6 +479,7 @@
     <property role="3GE5qa" value="actions" />
     <property role="TrG5h" value="If" />
     <property role="34LRSv" value="if" />
+    <property role="1pbfSe" value="1844742815" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5FOA3OR5SKK" role="1TKVEl">
       <property role="TrG5h" value="condition" />
@@ -469,6 +498,7 @@
   <node concept="1TIwiD" id="5FOA3OR8OXr">
     <property role="3GE5qa" value="actions" />
     <property role="TrG5h" value="ForEach" />
+    <property role="1pbfSe" value="1843927144" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5FOA3OR8OXs" role="PzmwI">
       <ref role="PrY4T" node="5mpyFhN2eh4" resolve="Action" />
@@ -500,6 +530,7 @@
   <node concept="1TIwiD" id="1_woEd4wJCg">
     <property role="3GE5qa" value="datamodel" />
     <property role="TrG5h" value="Parameter" />
+    <property role="1pbfSe" value="1575181491" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1_woEd4$ZuN" role="1TKVEl">
       <property role="TrG5h" value="name" />
@@ -514,6 +545,7 @@
     <property role="3GE5qa" value="datamodel" />
     <property role="TrG5h" value="SCXMLInvokeVariable" />
     <property role="34LRSv" value="invokeFromVar" />
+    <property role="1pbfSe" value="1440427441" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5IWMP7U7A9x" role="PzmwI">
       <ref role="PrY4T" node="6Ij5jedxvto" resolve="Invoke" />
@@ -526,11 +558,13 @@
   <node concept="PlHQZ" id="3jIQ8bOXSXW">
     <property role="3GE5qa" value="actions" />
     <property role="TrG5h" value="FireEventTarget" />
+    <property role="1pbfSe" value="702965758" />
   </node>
   <node concept="1TIwiD" id="3jIQ8bOXT4x">
     <property role="3GE5qa" value="actions" />
     <property role="TrG5h" value="FireEventTargetParent" />
     <property role="34LRSv" value="parent" />
+    <property role="1pbfSe" value="702966179" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3jIQ8bOZCgt" role="PzmwI">
       <ref role="PrY4T" node="3jIQ8bOXSXW" resolve="FireEventTarget" />
@@ -540,6 +574,7 @@
     <property role="3GE5qa" value="actions" />
     <property role="TrG5h" value="FireEventTargetInvoke" />
     <property role="34LRSv" value="invoke" />
+    <property role="1pbfSe" value="702966393" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3jIQ8bOXT8j" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -555,6 +590,7 @@
     <property role="3GE5qa" value="conditions" />
     <property role="TrG5h" value="InvokeFinished" />
     <property role="34LRSv" value="invoked session finished" />
+    <property role="1pbfSe" value="704679781" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3jIQ8bP4rtJ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -570,6 +606,7 @@
     <property role="3GE5qa" value="actions" />
     <property role="TrG5h" value="IfElse" />
     <property role="34LRSv" value="ifelse" />
+    <property role="1pbfSe" value="445046704" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7RTBPMszk1l" role="1TKVEl">
       <property role="TrG5h" value="condition" />
