@@ -133,6 +133,9 @@
     <node concept="PrWs8" id="3jIQ8bP1u3W" role="PrDN$">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="PrWs8" id="6yWTLzAkpav" role="PrDN$">
+      <ref role="PrY4T" node="6yWTLzAkp41" resolve="TransitionTarget" />
+    </node>
   </node>
   <node concept="PlHQZ" id="5mpyFhN0rRQ">
     <property role="TrG5h" value="StateContainer" />
@@ -217,7 +220,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5mpyFhN0kXB" resolve="StateLike" />
+      <ref role="20lvS9" node="6yWTLzAkp41" resolve="TransitionTarget" />
     </node>
     <node concept="PrWs8" id="3YYQsimGIfr" role="PzmwI">
       <ref role="PrY4T" node="3YYQsimGIfe" resolve="ICanBeCommented" />
@@ -626,6 +629,13 @@
       <property role="20kJfa" value="elseactions" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5mpyFhN2eh4" resolve="Action" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6yWTLzAkp41">
+    <property role="1pbfSe" value="1326348313" />
+    <property role="TrG5h" value="TransitionTarget" />
+    <node concept="PrWs8" id="6yWTLzAkp42" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

@@ -405,7 +405,7 @@
   <target name="java.compile.coordination" depends="java.compile.graph, java.compile.plantUML, fetchDependencies">
     <mkdir dir="${basedir}/languages/coordination/source_gen" />
     <mkdir dir="${build.tmp}/java/out/coordination" />
-    <javac destdir="${build.tmp}/java/out/coordination" fork="false" includeantruntime="false" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/coordination" fork="false" encoding="utf8" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/coordination/source_gen" />
@@ -459,7 +459,7 @@
   <target name="java.compile.coordination#3975843521651967143" depends="java.compile.coordination, java.compile.graph, java.compile.plantUML, fetchDependencies">
     <mkdir dir="${basedir}/languages/coordination/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/coordination#3975843521651967143" />
-    <javac destdir="${build.tmp}/java/out/coordination#3975843521651967143" fork="false" includeantruntime="false" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/coordination#3975843521651967143" fork="false" encoding="utf8" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/coordination/generator/source_gen" />
@@ -516,7 +516,7 @@
   <target name="java.compile.graph" depends="fetchDependencies">
     <mkdir dir="${graph.lang}/languages/graph/source_gen" />
     <mkdir dir="${build.tmp}/java/out/graph" />
-    <javac destdir="${build.tmp}/java/out/graph" fork="false" includeantruntime="false" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/graph" fork="false" encoding="utf8" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${graph.lang}/languages/graph/source_gen" />
@@ -567,7 +567,7 @@
   <target name="java.compile.graph#1713180196390123199" depends="java.compile.graph, fetchDependencies">
     <mkdir dir="${graph.lang}/languages/graph/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/graph#1713180196390123199" />
-    <javac destdir="${build.tmp}/java/out/graph#1713180196390123199" fork="false" includeantruntime="false" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/graph#1713180196390123199" fork="false" encoding="utf8" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${graph.lang}/languages/graph/generator/source_gen" />
@@ -621,7 +621,7 @@
   <target name="java.compile.plantUML" depends="fetchDependencies">
     <mkdir dir="${plantuml.lang}/languages/plantUML/source_gen" />
     <mkdir dir="${build.tmp}/java/out/plantUML" />
-    <javac destdir="${build.tmp}/java/out/plantUML" fork="false" includeantruntime="false" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/plantUML" fork="false" encoding="utf8" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${plantuml.lang}/languages/plantUML/source_gen" />
@@ -665,7 +665,7 @@
   <target name="java.compile.plantUML#3560655027465713227" depends="java.compile.plantUML, fetchDependencies">
     <mkdir dir="${plantuml.lang}/languages/plantUML/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/plantUML#3560655027465713227" />
-    <javac destdir="${build.tmp}/java/out/plantUML#3560655027465713227" fork="false" includeantruntime="false" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/plantUML#3560655027465713227" fork="false" encoding="utf8" includeantruntime="false" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${plantuml.lang}/languages/plantUML/generator/source_gen" />
