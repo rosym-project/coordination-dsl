@@ -122,7 +122,7 @@
     <node concept="AA6MR" id="3YYQsimI5Ls" role="AA3t3">
       <property role="TrG5h" value="Bar" />
       <property role="AyEUC" value="true" />
-      <ref role="ABQvG" node="3YYQsimI5M2" resolve="System Idle" />
+      <ref role="ABQvG" node="3YYQsimI5LX" resolve="foo Parallel" />
       <node concept="ABKeK" id="3YYQsimI5LX" role="AA3t3">
         <property role="TrG5h" value="foo Parallel" />
         <property role="AyEUC" value="true" />
@@ -475,7 +475,7 @@
       </node>
       <node concept="2eRDY6" id="6yWTLzAs9ya" role="2eRWNA">
         <property role="TrG5h" value="fun" />
-        <ref role="2eQjBW" node="6yWTLzApKxw" resolve="finish" />
+        <ref role="2eQjBW" node="6yWTLzApKx_" resolve="initial" />
       </node>
     </node>
     <node concept="ABKeK" id="6yWTLzAskR5" role="AA3t3">
