@@ -14,6 +14,15 @@
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
@@ -145,6 +154,12 @@
       <property role="20kJfa" value="states" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5mpyFhN0kXB" resolve="StateLike" />
+    </node>
+    <node concept="1TJgyj" id="6yWTLzAoMJY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="histories" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6yWTLzAoByu" resolve="History" />
     </node>
     <node concept="PrWs8" id="5mpyFhN0rRZ" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -636,6 +651,40 @@
     <property role="TrG5h" value="TransitionTarget" />
     <node concept="PrWs8" id="6yWTLzAkp42" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6yWTLzAoByu">
+    <property role="1pbfSe" value="1327456182" />
+    <property role="TrG5h" value="History" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6yWTLzAoByv" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6yWTLzAoBy_" role="PzmwI">
+      <ref role="PrY4T" node="6yWTLzAkp41" resolve="TransitionTarget" />
+    </node>
+    <node concept="1TJgyi" id="6yWTLzAoH4p" role="1TKVEl">
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="6yWTLzAoH4k" resolve="HistoryType" />
+    </node>
+    <node concept="1TJgyj" id="6yWTLzAptV$" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="fallback" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5mpyFhN0kXB" resolve="StateLike" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="6yWTLzAoH4k">
+    <property role="TrG5h" value="HistoryType" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="6yWTLzAoH4l" role="M5hS2">
+      <property role="1uS6qv" value="shallow" />
+      <property role="1uS6qo" value="shallow" />
+    </node>
+    <node concept="M4N5e" id="6yWTLzAoH4m" role="M5hS2">
+      <property role="1uS6qv" value="deep" />
+      <property role="1uS6qo" value="deep" />
     </node>
   </node>
 </model>

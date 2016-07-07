@@ -14,6 +14,10 @@
       <concept id="2935010982282873333" name="coordination.structure.String" flags="ng" index="ar0$5">
         <property id="2935010982282873551" name="String" index="ar0CZ" />
       </concept>
+      <concept id="7547161169696553118" name="coordination.structure.History" flags="ng" index="2eRDY6">
+        <property id="7547161169696575769" name="type" index="2eRzo1" />
+        <reference id="7547161169696775908" name="fallback" index="2eQjBW" />
+      </concept>
       <concept id="6168113672289368875" name="coordination.structure.WaitDuration" flags="ng" index="A$36v">
         <property id="6168113672289368927" name="milliseconds" index="A$37F" />
       </concept>
@@ -32,6 +36,7 @@
       </concept>
       <concept id="6168113672288845302" name="coordination.structure.StateContainer" flags="ng" index="AA3t2">
         <reference id="6168113672289185112" name="initialstate" index="ABQvG" />
+        <child id="7547161169696599038" name="histories" index="2eRWNA" />
         <child id="6168113672288845303" name="states" index="AA3t3" />
       </concept>
       <concept id="6168113672288855555" name="coordination.structure.CompositeState" flags="ng" index="AA6MR" />
@@ -448,6 +453,45 @@
       <property role="AyEUC" value="true" />
       <node concept="A$mYG" id="6xZndSPGYOX" role="A$mYV">
         <property role="A$mZM" value="GOOD" />
+      </node>
+    </node>
+  </node>
+  <node concept="1HUUU" id="6yWTLzApKxt">
+    <property role="TrG5h" value="HistoryTest" />
+    <ref role="ABQvG" node="6yWTLzApKxu" resolve="AState" />
+    <node concept="AA6MR" id="6yWTLzApKxu" role="AA3t3">
+      <property role="TrG5h" value="AState" />
+      <ref role="ABQvG" node="6yWTLzApKx_" resolve="initial" />
+      <node concept="AAcsC" id="6yWTLzApKx_" role="AA3t3">
+        <property role="TrG5h" value="initial" />
+      </node>
+      <node concept="AAcsC" id="6yWTLzApKxw" role="AA3t3">
+        <property role="TrG5h" value="finish" />
+        <property role="AyEUC" value="true" />
+      </node>
+      <node concept="2eRDY6" id="6yWTLzAs9y8" role="2eRWNA">
+        <property role="TrG5h" value="test" />
+        <ref role="2eQjBW" node="6yWTLzApKxw" resolve="finish" />
+      </node>
+      <node concept="2eRDY6" id="6yWTLzAs9ya" role="2eRWNA">
+        <property role="TrG5h" value="fun" />
+        <ref role="2eQjBW" node="6yWTLzApKxw" resolve="finish" />
+      </node>
+    </node>
+    <node concept="ABKeK" id="6yWTLzAskR5" role="AA3t3">
+      <property role="TrG5h" value="paraFun" />
+      <ref role="ABQvG" node="6yWTLzAskRf" resolve="funnyStart" />
+      <node concept="AAcsC" id="6yWTLzAskRf" role="AA3t3">
+        <property role="TrG5h" value="funnyStart" />
+      </node>
+      <node concept="AAcsC" id="6yWTLzAskRo" role="AA3t3">
+        <property role="TrG5h" value="funnyEnd" />
+        <property role="AyEUC" value="true" />
+      </node>
+      <node concept="2eRDY6" id="6yWTLzAskRu" role="2eRWNA">
+        <property role="TrG5h" value="test_start" />
+        <property role="2eRzo1" value="deep" />
+        <ref role="2eQjBW" node="6yWTLzAskRf" resolve="funnyStart" />
       </node>
     </node>
   </node>

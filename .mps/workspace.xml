@@ -7,14 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dadeb08a-6b99-426d-bfc0-2cf62190392c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/encodings.xml" afterPath="$PROJECT_DIR$/.mps/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/misc.xml" afterPath="$PROJECT_DIR$/.mps/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/vcs.xml" afterPath="$PROJECT_DIR$/.mps/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/coordination/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/languages/coordination/generator/template/main@generator.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/coordination/languageModels/behavior.mps" afterPath="$PROJECT_DIR$/languages/coordination/languageModels/behavior.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/coordination/languageModels/constraints.mps" afterPath="$PROJECT_DIR$/languages/coordination/languageModels/constraints.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/coordination/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languages/coordination/languageModels/editor.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/coordination/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/coordination/languageModels/structure.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/coordination/sandbox/models/coordination/sandbox.mps" afterPath="$PROJECT_DIR$/languages/coordination/sandbox/models/coordination/sandbox.mps" />
     </list>
     <ignored path="Coordination.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -48,7 +47,7 @@
       <list>
         <TabState>
           <option name="title" value="Console" />
-          <option name="history" value="kaurqQAABAAHKODJnXCKQksOoq0pw/Fh7BMAABlUZW1wTW9kZWxfMTMwMDMzMTU2OTM1NTk1F0iBkHLXoYlCeKCM1dVvRxfyAAAuVGVtcE1vZHVsZTgxOTA3MmQ3LWExODktNDI3OC1hMDhjLWQ1ZDU2ZjQ3MTdmMv////+rq6urWlpaWgACzqtRlSXqTyKbkhA7lcqMDAAAF2pldGJyYWlucy5tcHMubGFuZy5jb3JlAAEAAAEQOW6qpAAADUlOYW1lZENvbmNlcHQAEgABAAABEDluwEEAAARuYW1lAAAAAN4a2G1uUEoCswbU0X9kw3UAABpqZXRicmFpbnMubXBzLmNvbnNvbGUuYmFzZQADFfs0BR9yWiwAAAtDb25zb2xlUm9vdAASAAAAAAACFfs0BR9yW68AAAdoaXN0b3J5ABX7NAUfcluxAAANY29tbWFuZEhvbGRlcgAE4nFgrLRISwAADUNvbW1hbmRIb2xkZXIAEgAAAAAAAAqDXyjBqgK+AAAHSGlzdG9yeQASAAAAAAAApaWlpQAE3hrYbW5QSgKzBtTRf2TDdQEAAAAF8maR0g3vTAauxiy5DErwpAAAHWpldGJyYWlucy5tcHMuY29uc29sZS5zY3JpcHRzpeTeU0ajRNqqs2j98cNO0AAAIWpldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kc5lac5R/dkuLqSnFNEhwgQYAACZqZXRicmFpbnMubXBzLmNvbnNvbGUuaW50ZXJuYWxDb21tYW5kcwAAAAEXSPvCXdJdpEg6ixlwko4bYtcAACRqZXRicmFpbnMubXBzLmRldmtpdC5nZW5lcmFsLXB1cnBvc2UAAAAEByg1mx0rd8RG35vysly+oyJUAAAkamV0YnJhaW5zLm1wcy5jb25zb2xlLmJhc2Uuc3RydWN0dXJlcP////8HKOcS81NcPEKIrc6HyValL/sAACdqZXRicmFpbnMubXBzLmNvbnNvbGUuc2NyaXB0cy5zdHJ1Y3R1cmVw/////wcoE1pgbwN2TFyauEAw8FGgYgAAK2pldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kcy5zdHJ1Y3R1cmVw/////wcokERSBqlzTB23YDDlx3t0lwAAMGpldGJyYWlucy5tcHMuY29uc29sZS5pbnRlcm5hbENvbW1hbmRzLnN0cnVjdHVyZXD/////urq6ugAAAAEAARhovOcY5laQjv//ewAAAAAAAAAAAAIAAxhovOcY5laQjwAAewAAAAAAAAAAAAB9AAIYaLznGOZWkJAAAXsAAQAAAQAAAAkAAAAAAAAAAH19" />
+          <option name="history" value="kaurqQAABAAHKOSTDUm+Ok0XnFFX8RN63EcAABlUZW1wTW9kZWxfMTMyODYyNzcwMDc2NDkxF0gq9OBrWtlO7pXPIR8P1iVPAAAuVGVtcE1vZHVsZTJhZjRlMDZiLTVhZDktNGVlZS05NWNmLTIxMWYwZmQ2MjU0Zv////+rq6urWlpaWgACzqtRlSXqTyKbkhA7lcqMDAAAF2pldGJyYWlucy5tcHMubGFuZy5jb3JlAAEAAAEQOW6qpAAADUlOYW1lZENvbmNlcHQAEgABAAABEDluwEEAAARuYW1lAAAAAN4a2G1uUEoCswbU0X9kw3UAABpqZXRicmFpbnMubXBzLmNvbnNvbGUuYmFzZQADFfs0BR9yWiwAAAtDb25zb2xlUm9vdAASAAAAAAACFfs0BR9yW68AAAdoaXN0b3J5ABX7NAUfcluxAAANY29tbWFuZEhvbGRlcgAE4nFgrLRISwAADUNvbW1hbmRIb2xkZXIAEgAAAAAAAAqDXyjBqgK+AAAHSGlzdG9yeQASAAAAAAAApaWlpQAE3hrYbW5QSgKzBtTRf2TDdQEAAAAF8maR0g3vTAauxiy5DErwpAAAHWpldGJyYWlucy5tcHMuY29uc29sZS5zY3JpcHRzpeTeU0ajRNqqs2j98cNO0AAAIWpldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kc5lac5R/dkuLqSnFNEhwgQYAACZqZXRicmFpbnMubXBzLmNvbnNvbGUuaW50ZXJuYWxDb21tYW5kcwAAAAEXSPvCXdJdpEg6ixlwko4bYtcAACRqZXRicmFpbnMubXBzLmRldmtpdC5nZW5lcmFsLXB1cnBvc2UAAAAEByg1mx0rd8RG35vysly+oyJUAAAkamV0YnJhaW5zLm1wcy5jb25zb2xlLmJhc2Uuc3RydWN0dXJlcP////8HKOcS81NcPEKIrc6HyValL/sAACdqZXRicmFpbnMubXBzLmNvbnNvbGUuc2NyaXB0cy5zdHJ1Y3R1cmVw/////wcoE1pgbwN2TFyauEAw8FGgYgAAK2pldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kcy5zdHJ1Y3R1cmVw/////wcokERSBqlzTB23YDDlx3t0lwAAMGpldGJyYWlucy5tcHMuY29uc29sZS5pbnRlcm5hbENvbW1hbmRzLnN0cnVjdHVyZXD/////urq6ugAAAAEAARhovOcY5mhg9///ewAAAAAAAAAAAAIAAxhovOcY5mhg+AAAewAAAAAAAAAAAAB9AAIYaLznGOZoYPkAAXsAAQAAAQAAAAkAAAAAAAAAAH19" />
         </TabState>
       </list>
     </option>
@@ -69,113 +68,37 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StateLike" pinned="false" current-in-tab="false">
-        <entry file="mps://node://coordination/coordination.structure/StateLike">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="231" />
-                    <property name="caretXRelative" value="76" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="name" cellNumber="0" isInList="false">
-                      <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/6168113672288816999" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-              </memento>
-              <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/6168113672288816999" />
+      <file leaf-file-name="HistoryTest.xml" pinned="false" current-in-tab="false">
+        <entry file="previewcoordination.sandbox@0/HistoryTest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="10" selection-start-line="5" selection-start-column="2" selection-end-line="22" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Transition" pinned="false" current-in-tab="false">
-        <entry file="mps://node://coordination/coordination.structure/Transition">
+      <file leaf-file-name="Bla.Blubb-foo_u18" pinned="false" current-in-tab="false">
+        <entry file="mps://node://coordination.sandbox/coordination.sandbox/Bla.Blubb-foo_u18">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="71" />
-                    <property name="caretXRelative" value="56" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                      <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/6168113672289313863" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-              </memento>
-              <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/6168113672289313863" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransitionTarget" pinned="false" current-in-tab="false">
-        <entry file="mps://node://coordination/coordination.structure/TransitionTarget">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="279" />
-                    <property name="caretXRelative" value="132" />
+                    <property name="caretX" value="127" />
+                    <property name="caretXRelative" value="4" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:8dae407c-af73-48e9-affd-ab32cfe15628(coordination/coordination.behavior)/7547161169695445644" />
+                      <node node_reference="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/2985869118319538977" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorMarkers />
                 <transactionalProperties />
                 <collapsed />
-              </memento>
-              <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
                 <enabledHints />
-              </inspectorMemento>
-              <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:8dae407c-af73-48e9-affd-ab32cfe15628(coordination/coordination.behavior)/7547161169695445644" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main" pinned="false" current-in-tab="false">
-        <entry file="mps://node://coordination#3975843521651967143/coordination.generator.template.plantUML@generator/main">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
               </memento>
-              <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7547161169697525208" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -186,39 +109,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WaitFail" pinned="false" current-in-tab="true">
-        <entry file="mps://node://coordination.sandbox/coordination.sandbox/WaitFail">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="514">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="103" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="empty_actions" cellNumber="0" isInList="false">
-                      <node node_reference="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-              </memento>
-              <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WaitFail.graph.xml" pinned="false" current-in-tab="false">
-        <entry file="previewcoordination.sandbox@0/WaitFail.graph.xml">
+      <file leaf-file-name="HistoryTest.graph.xml" pinned="false" current-in-tab="false">
+        <entry file="previewcoordination.sandbox@0/HistoryTest.graph.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -226,50 +118,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WaitFail.plant" pinned="false" current-in-tab="false">
-        <entry file="previewcoordination.sandbox@0/WaitFail.plant">
+      <file leaf-file-name="HistoryTest.plant" pinned="false" current-in-tab="false">
+        <entry file="previewcoordination.sandbox@0/HistoryTest.plant">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParallelState" pinned="false" current-in-tab="false">
-        <entry file="mps://node://coordination/coordination.structure/ParallelState">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-              </memento>
-              <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="90263a5b-f84d-4b33-85d5-679100c0e752/r:ed56809a-0c79-42ba-9b8a-5910c29a9078(coordination#3975843521651967143/coordination.generator.template.plantUML@generator)/6392688875663130983" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test1" pinned="false" current-in-tab="false">
-        <entry file="mps://node://Tests/Tests.Issue1972/Test1">
+      <file leaf-file-name="HistoryTest" pinned="false" current-in-tab="true">
+        <entry file="mps://node://coordination.sandbox/coordination.sandbox/HistoryTest">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="108">
+              <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="119" />
-                    <property name="caretXRelative" value="12" />
+                    <property name="caretX" value="263" />
+                    <property name="caretXRelative" value="36" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="b0b9ee69-626f-4bed-b886-381ef65b97f1/r:467a8af4-10f0-4b4a-b292-ca5745808f04(Tests/Tests.Issue1972)/6456215011179899874" />
+                    <cellInfo cellId="F_property_isfinalstate" cellNumber="0" isInList="false">
+                      <node node_reference="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7547161169697525208" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -277,35 +147,13 @@
                 <transactionalProperties />
                 <collapsed />
               </memento>
-              <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7547161169697525208" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
                 <collapsed />
                 <enabledHints />
               </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompositeState" pinned="false" current-in-tab="false">
-        <entry file="mps://node://coordination/coordination.structure/CompositeState">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="41">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-              </memento>
-              <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <collapsed />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="90263a5b-f84d-4b33-85d5-679100c0e752/r:ed56809a-0c79-42ba-9b8a-5910c29a9078(coordination#3975843521651967143/coordination.generator.template.plantUML@generator)/3560655027470369389" />
             </state>
           </provider>
         </entry>
@@ -481,12 +329,88 @@
               <option name="myItemId" value="$PROJECT_DIR$/languages/coordination/sandbox/coordination.sandbox.msd" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure) in IdeaFile{file:///home/michael/Repositories/DSL/mps_3.3/coord-dsl/languages/coordination/languageModels/structure.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor) in IdeaFile{file:///home/michael/Repositories/DSL/mps_3.3/coord-dsl/languages/coordination/languageModels/editor.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coordination#3975843521651967143" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coordination" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coordination#3975843521651967143" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="coordination" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox) in IdeaFile{file:///home/michael/Repositories/DSL/mps_3.3/coord-dsl/languages/coordination/sandbox/models/coordination/sandbox.mps}" />
+              <option name="myItemId" value="90263a5b-f84d-4b33-85d5-679100c0e752/r:7fd39c94-043f-48c6-8404-68912c6016cc(coordination#3975843521651967143/coordination.generator.template.main@generator) in IdeaFile{file:///home/michael/Repositories/DSL/mps_3.3/coord-dsl/languages/coordination/generator/template/main@generator.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -496,17 +420,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/coordination/sandbox/coordination.sandbox.msd" />
+              <option name="myItemId" value="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="coordination" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:14eed51a-a846-4ba4-bf77-baa9972bdeb9(coordination/coordination.constraints) in IdeaFile{file:///home/michael/Repositories/DSL/mps_3.3/coord-dsl/languages/coordination/languageModels/constraints.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -516,7 +434,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="$PROJECT_DIR$/languages/coordination/sandbox/coordination.sandbox.msd" />
+              <option name="myItemId" value="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coordination#3975843521651967143" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -526,7 +448,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="05b3ce81-ad9b-4836-b473-d98f0216c2ac(coordination)" />
+              <option name="myItemId" value="$PROJECT_DIR$/languages/coordination/sandbox/coordination.sandbox.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coordination" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -545,7 +471,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rsb-coordination" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../coord-dsl-history" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
@@ -593,7 +519,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32087228" sideWeight="0.48173004" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32087228" sideWeight="0.4668158" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2009009" sideWeight="0.5028993" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -601,12 +527,12 @@
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32087228" sideWeight="0.51826996" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23520249" sideWeight="0.51230425" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23520249" sideWeight="0.49340177" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23520249" sideWeight="0.48769575" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932332" sideWeight="0.49706745" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293687" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -614,7 +540,7 @@
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17449665" sideWeight="0.80961186" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30201343" sideWeight="0.80961186" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5130597" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -648,35 +574,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="added ifelse" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ifelse" />
+    <MESSAGE value="- add concept of 'TransitionTarget' to allow implementation of History" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add concept of 'TransitionTarget' to allow implementation of History" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure/BaseConcept">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="mps://node://coordination/coordination.structure/SCXMLInvokeVariable">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="mps://node://coordination/coordination.structure/WaitDuration">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="mps://node://coordination/coordination.structure/WaitForEvent">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="mps://node://coordination/coordination.structure/FireEvent">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="mps://node://coordination/coordination.structure/LogMessage">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state />
@@ -706,22 +609,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="mps://node://coordination/coordination.structure/AbstractStateContainer">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="mps://node://coordination/coordination.structure/AbstractState">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state />
       </provider>
     </entry>
     <entry file="mps://node://coordination/coordination.structure/Condition">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="mps://node://coordination/coordination.structure/SCXMLInvoke">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state />
       </provider>
@@ -741,17 +634,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="mps://node://coordination/coordination.structure/StateContainer">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="mps://node://coordination/coordination.structure/Action">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="mps://node://coordination/coordination.structure/Comment">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state />
       </provider>
@@ -842,46 +725,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="mps://node://coordination.sandbox/coordination.sandbox/Test">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="76">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="495" />
-                <property name="caretXRelative" value="36" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name_1" cellNumber="0" isInList="false">
-                  <node node_reference="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/3814223991398588816" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </memento>
-          <inspectorMemento currentlyEditedNode="90263a5b-f84d-4b33-85d5-679100c0e752/r:7fd39c94-043f-48c6-8404-68912c6016cc(coordination#3975843521651967143/coordination.generator.template.main@generator)/4593348108327738699" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="255" />
-                <property name="caretXRelative" value="92" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name_1" cellNumber="0" isInList="false">
-                  <node node_reference="90263a5b-f84d-4b33-85d5-679100c0e752/r:7fd39c94-043f-48c6-8404-68912c6016cc(coordination#3975843521651967143/coordination.generator.template.main@generator)/4593348108327738699" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://coordination/coordination.structure/VariableDeclaration">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state />
@@ -920,11 +763,6 @@
             <collapsed />
           </inspectorMemento>
         </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://coordination/coordination.structure/Invoke">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state />
       </provider>
     </entry>
     <entry file="mps://node://coordination.sandbox/coordination.sandbox/invoked">
@@ -1050,36 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://coordination.sandbox/coordination.sandbox/Bla.Blubb-foo_u18">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="127" />
-                <property name="caretXRelative" value="4" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/2985869118319538977" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </memento>
-          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://coordination.sandbox/coordination.sandbox/Conditions">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -1110,105 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://coordination.sandbox/coordination.sandbox/Scenario-Coordination">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_pktb5_d0" cellNumber="0" isInList="false">
-                  <node node_reference="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/4593348108329966717" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://coordination/coordination.structure/StateMachine">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="90263a5b-f84d-4b33-85d5-679100c0e752/r:ed56809a-0c79-42ba-9b8a-5910c29a9078(coordination#3975843521651967143/coordination.generator.template.plantUML@generator)/3560655027467888844" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://coordination/coordination.structure/CompositeState">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="41">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="90263a5b-f84d-4b33-85d5-679100c0e752/r:ed56809a-0c79-42ba-9b8a-5910c29a9078(coordination#3975843521651967143/coordination.generator.template.plantUML@generator)/3560655027470369389" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://coordination/coordination.structure/StateLike">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="231" />
-                <property name="caretXRelative" value="76" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="name" cellNumber="0" isInList="false">
-                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/6168113672288816999" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/6168113672288816999" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://Tests/Tests.Issue1972/Test1">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -1228,7 +937,173 @@
             <transactionalProperties />
             <collapsed />
           </memento>
-          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/7547161169696599038" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination#3975843521651967143/coordination.generator.template.plantUML@generator/main">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/7547161169696645248" viewPositionX="0" viewPositionY="129">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination/coordination.structure/TransitionTarget">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="279" />
+                <property name="caretXRelative" value="132" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:8dae407c-af73-48e9-affd-ab32cfe15628(coordination/coordination.behavior)/7547161169695445644" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="90263a5b-f84d-4b33-85d5-679100c0e752/r:7fd39c94-043f-48c6-8404-68912c6016cc(coordination#3975843521651967143/coordination.generator.template.main@generator)/3560655027468155069" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:8dae407c-af73-48e9-affd-ab32cfe15628(coordination/coordination.behavior)/7547161169695445644" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination/coordination.structure/Invoke">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="207" />
+                <property name="caretXRelative" value="52" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/7751562694796638040" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/7547161169696553118" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/7751562694796638040" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination/coordination.structure/StateMachine">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="271" />
+                <property name="caretXRelative" value="216" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="90263a5b-f84d-4b33-85d5-679100c0e752/r:7fd39c94-043f-48c6-8404-68912c6016cc(coordination#3975843521651967143/coordination.generator.template.main@generator)/3560655027468155069" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:14eed51a-a846-4ba4-bf77-baa9972bdeb9(coordination/coordination.constraints)/4229671687300828605" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="90263a5b-f84d-4b33-85d5-679100c0e752/r:7fd39c94-043f-48c6-8404-68912c6016cc(coordination#3975843521651967143/coordination.generator.template.main@generator)/3560655027468155069" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination#3975843521651967143/coordination.generator.template.main@generator/main">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="1881">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="653" />
+                <property name="caretXRelative" value="112" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="90263a5b-f84d-4b33-85d5-679100c0e752/r:7fd39c94-043f-48c6-8404-68912c6016cc(coordination#3975843521651967143/coordination.generator.template.main@generator)/7547161169696795726" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="90263a5b-f84d-4b33-85d5-679100c0e752/r:ed56809a-0c79-42ba-9b8a-5910c29a9078(coordination#3975843521651967143/coordination.generator.template.plantUML@generator)/7802550920364582355" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-451" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_t2jtrp_a" cellNumber="0" isInList="false">
+                  <node node_reference="90263a5b-f84d-4b33-85d5-679100c0e752/r:ed56809a-0c79-42ba-9b8a-5910c29a9078(coordination#3975843521651967143/coordination.generator.template.plantUML@generator)/7802550920364585174" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination#3975843521651967143/coordination.generator.template.main@generator/reduce_History">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7547161169696852062" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1241,7 +1116,7 @@
     <entry file="mps://node://coordination.sandbox/coordination.sandbox/WaitFail">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="514">
+          <memento viewPositionX="0" viewPositionY="459">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
@@ -1267,42 +1142,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://coordination#3975843521651967143/coordination.generator.template.plantUML@generator/main">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <collapsed />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://coordination/coordination.structure/ParallelState">
+    <entry file="mps://node://coordination/coordination.structure/SCXMLInvoke">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="271" />
+                <property name="caretXRelative" value="92" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:14eed51a-a846-4ba4-bf77-baa9972bdeb9(coordination/coordination.constraints)/1828569902081737028" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
             <errorMarkers />
             <transactionalProperties />
             <collapsed />
           </memento>
-          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:14eed51a-a846-4ba4-bf77-baa9972bdeb9(coordination/coordination.constraints)/1828569902081737028" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
             <collapsed />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="90263a5b-f84d-4b33-85d5-679100c0e752/r:ed56809a-0c79-42ba-9b8a-5910c29a9078(coordination#3975843521651967143/coordination.generator.template.plantUML@generator)/6392688875663130983" />
+          <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:14eed51a-a846-4ba4-bf77-baa9972bdeb9(coordination/coordination.constraints)/1828569902081737028" />
         </state>
       </provider>
     </entry>
@@ -1313,11 +1179,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
+                <property name="caretX" value="263" />
+                <property name="caretXRelative" value="84" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/6168113672289313863" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:14eed51a-a846-4ba4-bf77-baa9972bdeb9(coordination/coordination.constraints)/4229671687300546214" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1325,29 +1191,88 @@
             <transactionalProperties />
             <collapsed />
           </memento>
-          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:14eed51a-a846-4ba4-bf77-baa9972bdeb9(coordination/coordination.constraints)/4229671687300546214" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
             <collapsed />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/6168113672289313863" />
+          <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:14eed51a-a846-4ba4-bf77-baa9972bdeb9(coordination/coordination.constraints)/4229671687300546214" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://coordination/coordination.structure/TransitionTarget">
+    <entry file="mps://node://coordination.sandbox/coordination.sandbox/Test">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="135" />
+                <property name="caretXRelative" value="4" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="empty_histories" cellNumber="0" isInList="false">
+                  <node node_reference="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/3560655027470659340" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </memento>
+          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/3560655027470659340" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination/coordination.structure/HistoryType">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="223" />
+                <property name="caretXRelative" value="44" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/7547161169696575764" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/7547161169696575764" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination/coordination.structure/StateContainer">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="279" />
-                <property name="caretXRelative" value="132" />
+                <property name="caretX" value="271" />
+                <property name="caretXRelative" value="116" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:8dae407c-af73-48e9-affd-ab32cfe15628(coordination/coordination.behavior)/7547161169695445644" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/6168113672288845302" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1355,14 +1280,288 @@
             <transactionalProperties />
             <collapsed />
           </memento>
-          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7529839211440237375" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/6168113672288845302" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
             <collapsed />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:8dae407c-af73-48e9-affd-ab32cfe15628(coordination/coordination.behavior)/7547161169695445644" />
+          <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)/6168113672288845302" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination/coordination.structure/CompositeState">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="123" />
+                <property name="caretXRelative" value="44" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/7547161169697368472" />
+                </cellInfo>
+              </stackElement>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
+                <property name="role" value="childCellModel" />
+                <property name="modelId" value="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)" />
+                <property name="firstNodeId" value="7547161169697368472" />
+                <property name="parentNodeId" value="6168113672288855598" />
+                <property name="lastNodeId" value="7547161169697368472" />
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </inspectorMemento>
+          <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/6168113672288855596" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination/coordination.structure/ParallelState">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="227" />
+                <property name="caretXRelative" value="12" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReadOnlyModelAccessor_abi8e8_a" cellNumber="0" isInList="false">
+                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/7547161169697504248" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/7547161169697504248" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/6168113672289159442" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination/coordination.structure/Comment">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="303" />
+                <property name="caretXRelative" value="60" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/4593348108329604354" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/4593348108329604354" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/4593348108329604354" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination/coordination.structure/AbstractStateContainer">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="179" />
+                <property name="caretXRelative" value="20" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a" cellNumber="0" isInList="false">
+                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/7547161169697368469" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/7547161169697368469" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/7547161169697368468" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination/coordination.structure/History">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="439" />
+                <property name="caretXRelative" value="12" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_text" cellNumber="0" isInList="false">
+                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/7547161169696775948" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7547161169697525214" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/7547161169696575776" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination.sandbox/coordination.sandbox/Scenario-Coordination">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_pktb5_d0" cellNumber="0" isInList="false">
+                  <node node_reference="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/4593348108329966717" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/4593348108329966717" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination/coordination.structure/StateLike">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="91" />
+                <property name="caretXRelative" value="20" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a" cellNumber="0" isInList="false">
+                  <node node_reference="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/6610381906023058706" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/6610381906023058706" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:356b80db-9f08-46a9-ab26-85bfdbb9b1db(coordination/coordination.editor)/6168113672289368967" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination.sandbox/coordination.sandbox/Bla.Blubb-foo_u18">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="127" />
+                <property name="caretXRelative" value="4" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/2985869118319538977" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </memento>
+          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7547161169697525208" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://coordination.sandbox/coordination.sandbox/HistoryTest">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="263" />
+                <property name="caretXRelative" value="36" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="F_property_isfinalstate" cellNumber="0" isInList="false">
+                  <node node_reference="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7547161169697525208" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="cf56bcc1-06d5-401d-9cc8-128578997ab0/r:3cf2e0e1-1643-42e4-ad10-d03b790794ea(coordination.sandbox/coordination.sandbox)/7547161169697525208" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <collapsed />
+            <enabledHints />
+          </inspectorMemento>
         </state>
       </provider>
     </entry>
