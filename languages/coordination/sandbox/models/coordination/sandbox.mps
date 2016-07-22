@@ -221,7 +221,7 @@
   </node>
   <node concept="1HUUU" id="35DZe7vWTIA">
     <property role="TrG5h" value="Test" />
-    <ref role="ABQvG" node="35DZe7vWTJ6" resolve="A" />
+    <ref role="ABQvG" node="35DZe7w6eWc" resolve="AB" />
     <node concept="AA6MR" id="35DZe7w6eWc" role="AA3t3">
       <property role="TrG5h" value="AB" />
       <ref role="ABQvG" node="35DZe7w6eWy" resolve="AB  C" />
@@ -249,14 +249,11 @@
       <node concept="AAcsC" id="35DZe7w6eWy" role="AA3t3">
         <property role="TrG5h" value="AB  C" />
         <property role="AyEUC" value="true" />
-        <node concept="A$mVN" id="35DZe7w6fOK" role="A$mYT">
-          <ref role="A$mVY" node="35DZe7w6fOx" resolve="D" />
-          <node concept="2D1ejp" id="35DZe7w9RNy" role="A$mYR">
-            <property role="2D1eiI" value="Foobar" />
-          </node>
-        </node>
         <node concept="A$5BF" id="3jIQ8bP1rKn" role="A$mYV">
           <property role="A$5Bg" value="test" />
+        </node>
+        <node concept="A$mVN" id="2vBk2s4GA5q" role="A$mYT">
+          <ref role="A$mVY" node="35DZe7w6fOx" resolve="D" />
         </node>
       </node>
       <node concept="A$mVN" id="35DZe7w6eWB" role="A$mYT">
@@ -464,6 +461,9 @@
       <ref role="ABQvG" node="6yWTLzApKx_" resolve="initial" />
       <node concept="AAcsC" id="6yWTLzApKx_" role="AA3t3">
         <property role="TrG5h" value="initial" />
+        <node concept="A$mVN" id="2vBk2s4GA5Q" role="A$mYT">
+          <ref role="A$mVY" node="6yWTLzApKxw" resolve="finish" />
+        </node>
       </node>
       <node concept="AAcsC" id="6yWTLzApKxw" role="AA3t3">
         <property role="TrG5h" value="finish" />
