@@ -38,6 +38,10 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
+        <child id="1081256993305" name="classType" index="2ZW6by" />
+        <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -450,12 +454,22 @@
           <ref role="3cqZAo" node="2pOAke0fCko" resolve="unreachableNodes" />
         </node>
         <node concept="3clFbS" id="2pOAke0fCkI" role="2LFqv$">
-          <node concept="a7r0C" id="2pOAke0fHU0" role="3cqZAp">
-            <node concept="Xl_RD" id="2pOAke0fHUU" role="a7wSD">
-              <property role="Xl_RC" value="This state is unreachable or contains unreachable states." />
+          <node concept="3clFbJ" id="6JJZnStGv9c" role="3cqZAp">
+            <node concept="3clFbS" id="6JJZnStGv9e" role="3clFbx">
+              <node concept="a7r0C" id="2pOAke0fHU0" role="3cqZAp">
+                <node concept="Xl_RD" id="2pOAke0fHUU" role="a7wSD">
+                  <property role="Xl_RC" value="This state is unreachable or contains unreachable states." />
+                </node>
+                <node concept="2GrUjf" id="2pOAke0fHWk" role="2OEOjV">
+                  <ref role="2Gs0qQ" node="2pOAke0fCkG" resolve="unreachableNode" />
+                </node>
+              </node>
             </node>
-            <node concept="2GrUjf" id="2pOAke0fHWk" role="2OEOjV">
-              <ref role="2Gs0qQ" node="2pOAke0fCkG" resolve="unreachableNode" />
+            <node concept="2ZW3vV" id="6JJZnStGDcX" role="3clFbw">
+              <node concept="3Tqbb2" id="6JJZnStGDh2" role="2ZW6by" />
+              <node concept="2GrUjf" id="6JJZnStGv9U" role="2ZW6bz">
+                <ref role="2Gs0qQ" node="2pOAke0fCkG" resolve="unreachableNode" />
+              </node>
             </node>
           </node>
         </node>
