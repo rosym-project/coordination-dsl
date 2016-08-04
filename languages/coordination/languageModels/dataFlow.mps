@@ -13,6 +13,8 @@
   <imports>
     <import index="tpem" ref="r:00000000-0000-4000-0000-011c895902c2(jetbrains.mps.baseLanguage.dataFlow)" />
     <import index="tp41" ref="r:00000000-0000-4000-0000-011c8959037d(jetbrains.mps.lang.dataFlow.structure)" />
+    <import index="74vq" ref="r:097c31e1-e481-482f-b972-3daad8ecf512(SystemsCoordination.dataFlow)" />
+    <import index="dau9" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework.instructions(MPS.Core/)" />
     <import index="l1y1" ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)" implicit="true" />
   </imports>
   <registry>
@@ -308,10 +310,9 @@
               </node>
             </node>
             <node concept="3clFbH" id="2S2UL5dsqrN" role="3cqZAp" />
-            <node concept="1X3_iC" id="2S2UL5dsuS3" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3_JC1X" id="4luzaQL2g5d" role="8Wnug">
+            <node concept="3clFbH" id="5ogXbwfknGO" role="3cqZAp" />
+            <node concept="3F2QtG" id="5ogXbwfkNhm" role="3cqZAp">
+              <node concept="3_JC1X" id="4luzaQL2g5d" role="3F2SoO">
                 <node concept="3_IKw2" id="4luzaQL2g7w" role="3_JbIs">
                   <node concept="3__QtB" id="4luzaQL2g85" role="3_I9Fq" />
                 </node>
@@ -416,6 +417,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="5ogXbwfkb$G" role="3cqZAp" />
       </node>
     </node>
   </node>
