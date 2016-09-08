@@ -309,18 +309,12 @@
             <property role="2Ry0Am" value=".." />
             <node concept="2Ry0Ak" id="zg0vcO49SO" role="2Ry0An">
               <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="zg0vcO49TK" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="2uXg0G7k6Oc" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="2uXg0G7k6Oj" role="2Ry0An">
-                    <property role="2Ry0Am" value="Applications" />
-                    <node concept="2Ry0Ak" id="2uXg0G7k6Oq" role="2Ry0An">
-                      <property role="2Ry0Am" value="MPS 3.3.app" />
-                      <node concept="2Ry0Ak" id="2uXg0G7k6Ox" role="2Ry0An">
-                        <property role="2Ry0Am" value="Contents" />
-                      </node>
-                    </node>
+              <node concept="2Ry0Ak" id="1XsW4J2F76Y" role="2Ry0An">
+                <property role="2Ry0Am" value="Stuff" />
+                <node concept="2Ry0Ak" id="1XsW4J2F785" role="2Ry0An">
+                  <property role="2Ry0Am" value="Apps" />
+                  <node concept="2Ry0Ak" id="1XsW4J2F78Q" role="2Ry0An">
+                    <property role="2Ry0Am" value="MPS 3.4 EAP" />
                   </node>
                 </node>
               </node>
@@ -345,8 +339,8 @@
       <node concept="55IIr" id="6Qm$q17uHJ0" role="398pKh">
         <node concept="2Ry0Ak" id="6Qm$q17uI1W" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="6Qm$q17uI2L" role="2Ry0An">
-            <property role="2Ry0Am" value="graph-dsl" />
+          <node concept="2Ry0Ak" id="1XsW4J2F73b" role="2Ry0An">
+            <property role="2Ry0Am" value="dsl.graph" />
           </node>
         </node>
       </node>
@@ -636,6 +630,12 @@
             <ref role="3bR37D" node="6Qm$q17uI7R" resolve="graph" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1XsW4J2F79e" role="3bR37C">
+          <node concept="3bR9La" id="1XsW4J2F79f" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfK" resolve="jetbrains.mps.dataFlow.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6Qm$q17uI7R" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -707,8 +707,8 @@
           </node>
         </node>
         <node concept="1yeLz9" id="3EMNZPA1vqi" role="1TViLv">
-          <property role="TrG5h" value="plantUML#3560655027465713227" />
-          <property role="3LESm3" value="a655dc8c-8499-40df-8c36-3f9879b6ba2c" />
+          <property role="TrG5h" value="plantUML#5334702496414973684" />
+          <property role="3LESm3" value="a9ddf332-d558-426a-8c9a-7dfc5fa683da" />
           <property role="2GAjPV" value="false" />
         </node>
         <node concept="1SiIV0" id="5Ap5lyuUpP4" role="3bR37C">
