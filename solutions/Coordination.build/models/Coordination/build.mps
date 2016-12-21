@@ -151,8 +151,8 @@
       <node concept="55IIr" id="6Qm$q17uHJ0" role="398pKh">
         <node concept="2Ry0Ak" id="6Qm$q17uI1W" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="1XsW4J2F73b" role="2Ry0An">
-            <property role="2Ry0Am" value="dsl.graph" />
+          <node concept="2Ry0Ak" id="1CfY4uLALk_" role="2Ry0An">
+            <property role="2Ry0Am" value="lang.graph-dsl" />
           </node>
         </node>
       </node>

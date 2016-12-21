@@ -280,13 +280,13 @@
         </node>
       </node>
       <node concept="j$656" id="35DZe7vUcqM" role="1lVwrX">
-        <ref role="v9R2y" node="35DZe7vVEzt" resolve="reduce_State_to_DiagramState" />
+        <ref role="v9R2y" node="35DZe7vVEzt" resolve="reduce_State_to_DiagramStateper" />
       </node>
     </node>
     <node concept="3aamgX" id="35DZe7w0$gh" role="3acgRq">
       <ref role="30HIoZ" to="l1y1:5mpyFhN0kQs" resolve="State" />
       <node concept="j$656" id="35DZe7w0AxP" role="1lVwrX">
-        <ref role="v9R2y" node="35DZe7vVEzt" resolve="reduce_State_to_DiagramState" />
+        <ref role="v9R2y" node="35DZe7vVEzt" resolve="reduce_State_to_DiagramStateper" />
       </node>
       <node concept="30G5F_" id="35DZe7w0$v8" role="30HLyM">
         <node concept="3clFbS" id="35DZe7w0$v9" role="2VODD2">
@@ -624,7 +624,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="35DZe7vVEzt">
-    <property role="TrG5h" value="reduce_State_to_DiagramState" />
+    <property role="TrG5h" value="reduce_State_to_DiagramStateper" />
     <property role="3GE5qa" value="" />
     <ref role="3gUMe" to="l1y1:5mpyFhN0kXB" resolve="StateLike" />
     <node concept="3ID7Qr" id="35DZe7w0G3C" role="13RCb5">
