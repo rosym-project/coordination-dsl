@@ -60,7 +60,7 @@
   <node concept="1M2fIO" id="3EMNZPA4RUA">
     <ref role="1M2myG" to="l1y1:5mpyFhN2eh7" resolve="Transition" />
     <node concept="1N5Pfh" id="3EMNZPA4RVq" role="1Mr941">
-      <ref role="1N5Vy1" to="l1y1:5mpyFhN2eha" />
+      <ref role="1N5Vy1" to="l1y1:5mpyFhN2eha" resolve="target" />
       <node concept="1dDu$B" id="3EMNZPA4Trv" role="1N6uqs">
         <ref role="1dDu$A" to="l1y1:5mpyFhN0kXB" resolve="StateLike" />
       </node>
@@ -69,7 +69,7 @@
   <node concept="1M2fIO" id="3EMNZPA5WQX">
     <ref role="1M2myG" to="l1y1:5mpyFhN0rRQ" resolve="StateContainer" />
     <node concept="1N5Pfh" id="3EMNZPA5WRL" role="1Mr941">
-      <ref role="1N5Vy1" to="l1y1:5mpyFhN1IPo" />
+      <ref role="1N5Vy1" to="l1y1:5mpyFhN1IPo" resolve="initialstate" />
       <node concept="13QW63" id="6yWTLzAsrJg" role="1N6uqs">
         <node concept="3clFbS" id="6yWTLzAsrJh" role="2VODD2">
           <node concept="3cpWs6" id="6yWTLzAsrJx" role="3cqZAp">
@@ -79,7 +79,7 @@
               <node concept="3kakTB" id="6yWTLzAsuVD" role="37wK5m" />
               <node concept="359W_D" id="6yWTLzAsthA" role="37wK5m">
                 <ref role="359W_E" to="l1y1:5mpyFhN0rRQ" resolve="StateContainer" />
-                <ref role="359W_F" to="l1y1:5mpyFhN0rRR" />
+                <ref role="359W_F" to="l1y1:5mpyFhN0rRR" resolve="states" />
               </node>
             </node>
           </node>
@@ -98,7 +98,7 @@
     <property role="3GE5qa" value="actions" />
     <ref role="1M2myG" to="l1y1:3jIQ8bOXT7R" resolve="FireEventTargetInvoke" />
     <node concept="1N5Pfh" id="3jIQ8bP1u3u" role="1Mr941">
-      <ref role="1N5Vy1" to="l1y1:3jIQ8bOXT8j" />
+      <ref role="1N5Vy1" to="l1y1:3jIQ8bOXT8j" resolve="invoke" />
       <node concept="1dDu$B" id="3jIQ8bP1u3w" role="1N6uqs">
         <ref role="1dDu$A" to="l1y1:6Ij5jedxvto" resolve="Invoke" />
       </node>
@@ -108,7 +108,7 @@
     <property role="3GE5qa" value="conditions" />
     <ref role="1M2myG" to="l1y1:3jIQ8bP4rrz" resolve="InvokeFinished" />
     <node concept="1N5Pfh" id="3jIQ8bP4rN4" role="1Mr941">
-      <ref role="1N5Vy1" to="l1y1:3jIQ8bP4rtJ" />
+      <ref role="1N5Vy1" to="l1y1:3jIQ8bP4rtJ" resolve="invoke" />
       <node concept="1dDu$B" id="3jIQ8bP4rNj" role="1N6uqs">
         <ref role="1dDu$A" to="l1y1:6Ij5jedxvto" resolve="Invoke" />
       </node>
@@ -118,7 +118,7 @@
     <property role="3GE5qa" value="actions" />
     <ref role="1M2myG" to="l1y1:35DZe7wmUkO" resolve="Assign" />
     <node concept="1N5Pfh" id="7RTBPMsBdZS" role="1Mr941">
-      <ref role="1N5Vy1" to="l1y1:35DZe7wnxND" />
+      <ref role="1N5Vy1" to="l1y1:35DZe7wnxND" resolve="location" />
       <node concept="1dDu$B" id="7RTBPMsBdZV" role="1N6uqs">
         <ref role="1dDu$A" to="l1y1:6KWQ8i7tHbi" resolve="Data" />
       </node>
@@ -127,7 +127,7 @@
   <node concept="1M2fIO" id="6yWTLzApKxD">
     <ref role="1M2myG" to="l1y1:6yWTLzAoByu" resolve="History" />
     <node concept="1N5Pfh" id="6yWTLzApKxE" role="1Mr941">
-      <ref role="1N5Vy1" to="l1y1:6yWTLzAptV$" />
+      <ref role="1N5Vy1" to="l1y1:6yWTLzAptV$" resolve="fallback" />
       <node concept="13QW63" id="6yWTLzAq66_" role="1N6uqs">
         <node concept="3clFbS" id="6yWTLzAq66A" role="2VODD2">
           <node concept="3cpWs6" id="6yWTLzAq79B" role="3cqZAp">
@@ -137,7 +137,7 @@
               <node concept="21POm0" id="3jIQ8bP9WtU" role="37wK5m" />
               <node concept="359W_D" id="6yWTLzAstmJ" role="37wK5m">
                 <ref role="359W_E" to="l1y1:5mpyFhN0rRQ" resolve="StateContainer" />
-                <ref role="359W_F" to="l1y1:5mpyFhN0rRR" />
+                <ref role="359W_F" to="l1y1:5mpyFhN0rRR" resolve="states" />
               </node>
             </node>
           </node>

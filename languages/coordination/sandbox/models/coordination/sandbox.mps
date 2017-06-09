@@ -495,5 +495,27 @@
       </node>
     </node>
   </node>
+  <node concept="1HUUU" id="2h2G7pQwo$_">
+    <property role="TrG5h" value="TestIfElse" />
+    <ref role="ABQvG" node="2h2G7pQwoBy" resolve="One" />
+    <node concept="AAcsC" id="2h2G7pQwoBy" role="AA3t3">
+      <property role="TrG5h" value="One" />
+      <node concept="1HS$kp" id="2h2G7pQwoBL" role="A$mYV">
+        <property role="1HSLgd" value="true" />
+        <node concept="A$mYG" id="2h2G7pQwoC0" role="1HUJmv">
+          <property role="A$mZM" value="if works" />
+        </node>
+      </node>
+      <node concept="3xtdW8" id="2h2G7pQwoCU" role="A$mYV">
+        <property role="3xtdW9" value="false" />
+        <node concept="A$mYG" id="2h2G7pQwoDA" role="3xtdWb">
+          <property role="A$mZM" value="if works" />
+        </node>
+        <node concept="A$mYG" id="2h2G7pQwoDP" role="3xt0xh">
+          <property role="A$mZM" value="else works" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
