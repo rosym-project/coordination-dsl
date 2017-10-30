@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -30,9 +30,7 @@
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
-      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
-        <child id="7389400916848144618" name="defaultPath" index="398pKh" />
-      </concept>
+      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT" />
       <concept id="7389400916848153117" name="jetbrains.mps.build.structure.BuildSourceMacroRelativePath" flags="ng" index="398BVA">
         <reference id="7389400916848153130" name="macro" index="398BVh" />
       </concept>
@@ -118,28 +116,6 @@
     <node concept="3b7kt6" id="1XsW4J2F2TT" role="10PD9s" />
     <node concept="398rNT" id="1XsW4J2F2TU" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
-    </node>
-    <node concept="398rNT" id="3EMNZPA1v7d" role="1l3spd">
-      <property role="TrG5h" value="plantuml.lang" />
-      <node concept="55IIr" id="3EMNZPA1v8z" role="398pKh">
-        <node concept="2Ry0Ak" id="3EMNZPA1v8A" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="6FODdnhj$zo" role="2Ry0An">
-            <property role="2Ry0Am" value="plantuml-dsl" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="6Qm$q17uHGs" role="1l3spd">
-      <property role="TrG5h" value="graph.lang" />
-      <node concept="55IIr" id="6Qm$q17uHJ0" role="398pKh">
-        <node concept="2Ry0Ak" id="6Qm$q17uI1W" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="1CfY4uLALk_" role="2Ry0An">
-            <property role="2Ry0Am" value="lang.graph-dsl" />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2sgV4H" id="1XsW4J2F2TV" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />

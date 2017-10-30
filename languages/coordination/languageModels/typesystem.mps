@@ -2,8 +2,7 @@
 <model ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:3d73eed1-12be-4e9c-825b-07051d38a984(coordination/coordination.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="l1y1" ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:63b00e0f-42e9-495d-a65b-5c1f0a565854(coordination/coordination.structure)" />
@@ -192,7 +191,7 @@
                 <ref role="1YBMHb" node="5mpyFhN5NMA" resolve="parallelState" />
               </node>
               <node concept="3Tsc0h" id="5mpyFhN5O3V" role="2OqNvi">
-                <ref role="3TtcxE" to="l1y1:5mpyFhN0rRR" />
+                <ref role="3TtcxE" to="l1y1:5mpyFhN0rRR" resolve="states" />
               </node>
             </node>
             <node concept="34oBXx" id="5mpyFhN5QIm" role="2OqNvi" />
@@ -226,7 +225,7 @@
             <ref role="1YBMHb" node="5mpyFhN5SvG" resolve="stateContainer" />
           </node>
           <node concept="3Tsc0h" id="5mpyFhN5ST_" role="2OqNvi">
-            <ref role="3TtcxE" to="l1y1:5mpyFhN0rRR" />
+            <ref role="3TtcxE" to="l1y1:5mpyFhN0rRR" resolve="states" />
           </node>
         </node>
         <node concept="3clFbS" id="5mpyFhN5SHb" role="2LFqv$">
