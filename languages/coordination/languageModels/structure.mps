@@ -740,8 +740,8 @@
     <property role="EcuMT" value="8101035457271936376" />
     <property role="TrG5h" value="ExpressionActionWrapper" />
     <property role="R4oN_" value="Use an expression as action" />
-    <property role="34LRSv" value="Expression" />
     <property role="3GE5qa" value="actions" />
+    <property role="34LRSv" value="exp" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="PrWs8" id="71GEdf7yrlT" role="PzmwI">
       <ref role="PrY4T" node="5mpyFhN2eh4" resolve="Action" />
@@ -751,6 +751,21 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="exp" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4c0$OGc4snN">
+    <property role="EcuMT" value="4828020751075493363" />
+    <property role="3GE5qa" value="actions" />
+    <property role="TrG5h" value="CommentAction" />
+    <property role="34LRSv" value="#" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4c0$OGc4ssq" role="1TKVEl">
+      <property role="IQ2nx" value="4828020751075493658" />
+      <property role="TrG5h" value="comment" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="4c0$OGc4su8" role="PzmwI">
+      <ref role="PrY4T" node="5mpyFhN2eh4" resolve="Action" />
     </node>
   </node>
 </model>
