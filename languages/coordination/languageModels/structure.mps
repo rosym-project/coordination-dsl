@@ -6,6 +6,7 @@
   </languages>
   <imports>
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -28,6 +29,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -732,6 +734,23 @@
     <node concept="M4N5e" id="6yWTLzAoH4m" role="M5hS2">
       <property role="1uS6qv" value="deep" />
       <property role="1uS6qo" value="deep" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="71GEdf7yrlS">
+    <property role="EcuMT" value="8101035457271936376" />
+    <property role="TrG5h" value="ExpressionActionWrapper" />
+    <property role="R4oN_" value="Use an expression as action" />
+    <property role="34LRSv" value="Expression" />
+    <property role="3GE5qa" value="actions" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="PrWs8" id="71GEdf7yrlT" role="PzmwI">
+      <ref role="PrY4T" node="5mpyFhN2eh4" resolve="Action" />
+    </node>
+    <node concept="1TJgyj" id="71GEdf7yrnX" role="1TKVEi">
+      <property role="IQ2ns" value="8101035457271936509" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
 </model>
