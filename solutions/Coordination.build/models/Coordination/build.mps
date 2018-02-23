@@ -233,6 +233,12 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="6rnUMjFpePy" role="3bR37C">
+          <node concept="3bR9La" id="6rnUMjFpePz" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
       </node>
       <node concept="3LEwk6" id="1XsW4J2F2U7" role="2G$12L">
         <property role="BnDLt" value="false" />
