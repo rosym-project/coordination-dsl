@@ -782,5 +782,18 @@
     <property role="3GE5qa" value="actions" />
     <property role="TrG5h" value="IActionContainer" />
   </node>
+  <node concept="1TIwiD" id="4_xSw_Cy4lf">
+    <property role="EcuMT" value="5287755967546017103" />
+    <property role="3GE5qa" value="datamodel" />
+    <property role="TrG5h" value="DatamodelVariablenReference" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="4_xSw_Cy4r5" role="1TKVEi">
+      <property role="IQ2ns" value="5287755967546017477" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6KWQ8i7tHbi" resolve="Data" />
+    </node>
+  </node>
 </model>
 
