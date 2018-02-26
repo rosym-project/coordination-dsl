@@ -124,6 +124,7 @@
       <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
         <reference id="4278635856200794928" name="language" index="1Busuk" />
       </concept>
+      <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
@@ -181,22 +182,37 @@
     </node>
     <node concept="m$_wf" id="1XsW4J2F2U9" role="3989C9">
       <property role="m$_wk" value="Coordination" />
-      <node concept="2pNNFK" id="3ddCaS_xAzO" role="20twgj">
+      <node concept="2pNNFK" id="3eFKsYI1pKn" role="20twgj">
         <property role="2pNNFO" value="vendor" />
-        <node concept="2pNUuL" id="4J0OvZJgW_Q" role="2pNNFR">
+        <node concept="2pNUuL" id="3eFKsYI1pKo" role="2pNNFR">
           <property role="2pNUuO" value="email" />
-          <node concept="2pMdtt" id="4J0OvZJgW_T" role="2pMdts">
+          <node concept="2pMdtt" id="3eFKsYI1pKp" role="2pMdts">
             <property role="2pMdty" value="dwigand@techfak.uni-bielefeld.de" />
           </node>
         </node>
-        <node concept="2pNUuL" id="4J0OvZJgW_Z" role="2pNNFR">
+        <node concept="2pNUuL" id="3eFKsYI1pKq" role="2pNNFR">
           <property role="2pNUuO" value="url" />
-          <node concept="2pMdtt" id="4J0OvZJgWA6" role="2pMdts">
+          <node concept="2pMdtt" id="3eFKsYI1pKr" role="2pMdts">
             <property role="2pMdty" value="https://github.com/xwavex" />
           </node>
         </node>
-        <node concept="3o6iSG" id="3ddCaS_xA$L" role="3o6s8t">
+        <node concept="3o6iSG" id="3eFKsYI1pKs" role="3o6s8t">
           <property role="3o6i5n" value="Dennis Leroy Wigand" />
+        </node>
+      </node>
+      <node concept="2pNNFK" id="7hyLc6Vva35" role="20twgj">
+        <property role="2pNNFO" value="idea-version" />
+        <node concept="2pNUuL" id="7hyLc6Vva36" role="2pNNFR">
+          <property role="2pNUuO" value="until-build" />
+          <node concept="2pMdtt" id="7hyLc6Vva37" role="2pMdts">
+            <property role="2pMdty" value="172.1347" />
+          </node>
+        </node>
+        <node concept="2pNUuL" id="7hyLc6Vva38" role="2pNNFR">
+          <property role="2pNUuO" value="since-build" />
+          <node concept="2pMdtt" id="7hyLc6Vva39" role="2pMdts">
+            <property role="2pMdty" value="172.1347" />
+          </node>
         </node>
       </node>
       <node concept="3_J27D" id="1XsW4J2F2Ua" role="m$_yQ">
@@ -308,6 +324,29 @@
           <node concept="3bR9La" id="6rnUMjFpePz" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="3eFKsYI1pSU" role="2G$12L">
+        <property role="BnDLt" value="false" />
+        <property role="TrG5h" value="Coordination.build" />
+        <property role="3LESm3" value="235c521d-1c2b-4b5d-954e-3e0bf0da7519" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="3eFKsYI1pSX" role="3LF7KH">
+          <node concept="2Ry0Ak" id="3eFKsYI1q11" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="3eFKsYI1q1G" role="2Ry0An">
+              <property role="2Ry0Am" value="Coordination.build" />
+              <node concept="2Ry0Ak" id="3eFKsYI1q2n" role="2Ry0An">
+                <property role="2Ry0Am" value="Coordination.build.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3eFKsYI1q3b" role="3bR37C">
+          <node concept="3bR9La" id="3eFKsYI1q3c" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
           </node>
         </node>
       </node>
