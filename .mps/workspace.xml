@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dadeb08a-6b99-426d-bfc0-2cf62190392c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build-plugin-mps.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Coordination.build/models/Coordination/build.mps" afterPath="$PROJECT_DIR$/solutions/Coordination.build/models/Coordination/build.mps" />
     </list>
     <ignored path="Coordination.iws" />
@@ -119,7 +119,62 @@
     </search_options>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Coordination" pinned="false" current-in-tab="true">
+        <entry file="mps://node://Coordination.build/Coordination.build/Coordination">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="119" />
+                    <property name="caretXRelative" value="104" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_vny568_o0" cellNumber="0" isInList="false">
+                      <node node_reference="r:26172c77-e46f-4840-a5f2-2fae37e474cd(Coordination.build)/2259945321212423799" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_pa0pfb_e0" cellNumber="0" isInList="false">
+                      <node node_reference="r:26172c77-e46f-4840-a5f2-2fae37e474cd(Coordination.build)/2259945321212423815" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_ju7sd7_e0" cellNumber="0" isInList="false">
+                      <node node_reference="r:26172c77-e46f-4840-a5f2-2fae37e474cd(Coordination.build)/3723282614673841722" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_ucemm3_e0" cellNumber="0" isInList="false">
+                      <node node_reference="r:26172c77-e46f-4840-a5f2-2fae37e474cd(Coordination.build)/2259945321212423810" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_pilq2t_c0" cellNumber="0" isInList="false">
+                      <node node_reference="r:26172c77-e46f-4840-a5f2-2fae37e474cd(Coordination.build)/2259945321212423816" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:26172c77-e46f-4840-a5f2-2fae37e474cd(Coordination.build)/2259945321212423799" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -313,6 +368,48 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="235c521d-1c2b-4b5d-954e-3e0bf0da7519" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Coordination" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="235c521d-1c2b-4b5d-954e-3e0bf0da7519" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="235c521d-1c2b-4b5d-954e-3e0bf0da7519" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Coordination" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:26172c77-e46f-4840-a5f2-2fae37e474cd(Coordination.build) in IdeaFile{file:///home/dwigand/code/cogimon/Cosmo/DSLs/mps2017-2/coord-dsl/solutions/Coordination.build/models/Coordination/build.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <SELECTED>
             <PATH_ELEMENT>
@@ -321,6 +418,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="235c521d-1c2b-4b5d-954e-3e0bf0da7519" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Coordination" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:26172c77-e46f-4840-a5f2-2fae37e474cd(Coordination.build) in IdeaFile{file:///home/dwigand/code/cogimon/Cosmo/DSLs/mps2017-2/coord-dsl/solutions/Coordination.build/models/Coordination/build.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2259945321212423799" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -427,6 +536,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2609" y="24" width="1871" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31652662" sideWeight="0.46136987" order="7" side_tool="false" content_ui="tabs" />
@@ -438,14 +548,14 @@
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286648" sideWeight="0.5019178" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.270775" sideWeight="0.5035616" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286648" sideWeight="0.4789041" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24183007" sideWeight="0.45863014" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24183007" sideWeight="0.45643836" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286648" sideWeight="0.4980822" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.270775" sideWeight="0.49643835" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866043" sideWeight="0.49706745" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293687" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264857" sideWeight="0.4989339" order="7" side_tool="false" content_ui="tabs" />
@@ -453,7 +563,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23232877" sideWeight="0.80961186" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23232877" sideWeight="0.80961186" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959852" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5130597" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3915,7 +4025,8 @@
     <MESSAGE value="- updated constraints for initial state and history fallback state" />
     <MESSAGE value="- more specialized dataflow" />
     <MESSAGE value="BuildSolution updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="BuildSolution updated" />
+    <MESSAGE value="BuildSolution seems to be broken? But ignoring the error it builds the plugin properly. However, I need to test if it actually works as expected when loaded though." />
+    <option name="LAST_COMMIT_MESSAGE" value="BuildSolution seems to be broken? But ignoring the error it builds the plugin properly. However, I need to test if it actually works as expected when loaded though." />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure/IfStatement">
@@ -5338,16 +5449,16 @@
     </entry>
     <entry file="mps://node://Coordination.build/Coordination.build/Coordination">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="319">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="359" />
-                <property name="caretXRelative" value="120" />
+                <property name="caretX" value="119" />
+                <property name="caretXRelative" value="104" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:26172c77-e46f-4840-a5f2-2fae37e474cd(Coordination.build)/1577089378426094974" />
+                <cellInfo cellId="Constant_vny568_o0" cellNumber="0" isInList="false">
+                  <node node_reference="r:26172c77-e46f-4840-a5f2-2fae37e474cd(Coordination.build)/2259945321212423799" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -5375,20 +5486,9 @@
                 </cellIdElement>
               </collapsedElement>
             </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_ucemm3_e0" cellNumber="0" isInList="false">
-                  <node node_reference="r:26172c77-e46f-4840-a5f2-2fae37e474cd(Coordination.build)/2259945321212423810" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_pilq2t_c0" cellNumber="0" isInList="false">
-                  <node node_reference="r:26172c77-e46f-4840-a5f2-2fae37e474cd(Coordination.build)/2259945321212423816" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
+            <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:26172c77-e46f-4840-a5f2-2fae37e474cd(Coordination.build)/1577089378426094974" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:26172c77-e46f-4840-a5f2-2fae37e474cd(Coordination.build)/2259945321212423799" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
