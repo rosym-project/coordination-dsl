@@ -174,7 +174,25 @@
       <node concept="3981dG" id="1XsW4J2F2Uj" role="39821P">
         <node concept="3_J27D" id="1XsW4J2F2Uk" role="Nbhlr">
           <node concept="3Mxwew" id="1XsW4J2F2Ul" role="3MwsjC">
-            <property role="3MwjfP" value="Coordination.zip" />
+            <property role="3MwjfP" value="Coordination-" />
+          </node>
+          <node concept="3Mxwey" id="34OAev0MFtP" role="3MwsjC">
+            <ref role="3Mxwex" node="27wsLp9JmP9" resolve="current_version" />
+          </node>
+          <node concept="3Mxwew" id="34OAev0MFtO" role="3MwsjC">
+            <property role="3MwjfP" value="-" />
+          </node>
+          <node concept="3Mxwey" id="34OAev0MFye" role="3MwsjC">
+            <ref role="3Mxwex" to="ffeo:3IKDaVZnAxg" resolve="build.number" />
+          </node>
+          <node concept="3Mxwew" id="34OAev0MFyd" role="3MwsjC">
+            <property role="3MwjfP" value="-" />
+          </node>
+          <node concept="3Mxwey" id="34OAev0MFBb" role="3MwsjC">
+            <ref role="3Mxwex" to="ffeo:5HVSRHdVf2d" resolve="version" />
+          </node>
+          <node concept="3Mxwew" id="34OAev0MFBa" role="3MwsjC">
+            <property role="3MwjfP" value=".zip" />
           </node>
         </node>
         <node concept="m$_wl" id="1XsW4J2F2Um" role="39821P">
@@ -232,6 +250,9 @@
       </node>
       <node concept="m$_yC" id="1XsW4J2F2Uf" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="34OAev0MFs3" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
       </node>
       <node concept="3_J27D" id="1XsW4J2F2Ug" role="m_cZH">
         <node concept="3Mxwew" id="1XsW4J2F2Uh" role="3MwsjC">
