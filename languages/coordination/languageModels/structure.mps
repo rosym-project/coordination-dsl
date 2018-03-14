@@ -239,6 +239,12 @@
       <property role="IQ2ns" value="7693917789697543497" />
       <ref role="20lvS9" node="6F6insLXG94" resolve="JEXLCondition" />
     </node>
+    <node concept="1TJgyj" id="6vX1k0851TS" role="1TKVEi">
+      <property role="IQ2ns" value="7493151127585955448" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="oclTransition" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
     <node concept="1TJgyj" id="NsS28q5JAR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="actions" />
