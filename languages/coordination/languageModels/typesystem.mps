@@ -2,6 +2,7 @@
 <model ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:3d73eed1-12be-4e9c-825b-07051d38a984(coordination/coordination.typesystem)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -96,11 +97,8 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -124,13 +122,13 @@
       <concept id="1224760201579" name="jetbrains.mps.lang.typesystem.structure.InfoStatement" flags="nn" index="Dpp1Q">
         <child id="1224760230762" name="infoText" index="Dpw9R" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -170,6 +168,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -200,7 +206,7 @@
             <node concept="Xl_RD" id="5mpyFhN5Se1" role="a7wSD">
               <property role="Xl_RC" value="Parallel state should contain more than one state." />
             </node>
-            <node concept="1YBJjd" id="5mpyFhN5Sv1" role="2OEOjV">
+            <node concept="1YBJjd" id="5mpyFhN5Sv1" role="1urrMF">
               <ref role="1YBMHb" node="5mpyFhN5NMA" resolve="parallelState" />
             </node>
           </node>
@@ -280,9 +286,6 @@
       <node concept="3clFbJ" id="5mpyFhN5Un5" role="3cqZAp">
         <node concept="3clFbS" id="5mpyFhN5Un8" role="3clFbx">
           <node concept="Dpp1Q" id="5mpyFhN5Utp" role="3cqZAp">
-            <node concept="1YBJjd" id="5mpyFhN5W88" role="2OEOjV">
-              <ref role="1YBMHb" node="5mpyFhN5SvG" resolve="stateContainer" />
-            </node>
             <node concept="3cpWs3" id="5mpyFhN5V0f" role="Dpw9R">
               <node concept="Xl_RD" id="5mpyFhN5V0i" role="3uHU7w">
                 <property role="Xl_RC" value=" does not have a final state." />
@@ -295,6 +298,9 @@
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
+            </node>
+            <node concept="1YBJjd" id="5mpyFhN5W88" role="1urrMF">
+              <ref role="1YBMHb" node="5mpyFhN5SvG" resolve="stateContainer" />
             </node>
           </node>
         </node>
@@ -330,8 +336,31 @@
       </node>
       <node concept="3clFbH" id="2pOAke0fCiI" role="3cqZAp" />
       <node concept="3SKdUt" id="2pOAke0fCjL" role="3cqZAp">
-        <node concept="3SKdUq" id="2pOAke0fCjM" role="3SKWNk">
-          <property role="3SKdUp" value="grab all instructions that are unreachable (predefined functionality)" />
+        <node concept="1PaTwC" id="11Hu8EFW1JO" role="3ndbpf">
+          <node concept="3oM_SD" id="11Hu8EFW1JP" role="1PaTwD">
+            <property role="3oM_SC" value="grab" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1JQ" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1JR" role="1PaTwD">
+            <property role="3oM_SC" value="instructions" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1JS" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1JT" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1JU" role="1PaTwD">
+            <property role="3oM_SC" value="unreachable" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1JV" role="1PaTwD">
+            <property role="3oM_SC" value="(predefined" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1JW" role="1PaTwD">
+            <property role="3oM_SC" value="functionality)" />
+          </node>
         </node>
       </node>
       <node concept="3cpWs8" id="2pOAke0fCjN" role="3cqZAp">
@@ -362,8 +391,28 @@
         </node>
       </node>
       <node concept="3SKdUt" id="2pOAke0fCjY" role="3cqZAp">
-        <node concept="3SKdUq" id="2pOAke0fCjZ" role="3SKWNk">
-          <property role="3SKdUp" value="remove those that may legally be unreachable" />
+        <node concept="1PaTwC" id="11Hu8EFW1JX" role="3ndbpf">
+          <node concept="3oM_SD" id="11Hu8EFW1JY" role="1PaTwD">
+            <property role="3oM_SC" value="remove" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1JZ" role="1PaTwD">
+            <property role="3oM_SC" value="those" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1K0" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1K1" role="1PaTwD">
+            <property role="3oM_SC" value="may" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1K2" role="1PaTwD">
+            <property role="3oM_SC" value="legally" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1K3" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1K4" role="1PaTwD">
+            <property role="3oM_SC" value="unreachable" />
+          </node>
         </node>
       </node>
       <node concept="3cpWs8" id="2pOAke0fCk0" role="3cqZAp">
@@ -418,8 +467,37 @@
         </node>
       </node>
       <node concept="3SKdUt" id="2pOAke0fCkl" role="3cqZAp">
-        <node concept="3SKdUq" id="2pOAke0fCkm" role="3SKWNk">
-          <property role="3SKdUp" value="get the program nodes that correspond to the unreachable instructions" />
+        <node concept="1PaTwC" id="11Hu8EFW1K5" role="3ndbpf">
+          <node concept="3oM_SD" id="11Hu8EFW1K6" role="1PaTwD">
+            <property role="3oM_SC" value="get" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1K7" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1K8" role="1PaTwD">
+            <property role="3oM_SC" value="program" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1K9" role="1PaTwD">
+            <property role="3oM_SC" value="nodes" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1Ka" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1Kb" role="1PaTwD">
+            <property role="3oM_SC" value="correspond" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1Kc" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1Kd" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1Ke" role="1PaTwD">
+            <property role="3oM_SC" value="unreachable" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1Kf" role="1PaTwD">
+            <property role="3oM_SC" value="instructions" />
+          </node>
         </node>
       </node>
       <node concept="3cpWs8" id="2pOAke0fCkn" role="3cqZAp">
@@ -461,8 +539,31 @@
         </node>
       </node>
       <node concept="3SKdUt" id="2pOAke0fCkD" role="3cqZAp">
-        <node concept="3SKdUq" id="2pOAke0fCkE" role="3SKWNk">
-          <property role="3SKdUp" value="output errors for each of those unreachable nodes" />
+        <node concept="1PaTwC" id="11Hu8EFW1Kg" role="3ndbpf">
+          <node concept="3oM_SD" id="11Hu8EFW1Kh" role="1PaTwD">
+            <property role="3oM_SC" value="output" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1Ki" role="1PaTwD">
+            <property role="3oM_SC" value="errors" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1Kj" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1Kk" role="1PaTwD">
+            <property role="3oM_SC" value="each" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1Kl" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1Km" role="1PaTwD">
+            <property role="3oM_SC" value="those" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1Kn" role="1PaTwD">
+            <property role="3oM_SC" value="unreachable" />
+          </node>
+          <node concept="3oM_SD" id="11Hu8EFW1Ko" role="1PaTwD">
+            <property role="3oM_SC" value="nodes" />
+          </node>
         </node>
       </node>
       <node concept="2Gpval" id="2pOAke0fCkF" role="3cqZAp">
@@ -479,7 +580,7 @@
                 <node concept="Xl_RD" id="2pOAke0fHUU" role="a7wSD">
                   <property role="Xl_RC" value="This state is unreachable or contains unreachable states." />
                 </node>
-                <node concept="2GrUjf" id="2pOAke0fHWk" role="2OEOjV">
+                <node concept="2GrUjf" id="2pOAke0fHWk" role="1urrMF">
                   <ref role="2Gs0qQ" node="2pOAke0fCkG" resolve="unreachableNode" />
                 </node>
               </node>

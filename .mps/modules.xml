@@ -7,7 +7,6 @@
       <modulePath path="$PROJECT_DIR$/languages/coordination/sandbox/coordination.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Coordination.build/Coordination.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/IDE/IDE.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/Tests/Tests.msd" folder="" />
     </projectModules>
   </component>
 </project>

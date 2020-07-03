@@ -2,7 +2,7 @@
 <model ref="90263a5b-f84d-4b33-85d5-679100c0e752/r:7fd39c94-043f-48c6-8404-68912c6016cc(coordination#3975843521651967143/coordination.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -170,6 +170,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1966870290083281362" name="jetbrains.mps.lang.smodel.structure.EnumMember_NameOperation" flags="ng" index="24Tkf9" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -206,7 +207,7 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -634,7 +635,7 @@
       </node>
     </node>
     <node concept="3lhOvk" id="5mpyFhN6J84" role="3lj3bC">
-      <property role="13Pg2o" value="true" />
+      <property role="13Pg2o" value="h94ayQF/true_" />
       <ref role="30HIoZ" to="l1y1:3sH29SQAEo$" resolve="StateMachine" />
       <ref role="3lhOvi" node="35DZe7vWFyX" resolve="map_StateMachine_to_XmlFile" />
     </node>
@@ -3713,10 +3714,13 @@
               <node concept="3zFVjK" id="6yWTLzApB$p" role="3zH0cK">
                 <node concept="3clFbS" id="6yWTLzApB$q" role="2VODD2">
                   <node concept="3clFbF" id="6yWTLzApB_7" role="3cqZAp">
-                    <node concept="2OqwBi" id="6yWTLzApBCi" role="3clFbG">
-                      <node concept="30H73N" id="6yWTLzApB_6" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="6yWTLzApBMm" role="2OqNvi">
-                        <ref role="3TsBF5" to="l1y1:6yWTLzAoH4p" resolve="type" />
+                    <node concept="2OqwBi" id="11Hu8EFW1Kv" role="3clFbG">
+                      <node concept="24Tkf9" id="11Hu8EFW1Kx" role="2OqNvi" />
+                      <node concept="2OqwBi" id="6yWTLzApBCi" role="2Oq$k0">
+                        <node concept="30H73N" id="6yWTLzApB_6" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="6yWTLzApBMm" role="2OqNvi">
+                          <ref role="3TsBF5" to="l1y1:11Hu8EFW1Kt" resolve="type" />
+                        </node>
                       </node>
                     </node>
                   </node>
