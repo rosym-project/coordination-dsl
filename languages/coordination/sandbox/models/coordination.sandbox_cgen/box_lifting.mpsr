@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:e4405088-c1f6-48ba-a512-e3cae37678e5(coordination.sandbox_cgen)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination">
+      <concept id="3975843521651975716" name="coordination.structure.StateMachine" flags="ng" index="1HUUU" />
+      <concept id="6168113672289313863" name="coordination.structure.Transition" flags="ng" index="A$mVN">
+        <reference id="6168113672289313866" name="target" index="A$mVY" />
+        <child id="6168113672289314051" name="condition" index="A$mYR" />
+      </concept>
+      <concept id="6168113672288845302" name="coordination.structure.StateContainer" flags="ng" index="AA3t2">
+        <reference id="6168113672289185112" name="initialstate" index="ABQvG" />
+        <child id="6168113672288845303" name="states" index="AA3t3" />
+      </concept>
+      <concept id="6168113672288816999" name="coordination.structure.StateLike" flags="ng" index="AAcnj">
+        <property id="6168113672289985564" name="isfinalstate" index="AyEUC" />
+        <child id="6168113672289314061" name="transitions" index="A$mYT" />
+      </concept>
+      <concept id="6168113672288816540" name="coordination.structure.State" flags="ng" index="AAcsC" />
+      <concept id="4593348108330089757" name="coordination.structure.WaitForEvent" flags="ng" index="2D1ejp">
+        <property id="4593348108330089834" name="eventname" index="2D1eiI" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1HUUU" id="6afypRGthSn">
+    <property role="TrG5h" value="box_lifting" />
+    <ref role="ABQvG" node="6afypRGthTr" resolve="prepare" />
+    <node concept="AAcsC" id="6afypRGthTr" role="AA3t3">
+      <property role="TrG5h" value="prepare" />
+      <node concept="A$mVN" id="6afypRGthTy" role="A$mYT">
+        <ref role="A$mVY" node="6afypRGthTf" resolve="move_down" />
+      </node>
+    </node>
+    <node concept="AAcsC" id="6afypRGthTf" role="AA3t3">
+      <property role="TrG5h" value="move_down" />
+      <node concept="A$mVN" id="6afypRGthUx" role="A$mYT">
+        <ref role="A$mVY" node="6afypRGthT5" resolve="sliding_approach" />
+        <node concept="2D1ejp" id="6afypRGthUz" role="A$mYR">
+          <property role="2D1eiI" value="collide_table" />
+        </node>
+      </node>
+      <node concept="A$mVN" id="6afypRGthUD" role="A$mYT">
+        <ref role="A$mVY" node="6afypRGthSS" resolve="stop" />
+        <node concept="2D1ejp" id="6afypRGthUH" role="A$mYR">
+          <property role="2D1eiI" value="singularity" />
+        </node>
+      </node>
+    </node>
+    <node concept="AAcsC" id="6afypRGthT5" role="AA3t3">
+      <property role="TrG5h" value="sliding_approach" />
+      <node concept="A$mVN" id="6afypRGthUK" role="A$mYT">
+        <ref role="A$mVY" node="6afypRGthSX" resolve="lifting" />
+        <node concept="2D1ejp" id="6afypRGthUM" role="A$mYR">
+          <property role="2D1eiI" value="collide_box" />
+        </node>
+      </node>
+      <node concept="A$mVN" id="6afypRGthUV" role="A$mYT">
+        <ref role="A$mVY" node="6afypRGthSS" resolve="stop" />
+        <node concept="2D1ejp" id="6afypRGthV1" role="A$mYR">
+          <property role="2D1eiI" value="singularity" />
+        </node>
+      </node>
+    </node>
+    <node concept="AAcsC" id="6afypRGthSX" role="AA3t3">
+      <property role="TrG5h" value="lifting" />
+      <node concept="A$mVN" id="6afypRGthV3" role="A$mYT">
+        <ref role="A$mVY" node="6afypRGthSS" resolve="stop" />
+        <node concept="2D1ejp" id="6afypRGthV5" role="A$mYR">
+          <property role="2D1eiI" value="timeout" />
+        </node>
+      </node>
+      <node concept="A$mVN" id="6afypRGthV7" role="A$mYT">
+        <ref role="A$mVY" node="6afypRGthSS" resolve="stop" />
+        <node concept="2D1ejp" id="6afypRGthVb" role="A$mYR">
+          <property role="2D1eiI" value="singularity" />
+        </node>
+      </node>
+    </node>
+    <node concept="AAcsC" id="6afypRGthSS" role="AA3t3">
+      <property role="TrG5h" value="stop" />
+      <property role="AyEUC" value="true" />
+    </node>
+  </node>
+</model>
+

@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/Coordination.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/coordination/coordination.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/coordination/sandbox/coordination.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/coordination_CGenerator/coordination_CGenerator.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Coordination.build/Coordination.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/IDE/IDE.msd" folder="" />
     </projectModules>

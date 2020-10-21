@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:e4405088-c1f6-48ba-a512-e3cae37678e5(coordination.sandbox_cgen)" content="header">
+  <persistence version="9" />
+  <languages>
+    <use id="05b3ce81-ad9b-4836-b473-d98f0216c2ac" name="coordination" version="0" />
+    <engage id="d00debc6-193a-4e01-99b6-7180d7be143f" name="coordination_CGenerator" />
+  </languages>
+  <imports />
+</model>
+
