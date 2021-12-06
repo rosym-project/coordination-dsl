@@ -2,7 +2,7 @@
 <model ref="05b3ce81-ad9b-4836-b473-d98f0216c2ac/r:3d73eed1-12be-4e9c-825b-07051d38a984(coordination/coordination.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -98,7 +98,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -169,10 +169,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -336,7 +336,7 @@
       </node>
       <node concept="3clFbH" id="2pOAke0fCiI" role="3cqZAp" />
       <node concept="3SKdUt" id="2pOAke0fCjL" role="3cqZAp">
-        <node concept="1PaTwC" id="11Hu8EFW1JO" role="3ndbpf">
+        <node concept="1PaTwC" id="11Hu8EFW1JO" role="1aUNEU">
           <node concept="3oM_SD" id="11Hu8EFW1JP" role="1PaTwD">
             <property role="3oM_SC" value="grab" />
           </node>
@@ -383,7 +383,7 @@
                   <ref role="3cqZAo" node="2pOAke0fBZJ" resolve="prog" />
                 </node>
                 <node concept="liA8E" id="2pOAke0fCjX" role="2OqNvi">
-                  <ref role="37wK5l" to="1fjm:~Program.getUnreachableInstructions():java.util.Set" resolve="getUnreachableInstructions" />
+                  <ref role="37wK5l" to="1fjm:~Program.getUnreachableInstructions()" resolve="getUnreachableInstructions" />
                 </node>
               </node>
             </node>
@@ -391,7 +391,7 @@
         </node>
       </node>
       <node concept="3SKdUt" id="2pOAke0fCjY" role="3cqZAp">
-        <node concept="1PaTwC" id="11Hu8EFW1JX" role="3ndbpf">
+        <node concept="1PaTwC" id="11Hu8EFW1JX" role="1aUNEU">
           <node concept="3oM_SD" id="11Hu8EFW1JY" role="1PaTwD">
             <property role="3oM_SC" value="remove" />
           </node>
@@ -439,13 +439,13 @@
                             <ref role="3cqZAo" to="wyt6:~Boolean.TRUE" resolve="TRUE" />
                           </node>
                           <node concept="liA8E" id="2pOAke0fCke" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Boolean.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~Boolean.equals(java.lang.Object)" resolve="equals" />
                             <node concept="2OqwBi" id="2pOAke0fCkf" role="37wK5m">
                               <node concept="37vLTw" id="2pOAke0fCkg" role="2Oq$k0">
                                 <ref role="3cqZAo" node="2pOAke0fCkj" resolve="it" />
                               </node>
                               <node concept="liA8E" id="2pOAke0fCkh" role="2OqNvi">
-                                <ref role="37wK5l" to="dau9:~Instruction.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                                <ref role="37wK5l" to="dau9:~Instruction.getUserObject(java.lang.Object)" resolve="getUserObject" />
                                 <node concept="Xl_RD" id="2pOAke0fCki" role="37wK5m">
                                   <property role="Xl_RC" value="mayBeUnreachable" />
                                 </node>
@@ -467,7 +467,7 @@
         </node>
       </node>
       <node concept="3SKdUt" id="2pOAke0fCkl" role="3cqZAp">
-        <node concept="1PaTwC" id="11Hu8EFW1K5" role="3ndbpf">
+        <node concept="1PaTwC" id="11Hu8EFW1K5" role="1aUNEU">
           <node concept="3oM_SD" id="11Hu8EFW1K6" role="1PaTwD">
             <property role="3oM_SC" value="get" />
           </node>
@@ -522,7 +522,7 @@
                             <ref role="3cqZAo" node="2pOAke0fCkB" resolve="it" />
                           </node>
                           <node concept="liA8E" id="2pOAke0fCkA" role="2OqNvi">
-                            <ref role="37wK5l" to="dau9:~Instruction.getSource():java.lang.Object" resolve="getSource" />
+                            <ref role="37wK5l" to="dau9:~Instruction.getSource()" resolve="getSource" />
                           </node>
                         </node>
                       </node>
@@ -539,7 +539,7 @@
         </node>
       </node>
       <node concept="3SKdUt" id="2pOAke0fCkD" role="3cqZAp">
-        <node concept="1PaTwC" id="11Hu8EFW1Kg" role="3ndbpf">
+        <node concept="1PaTwC" id="11Hu8EFW1Kg" role="1aUNEU">
           <node concept="3oM_SD" id="11Hu8EFW1Kh" role="1PaTwD">
             <property role="3oM_SC" value="output" />
           </node>

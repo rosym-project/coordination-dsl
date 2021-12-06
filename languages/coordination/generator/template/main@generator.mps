@@ -2,7 +2,7 @@
 <model ref="90263a5b-f84d-4b33-85d5-679100c0e752/r:7fd39c94-043f-48c6-8404-68912c6016cc(coordination#3975843521651967143/coordination.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -716,7 +716,7 @@
                   <node concept="3cpWs6" id="2maAC89uI$3" role="3cqZAp">
                     <node concept="2YIFZM" id="2maAC89uJio" role="3cqZAk">
                       <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                      <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                      <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                       <node concept="Xl_RD" id="2maAC89uJip" role="37wK5m">
                         <property role="Xl_RC" value="line.separator" />
                       </node>
@@ -777,7 +777,7 @@
                   <node concept="3clFbF" id="2maAC89t5bz" role="3cqZAp">
                     <node concept="3cpWs3" id="2maAC89toyt" role="3clFbG">
                       <node concept="2YIFZM" id="2maAC89tq1s" role="3uHU7w">
-                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                         <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                         <node concept="Xl_RD" id="2maAC89tqjB" role="37wK5m">
                           <property role="Xl_RC" value="line.separator" />
@@ -1272,7 +1272,7 @@
                   <node concept="3cpWs6" id="2maAC89v7vY" role="3cqZAp">
                     <node concept="2YIFZM" id="2maAC89v7vZ" role="3cqZAk">
                       <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                      <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                      <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                       <node concept="Xl_RD" id="2maAC89v7w0" role="37wK5m">
                         <property role="Xl_RC" value="line.separator" />
                       </node>
@@ -1333,7 +1333,7 @@
                   <node concept="3clFbF" id="2maAC89v7wq" role="3cqZAp">
                     <node concept="3cpWs3" id="2maAC89v7wr" role="3clFbG">
                       <node concept="2YIFZM" id="2maAC89v7ws" role="3uHU7w">
-                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                         <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                         <node concept="Xl_RD" id="2maAC89v7wt" role="37wK5m">
                           <property role="Xl_RC" value="line.separator" />
@@ -1856,7 +1856,7 @@
                 <node concept="3cpWs6" id="2maAC89v4G$" role="3cqZAp">
                   <node concept="2YIFZM" id="2maAC89v4G_" role="3cqZAk">
                     <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                    <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                    <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                     <node concept="Xl_RD" id="2maAC89v4GA" role="37wK5m">
                       <property role="Xl_RC" value="line.separator" />
                     </node>
@@ -1917,7 +1917,7 @@
                 <node concept="3clFbF" id="2maAC89v4H0" role="3cqZAp">
                   <node concept="3cpWs3" id="2maAC89v4H1" role="3clFbG">
                     <node concept="2YIFZM" id="2maAC89v4H2" role="3uHU7w">
-                      <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                      <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                       <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                       <node concept="Xl_RD" id="2maAC89v4H3" role="37wK5m">
                         <property role="Xl_RC" value="line.separator" />
@@ -2938,7 +2938,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="35DZe7vWFzH" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                        <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                         <node concept="Xl_RD" id="35DZe7vWFzI" role="37wK5m">
                           <property role="Xl_RC" value="[^-._:a-zA-Z0-9]" />
                         </node>
@@ -2980,7 +2980,7 @@
                 <node concept="3clFbS" id="6L8eFzI5b29" role="2VODD2">
                   <node concept="3clFbF" id="6L8eFzI5b7x" role="3cqZAp">
                     <node concept="2YIFZM" id="6L8eFzI5b7z" role="3clFbG">
-                      <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                      <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                       <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                       <node concept="Xl_RD" id="6L8eFzI5b7$" role="37wK5m">
                         <property role="Xl_RC" value="line.separator" />
@@ -3017,7 +3017,7 @@
                         </node>
                       </node>
                       <node concept="2YIFZM" id="6L8eFzI4Y49" role="3uHU7w">
-                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                         <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                         <node concept="Xl_RD" id="6L8eFzI4Y4a" role="37wK5m">
                           <property role="Xl_RC" value="line.separator" />
@@ -3052,7 +3052,7 @@
                   <node concept="3cpWs6" id="6L8eFzI3qfV" role="3cqZAp">
                     <node concept="3cpWs3" id="6L8eFzI5aut" role="3cqZAk">
                       <node concept="2YIFZM" id="6L8eFzI3qGy" role="3uHU7B">
-                        <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                        <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                         <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                         <node concept="Xl_RD" id="6L8eFzI3qVQ" role="37wK5m">
                           <property role="Xl_RC" value="  Auto-generated on %tc via MPS Coordination IDE" />
@@ -3062,7 +3062,7 @@
                         </node>
                       </node>
                       <node concept="2YIFZM" id="6L8eFzI5aII" role="3uHU7w">
-                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                         <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                         <node concept="Xl_RD" id="6L8eFzI5aIJ" role="37wK5m">
                           <property role="Xl_RC" value="line.separator" />
@@ -3094,7 +3094,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="35DZe7vWF$1" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                 <node concept="Xl_RD" id="35DZe7vWF$2" role="37wK5m">
                   <property role="Xl_RC" value="[^-_.a-zA-Z0-9]" />
                 </node>
